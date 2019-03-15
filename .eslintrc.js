@@ -1,0 +1,27 @@
+module.exports = {
+  extends: ['airbnb', 'prettier', 'prettier/react', 'plugin:jest/recommended'],
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+    ecmaFeatures: {
+      impliedStrict: true,
+    },
+  },
+  plugins: ['react', 'jest', 'react-hooks'],
+  env: {
+    node: true,
+    browser: true,
+    es6: true,
+  },
+  rules: {
+    'import/no-extraneous-dependencies': 0,
+    'react/forbid-prop-types': [2, { forbid: ['any', 'array'] }],
+    'react/require-default-props': 0,
+    'react/jsx-filename-extension': 0,
+    'react/destructuring-assignment': 0,
+    'prefer-destructuring': 0,
+    'react-hooks/rules-of-hooks': 2,
+    'react-hooks/exhaustive-deps': 1,
+  },
+};

@@ -7,6 +7,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "lint": "eslint --ext=.jsx --ext=.js src",
     "format": "prettier --write 'src/**/*.{js,jsx}'"
   },
   "dependencies": {
@@ -20,13 +21,18 @@
     "react-jss": "^8.6.1"
   },
   "devDependencies": {
+    "@babel/cli": "7.2.3",
     "@babel/core": "7.3.4",
+    "@babel/plugin-proposal-class-properties": "7.3.4",
+    "@babel/preset-env": "7.3.4",
+    "@babel/preset-react": "7.0.0",
     "@nordnet/prettier-config": "^2.0.0",
     "@storybook/addon-a11y": "5.0.1",
     "@storybook/addon-actions": "5.0.1",
     "@storybook/addon-links": "5.0.1",
     "@storybook/addons": "5.0.1",
     "@storybook/react": "5.0.1",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "8.0.5",
     "babel-plugin-styled-components": "1.10.0",
     "eslint": "5.15.1",
@@ -36,6 +42,7 @@
     "eslint-plugin-jest": "22.3.0",
     "eslint-plugin-jsx-a11y": "6.2.1",
     "eslint-plugin-react": "7.12.4",
+    "eslint-plugin-react-hooks": "^1.5.1",
     "prettier": "1.16.4"
   }
 }
