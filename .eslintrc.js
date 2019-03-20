@@ -19,15 +19,11 @@ module.exports = {
     },
   },
   env: {
-    node: true,
     browser: true,
     es6: true,
   },
   rules: {
     'import/prefer-default-export': 0,
-    'import/no-extraneous-dependencies': 0,
-    'react/forbid-prop-types': [2, { forbid: ['any', 'array'] }],
-    'react/require-default-props': 0,
     'react/jsx-filename-extension': 0,
     'react/destructuring-assignment': 0,
     'prefer-destructuring': 0,
@@ -42,5 +38,12 @@ module.exports = {
         ignoreRestSiblings: false,
       },
     ],
+  },
+  overrides: {
+    files: 'src/**/*.stories.tsx',
+    rules: {
+      'import/no-extraneous-dependencies': 0,
+      'import/no-unresolved': 0,
+    },
   },
 };
