@@ -1,0 +1,42 @@
+language: node_js
+node_js:
+  - 10
+
+before_install:
+  # Download latest yarn since travis defaults to v1.3.2
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH="$HOME/.yarn/bin:$PATH"
+
+install: yarn install --ignore-engines
+
+cache:
+  yarn: true
+  directories:
+  - node_modules
+
+jobs:
+  include:
+    - stage: test-and-build
+      script:
+        - commitlint-travis
+        - npm run lint
+        # TODO
+        # - npm run coverage
+        - npm run build
+        - npm run build-storybook
+
+    # TODO
+    # - stage: release
+    #   script:
+    #     - git config user.email "nordnet-release@localhost"
+    #     - git config user.name "nordnet-release"
+    #     - TRAVIS_JOB_NUMBER=WORKAROUND.1 npm run semantic-release
+    #   after_script:
+    #     - npm run build:docs
+    #     - npm run travis-docs-publish
+    #   if: (NOT type IN (pull_request)) AND (branch = master)
+
+stages:
+  - name: test-and-build
+  # TODO
+  # - name: release

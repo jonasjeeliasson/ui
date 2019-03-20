@@ -11,3 +11,4 @@ coverage
 yalc.lock
 .history
 build
+storybook-static

@@ -10,14 +10,14 @@
   "license": "MIT",
   "scripts": {
     "dev": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
     "lint:js": "eslint --ext=.tsx --ext=.ts src",
     "lint:css": "stylelint './src/**/*.{ts,tsx}'",
     "lint": "yarn run lint:js && yarn run lint:css && tsc",
-    "format": "prettier --write 'src/**/*.{js,jsx}'",
-    "babel:esm": "BABEL_ENV=esm babel -d dist/esm src/",
-    "babel:cjs": "babel -d dist/cjs src/",
-    "babel": "babel src -d dist --copy-files --ignore .md",
+    "format": "prettier --write 'src/**/*.{ts,tsx}'",
+    "babel:esm": "BABEL_ENV=esm babel -d dist/esm src/ --extensions=.ts,.tsx --copy-files",
+    "babel:cjs": "babel -d dist/cjs src/ --extensions=.ts,.tsx --copy-files",
+    "build": "rimraf dist && yarn babel:esm && yarn babel:cjs",
+    "build-storybook": "build-storybook",
     "commit": "git-cz"
   },
   "commitlint": {
@@ -32,7 +32,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": [
+    "*.{ts, tsx}": [
       "prettier --write",
       "eslint",
       "git add"
@@ -87,6 +87,7 @@
     "babel-loader": "8.0.5",
     "babel-plugin-ramda": "^2.0.0",
     "babel-plugin-styled-components": "1.10.0",
+    "babel-plugin-typescript-to-proptypes": "^0.17.1",
     "commitlint-config-squash-pr": "^1.0.1",
     "cz-conventional-changelog": "^2.1.0",
     "eslint": "5.15.1",
