@@ -2,6 +2,7 @@
   "name": "@nordnet/ui",
   "version": "0.0.1",
   "author": "Nordnet <frontend@nordnet.se> (https://nordnet.se)",
+  "bugs": "https://github.com/nordnet/ui/issues",
   "main": "dist/cjs",
   "module": "dist/esm",
   "types": "types",
@@ -16,17 +17,48 @@
     "format": "prettier --write 'src/**/*.{js,jsx}'",
     "babel:esm": "BABEL_ENV=esm babel -d dist/esm src/",
     "babel:cjs": "babel -d dist/cjs src/",
-    "babel": "babel src -d dist --copy-files --ignore .md"
+    "babel": "babel src -d dist --copy-files --ignore .md",
+    "commit": "git-cz"
+  },
+  "commitlint": {
+    "extends": [
+      "squash-pr",
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "scope-case": [
+        0
+      ]
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn lint"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "dependencies": {
     "nordnet-ui-kit": "^4.0.5",
+    "ramda": "^0.26.1",
     "styled-components": "^4.1.3"
   },
   "peerDependencies": {
     "prop-types": ">=15",
     "react": ">=16",
-    "react-dom": ">=16",
-    "react-jss": "^8.6.1"
+    "react-dom": ">=16"
   },
   "devDependencies": {
     "@babel/cli": "7.2.3",
@@ -35,6 +67,9 @@
     "@babel/preset-env": "7.3.4",
     "@babel/preset-react": "7.0.0",
     "@babel/preset-typescript": "7.3.3",
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
+    "@commitlint/travis-cli": "^7.5.2",
     "@nordnet/prettier-config": "2.0.0",
     "@storybook/addon-a11y": "5.0.1",
     "@storybook/addon-actions": "5.0.1",
@@ -50,7 +85,10 @@
     "@typescript-eslint/eslint-plugin": "1.4.2",
     "@typescript-eslint/parser": "1.4.2",
     "babel-loader": "8.0.5",
+    "babel-plugin-ramda": "^2.0.0",
     "babel-plugin-styled-components": "1.10.0",
+    "commitlint-config-squash-pr": "^1.0.1",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "5.15.1",
     "eslint-config-airbnb": "17.1.0",
     "eslint-config-prettier": "4.1.0",
@@ -59,6 +97,9 @@
     "eslint-plugin-jsx-a11y": "6.2.1",
     "eslint-plugin-react": "7.12.4",
     "eslint-plugin-react-hooks": "1.5.1",
+    "git-cz": "^2.0.0",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
     "prettier": "1.16.4",
     "rimraf": "2.6.3",
     "stylelint": "9.10.1",
