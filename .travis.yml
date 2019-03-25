@@ -24,18 +24,17 @@ jobs:
         - npm run build
         - npm run build-storybook
 
-    # TODO
-    # - stage: release
-    #   script:
-    #     - git config user.email "nordnet-release@localhost"
-    #     - git config user.name "nordnet-release"
-    #     - TRAVIS_JOB_NUMBER=WORKAROUND.1 npm run semantic-release
-    #   after_script:
-    #     - npm run build:docs
-    #     - npm run travis-docs-publish
-    #   if: (NOT type IN (pull_request)) AND (branch = master)
+    TODO
+    - stage: release
+      script:
+        - git config user.email "nordnet-release@localhost"
+        - git config user.name "nordnet-release"
+      #   - TRAVIS_JOB_NUMBER=WORKAROUND.1 npm run semantic-release
+      after_script:
+        - npm run build-storybook
+        - npm run docs-publish
+      if: (NOT type IN (pull_request)) AND (branch = master)
 
 stages:
   - name: test-and-build
-  # TODO
-  # - name: release
+  - name: release

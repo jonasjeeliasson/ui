@@ -20,6 +20,7 @@
     "babel:cjs": "babel -d dist/cjs src/ --extensions=.ts,.tsx --copy-files",
     "build": "rimraf dist && yarn babel:esm && yarn babel:cjs",
     "build-storybook": "build-storybook",
+    "docs-publish": "gh-pages -d documentation/dist --repo https://$GH_TOKEN@github.com/nordnet/ui.git --silent",
     "now-build": "build-storybook",
     "commit": "git-cz"
   },
@@ -105,6 +106,7 @@
     "eslint-plugin-jsx-a11y": "6.2.1",
     "eslint-plugin-react": "7.12.4",
     "eslint-plugin-react-hooks": "1.6.0",
+    "gh-pages": "2.0.1",
     "git-cz": "3.0.0",
     "husky": "1.3.1",
     "jest": "^24.5.0",
