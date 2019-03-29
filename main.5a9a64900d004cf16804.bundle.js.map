@@ -1,0 +1,1 @@
+{"version":3,"file":"main.5a9a64900d004cf16804.bundle.js","sources":["webpack:///./src/common/utils.ts"],"sourcesContent":["export const assert = (expression: boolean, errorMessage: string) => {\n  if (process.env.NODE_ENV !== 'production') {\n    if (!expression) {\n      throw new Error(errorMessage);\n    }\n  }\n};\n"],"mappings":"AAAA","sourceRoot":""}
