@@ -45,6 +45,8 @@ export type RawColor = {
 export type Theme = {
   /** Semantic names for the colors */
   color: {
+    /** cta */
+    activeBorder: RawColor['cta'];
     /** gray7 */
     background: RawColor['gray7'];
     /** gray0 */

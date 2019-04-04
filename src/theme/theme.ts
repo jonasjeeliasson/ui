@@ -65,6 +65,7 @@ export const createTheme = (config?: ThemeConfig): Theme => {
       duration: {},
     },
     color: {
+      activeBorder: rawColor.cta,
       background: rawColor.gray7,
       backgroundDark: rawColor.gray0,
       buttonSecondaryBackground: rawColor.white,
