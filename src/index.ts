@@ -9,12 +9,9 @@ import Media from './Atoms/Media';
 import Separator from './Atoms/Separator';
 import Icon from './Atoms/Icon';
 import Text from './Atoms/Text';
-import TabPanel from './Atoms/TabPanel';
-import Tab from './Atoms/Tab';
 import LabeledValue from './Molecules/LabeledValue';
 import Button from './Molecules/Button';
 import Tabs from './Molecules/Tabs';
-
 
 import theme from './theme';
 
@@ -34,7 +31,5 @@ export {
   Text,
   Button,
   LabeledValue,
-  Tab,
-  TabPanel,
-  Tabs
+  Tabs,
 };

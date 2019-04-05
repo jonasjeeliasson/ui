@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import NormalizedElements from '../../common/NormalizedElements'
+import NormalizedElements from '../../../common/NormalizedElements'
 import { Props } from './Tab.types';
-import Text from '../Text';
+import Text from '../../../Atoms/Text';
 
-const Button = styled(NormalizedElements.Button)`
+const Button  = styled(NormalizedElements.Button)`
   background: none;
   border: none;
   padding: 0;
-  margin-right: ${props => props.theme.spacing.unit(2)}px;
+  margin-right: ${props => props.theme.spacing.unit(5)}px;
   padding-bottom: ${props => props.theme.spacing.unit(1)}px;
   border-bottom: 2px solid ${props => props.selected ? props.theme.color.activeBorder: 'transparent'};
 `;  

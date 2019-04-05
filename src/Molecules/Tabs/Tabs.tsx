@@ -2,17 +2,15 @@ import React, { Component, useState } from 'react';
 import * as R from 'ramda';
 import styled from 'styled-components';
 
-import Tab from '../../Atoms/Tab';
-import TabPanel from '../../Atoms/TabPanel';
+import Tab from './Tab';
+import TabPanel from './TabPanel';
 import { useKeyboardNavigation } from './KeyboardNavigation';
 import Separator from '../../Atoms/Separator';
 
 type Props = {
   onChange?: (index: number) => void;
   items: { content: React.ReactNode, name: React.ReactText }[];
-  renderTab?: (props: any) => React.ReactNode;
-  renderTabpanel?: (props: any) => React.ReactNode;
-
+  padding?: number;
 }
 
 const TabsList = styled.ul`
@@ -20,10 +18,10 @@ const TabsList = styled.ul`
   display: flex;
   margin: 0;
   margin-bottom: -1px;
-  padding: 0;
+  padding: ${props => props.padding ? `0 ${props.padding}px` : 0};
 `
 
-const Tabs: React.FC<Props> = ({ items, onChange: onChangeFromProps = (_: number) => null, renderTab = props => <Tab {...props} />, renderTabpanel = props => <TabPanel {...props} /> }) => {
+const Tabs: React.FC<Props> = ({ items, padding, onChange: onChangeFromProps = (_: number) => null }) => {
   const defaultSelected = items.findIndex(R.propEq('defaultSelected', true));
   const [selected, setSelected] = useState(defaultSelected === -1 ? 0 : defaultSelected);
   const onChange = (index: number) => {
@@ -37,26 +35,17 @@ const Tabs: React.FC<Props> = ({ items, onChange: onChangeFromProps = (_: number
       <TabsList
         role="tablist"
         onKeyDown={onKeyDown}
+        padding={padding}
       >
         {items.map((item, index) =>
-          renderTab({
-            children: item.name,
-            selected: selected === index,
-            index,
-            key: item.name,
-            onClick: onChange,
-            setRef: setRef(index),
-          }),
+          <Tab selected={selected === index} index={index} key={item.name} onClick={onChange} setRef={setRef(index)}>
+            {item.name}
+          </Tab>
         )}
       </TabsList>
       <Separator />
       {items.map((item, index) => 
-        renderTabpanel({
-          children: item.content,
-          selected: selected === index,
-          key: item.name,
-          index,
-        }),
+      <TabPanel selected={selected === index} key={item.name} index={index}>{item.content}</TabPanel>
       )}
   </>
   );

@@ -6,7 +6,7 @@ import { Tabs } from '../..';
 const stories = storiesOf('Molecules/Tabs', module);
 
 
-stories.add('Default usage', () => <Tabs
+stories.add('Default usage', () => <Tabs padding={32}
 items={[
   {
     name: 'All News',
@@ -15,7 +15,7 @@ items={[
   {
     name: 'Recommended News',
     content: (
-      <div style={{ fontWeight: 700 }}>Recommended News. Content can be nodes to.</div>
+      <div style={{ fontWeight: 700 }}>Recommended News. Content can be nodes to.<a href="#">asd</a></div>
     ),
   },
   {
