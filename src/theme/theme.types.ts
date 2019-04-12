@@ -57,6 +57,8 @@ export type Theme = {
     buy: RawColor['cta'];
     /** white */
     buttonText: RawColor['white'];
+    /** cta */
+    borderActive: RawColor['cta'];
     /** negative */
     sell: RawColor['negative'];
     /** cta */

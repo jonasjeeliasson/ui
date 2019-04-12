@@ -70,6 +70,7 @@ export const createTheme = (config?: ThemeConfig): Theme => {
       buttonSecondaryBackground: rawColor.white,
       buttonText: rawColor.white,
       buy: rawColor.cta,
+      borderActive: rawColor.cta,
       card: rawColor.white,
       cta: rawColor.cta,
       disabled: rawColor.gray5,

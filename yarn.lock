@@ -11609,7 +11609,7 @@ react-router-dom@^5.0.0:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-router@5.0.0:
+react-router@5.0.0, react-router@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/react-router/-/react-router-5.0.0.tgz#349863f769ffc2fa10ee7331a4296e86bc12879d"
   integrity sha512-6EQDakGdLG/it2x9EaCt9ZpEEPxnd0OCLBHQ1AcITAAx7nCnyvnzf76jKWG1s2/oJ7SSviUgfWHofdYljFexsA==
@@ -14110,6 +14110,18 @@ urlgrey@^0.4.4:
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/urlgrey/-/urlgrey-0.4.4.tgz#892fe95960805e85519f1cd4389f2cb4cbb7652f"
   integrity sha1-iS/pWWCAXoVRnxzUOJ8stMu3ZS8=
+
+use-force-update@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/use-force-update/-/use-force-update-1.0.4.tgz#7e9b55b32b7eb947a2187e5c87e047c7f6c4481b"
+  integrity sha512-/tF1kH4p4KwuJeA9De0hzPXi48JTk9fEwlBnZ8fUOTcDYwKuLiMPVOFrN0RzbcKLgcVog/74kTRCiHfu93ju+g==
+
+use-react-router@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/use-react-router/-/use-react-router-1.0.5.tgz#509d930ad1110f25ff97a88c96c104487f85760f"
+  integrity sha512-huk5DhGio0RYjCngZ+DyTOQ4NqC+hsZ6N78KABkgT6Y2BSJYQkBpqob3gxZBlt+h7Q7YMkH5QZo7mYIW14jhOg==
+  dependencies:
+    use-force-update "^1.0.4"
 
 use@^3.1.0:
   version "3.1.1"

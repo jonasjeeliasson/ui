@@ -62,8 +62,10 @@
     "color": "^3.1.0",
     "ramda": "^0.26.1",
     "react-intl": "^2.8.0",
+    "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "use-react-router": "^1.0.5"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.8",
