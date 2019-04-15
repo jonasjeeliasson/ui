@@ -86,7 +86,9 @@ const Container: React.FC = ({ children, initialActiveTabId = 0 }) => {
                   setRef={setRef(i)}
                   to={c.props.to}
                 >
-                  {c.props.title}
+                  <Typography type="secondary" weight={active === i ? 'bold' : 'regular'}>
+                    {c.props.title}
+                  </Typography>
                 </Title>
               </Flexbox.Item>
             );

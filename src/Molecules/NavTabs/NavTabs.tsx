@@ -2,7 +2,7 @@ import React, { createContext, useContext, ReactNode, ReactChildren } from 'reac
 import { matchPath, __RouterContext } from 'react-router';
 import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
-import { Flexbox, Typography } from '../../index';
+import { Flexbox, Typography, Separator } from '../../index';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from '../Tabs/useKeyboardNavigation';
 
@@ -97,10 +97,13 @@ const Container: React.FC = ({ children }) => {
   });
 
   return (
+    <div>
     <div onKeyDown={onKeyDown}>
       <Flexbox.Container direction="row" gutter={2} as={StyledUl}>
         {titles}
       </Flexbox.Container>
+      <Separator />
+    </div>
 
       <div>{contents}</div>
     </div>
