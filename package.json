@@ -68,11 +68,9 @@
     "use-react-router": "^1.0.5"
   },
   "peerDependencies": {
-    "@types/react": ">=16.8.8",
     "prop-types": ">=15",
     "react": ">=16",
-    "react-dom": ">=16",
-    "react-intl": "2"
+    "react-dom": ">=16"
   },
   "devDependencies": {
     "@babel/cli": "7.4.3",
@@ -136,7 +134,6 @@
     "prettier": "1.17.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-intl": "2.8.0",
     "react-markdown": "4.0.8",
     "react-test-renderer": "16.8.6",
     "rimraf": "2.6.3",
