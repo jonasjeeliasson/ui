@@ -133,10 +133,9 @@ const Container: React.FC<ContainerProps> = ({ children, initialActiveTabId = 0 
 
   return (
     <div>
-      {/* @fixme a11y */}
       {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
       <div onKeyDown={onKeyDown}>
-        <Flexbox.Container direction="row" gutter={2} as={StyledUl}>
+        <Flexbox.Container direction="row" gutter={2} as={StyledUl} role="tablist">
           {titles}
         </Flexbox.Container>
       </div>

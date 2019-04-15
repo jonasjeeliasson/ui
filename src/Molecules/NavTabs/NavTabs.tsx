@@ -51,7 +51,7 @@ const Title = ({ active, children, setRef, to }: TitleProps) => {
     <li role="presentation">
       <Typography type="secondary" weight={active ? 'bold' : 'regular'}>
         <div>
-          <StyledLink to={to} role="tab" innerRef={setRef} active={`${active}`}>
+          <StyledLink to={to} innerRef={setRef} active={`${active}`}>
             {children}
           </StyledLink>
         </div>
