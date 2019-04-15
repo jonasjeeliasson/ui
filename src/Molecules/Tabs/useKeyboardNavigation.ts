@@ -1,5 +1,9 @@
-export const useKeyboardNavigation = ({ itemsLength, onChange = (_: number) => null }) => {
-  // const useKeyboardNavigation: Arguments => Return = ({ itemsLength, onChange }) => {
+type UseKeyboardNavigationArgs = { itemsLength: number; onChange: (n: number) => void };
+
+export const useKeyboardNavigation = ({
+  itemsLength,
+  onChange = (_: number) => null,
+}: UseKeyboardNavigationArgs) => {
   const tabRefs: HTMLElement[] = [];
 
   const getActive = () => Object.values(tabRefs).findIndex(tab => tab === document.activeElement);
@@ -28,7 +32,7 @@ export const useKeyboardNavigation = ({ itemsLength, onChange = (_: number) => n
     }
   };
 
-  const setRef = index => ref => {
+  const setRef = (index: number) => <RefType extends HTMLElement>(ref: RefType) => {
     tabRefs[index] = ref;
   };
 
