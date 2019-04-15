@@ -1,6 +1,6 @@
 import React, { createContext, useState, useContext } from 'react';
 import styled, { css } from 'styled-components';
-import { Flexbox, Typography } from '../..';
+import { Flexbox, Typography, Separator } from '../..';
 import NormalizedElements from '../../common/NormalizedElements';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
@@ -69,28 +69,31 @@ const Container: React.FC = ({ children, initialActiveTabId = 0 }) => {
     itemsLength: React.Children.count(children),
   });
   return (
-    <div onKeyDown={onKeyDown}>
-      <Flexbox.Container direction="row" gutter={2} as={StyledUl}>
-        {React.Children.map(children, (c: any, i) => {
-          if (c.type !== Item) {
-            return null;
-          }
+    <div>
+      <div onKeyDown={onKeyDown}>
+        <Flexbox.Container direction="row" gutter={2} as={StyledUl}>
+          {React.Children.map(children, (c: any, i) => {
+            if (c.type !== Item) {
+              return null;
+            }
 
-          return (
-            <Flexbox.Item>
-              <Title
-                active={active === i}
-                index={i}
-                onTitleClick={handleTitleClick(i)}
-                setRef={setRef(i)}
-                to={console.log({ c }) || c.props.to}
-              >
-                {c.props.title}
-              </Title>
-            </Flexbox.Item>
-          );
-        })}
-      </Flexbox.Container>
+            return (
+              <Flexbox.Item>
+                <Title
+                  active={active === i}
+                  index={i}
+                  onTitleClick={handleTitleClick(i)}
+                  setRef={setRef(i)}
+                  to={c.props.to}
+                >
+                  {c.props.title}
+                </Title>
+              </Flexbox.Item>
+            );
+          })}
+        </Flexbox.Container>
+      </div>
+      <Separator />
 
       <div>
         {React.Children.map(children, (c, i) => {

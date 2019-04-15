@@ -1,4 +1,4 @@
-type UseKeyboardNavigationArgs = { itemsLength: number; onChange: (n: number) => void };
+type UseKeyboardNavigationArgs = { itemsLength: number; onChange?: (n: number) => void };
 
 export const useKeyboardNavigation = ({
   itemsLength,
