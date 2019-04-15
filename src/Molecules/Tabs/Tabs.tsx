@@ -41,11 +41,13 @@ type TitleProps = {
   onTitleClick: MouseEventHandler<HTMLButtonElement>;
   index: number;
   setRef: (el: HTMLButtonElement | null) => void;
+  onKeyDown: (e: React.KeyboardEvent) => void;
 };
 const Title: React.FC<TitleProps> = ({
   active: activeFromProps,
   children,
   onTitleClick,
+  onKeyDown,
   index,
   setRef,
 }) => {
@@ -58,6 +60,7 @@ const Title: React.FC<TitleProps> = ({
           ref={setRef}
           type="button"
           onClick={onTitleClick}
+          onKeyDown={onKeyDown}
           aria-selected={active}
           role="tab"
           id={`tabs-tab-${index}`}
@@ -106,7 +109,7 @@ const Container: React.FC<ContainerProps> = ({ children, initialActiveTabId = 0 
     } else {
       titles.push(
         <Flexbox.Item>
-          <Title active={isActive} index={i} onTitleClick={handleTitleClick(i)} setRef={setRef(i)}>
+          <Title active={isActive} index={i} onTitleClick={handleTitleClick(i)} onKeyDown={onKeyDown} setRef={setRef(i)}>
             <Typography type="secondary" weight={active === i ? 'bold' : 'regular'}>
               {c.props.title}
             </Typography>
@@ -133,12 +136,9 @@ const Container: React.FC<ContainerProps> = ({ children, initialActiveTabId = 0 
 
   return (
     <div>
-      {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
-      <div onKeyDown={onKeyDown}>
-        <Flexbox.Container direction="row" gutter={2} as={StyledUl} role="tablist">
-          {titles}
-        </Flexbox.Container>
-      </div>
+      <Flexbox.Container direction="row" gutter={2} as={StyledUl} role="tablist">
+        {titles}
+      </Flexbox.Container>
       <Separator />
 
       <div>{contents}</div>

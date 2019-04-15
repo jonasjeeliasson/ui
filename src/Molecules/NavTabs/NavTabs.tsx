@@ -44,14 +44,15 @@ type TitleProps = {
   children: React.ReactNode;
   setRef: (ref: HTMLAnchorElement | null) => void;
   to: string;
+  onKeyDown: (e: React.KeyboardEvent) => void;
 };
 
-const Title = ({ active, children, setRef, to }: TitleProps) => {
+const Title = ({ active, children, setRef, to, onKeyDown }: TitleProps) => {
   return (
     <li role="presentation">
       <Typography type="secondary" weight={active ? 'bold' : 'regular'}>
         <div>
-          <StyledLink to={to} innerRef={setRef} active={`${active}`}>
+          <StyledLink to={to} innerRef={setRef} active={`${active}`} onKeyDown={onKeyDown}>
             {children}
           </StyledLink>
         </div>
@@ -91,7 +92,7 @@ const Container: React.FC = ({ children }) => {
 
       titles.push(
         <Flexbox.Item>
-          <Title active={isIndexActive} setRef={setRef(i)} to={c.props.to}>
+          <Title active={isIndexActive} setRef={setRef(i)} to={c.props.to} onKeyDown={onKeyDown}>
             {c.props.title}
           </Title>
         </Flexbox.Item>,
@@ -103,14 +104,10 @@ const Container: React.FC = ({ children }) => {
 
   return (
     <div>
-      {/* @fixme a11y */}
-      {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
-      <div onKeyDown={onKeyDown}>
-        <Flexbox.Container direction="row" gutter={2} as={StyledUl}>
-          {titles}
-        </Flexbox.Container>
-        <Separator />
-      </div>
+      <Flexbox.Container direction="row" gutter={2} as={StyledUl}>
+        {titles}
+      </Flexbox.Container>
+      <Separator />
 
       <div>{contents}</div>
     </div>
