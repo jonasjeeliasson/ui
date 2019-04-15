@@ -1,13 +1,14 @@
-import React, { createContext, useContext, ReactNode, ReactChildren } from 'react';
+import React, { useContext, ReactNode } from 'react';
+// @ts-ignore
 import { matchPath, __RouterContext } from 'react-router';
-import { Link } from 'react-router-dom';
+import { Link, LinkProps } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 import { Flexbox, Typography, Separator } from '../../index';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from '../Tabs/useKeyboardNavigation';
 
 type ItemProps = {
-  children: ReactChildren;
+  children: React.ReactNode | React.ReactNode[];
   to: string;
   title: ReactNode;
 };
@@ -15,7 +16,7 @@ const Item: React.FC<ItemProps> = ({ children }) => {
   return <div>{children}</div>;
 };
 
-const styles = css<TitleProps>`
+const styles = css<LinkProps & { active: string }>`
   background: none;
   display: inline-block;
   border: none;
@@ -24,7 +25,7 @@ const styles = css<TitleProps>`
   padding-bottom: ${props => props.theme.spacing.unit(1)}px;
   color: ${props => props.theme.color.text};
   border-bottom: 2px solid
-    ${props => (props.active ? props.theme.color.borderActive : 'transparent')};
+    ${props => (props.active === 'true' ? props.theme.color.borderActive : 'transparent')};
 `;
 
 const StyledLink = styled(Link)`
@@ -40,8 +41,8 @@ const StyledLink = styled(Link)`
 
 type TitleProps = {
   active: boolean;
-  children: React.ReactChildren;
-  setRef: (ref: HTMLElement) => void;
+  children: React.ReactNode;
+  setRef: (ref: HTMLAnchorElement | null) => void;
   to: string;
 };
 
@@ -50,7 +51,7 @@ const Title = ({ active, children, setRef, to }: TitleProps) => {
     <li role="presentation">
       <Typography type="secondary" weight={active ? 'bold' : 'regular'}>
         <div>
-          <StyledLink to={to} role="tab" innerRef={setRef} active={active}>
+          <StyledLink to={to} role="tab" innerRef={setRef} active={`${active}`}>
             {children}
           </StyledLink>
         </div>
@@ -60,15 +61,19 @@ const Title = ({ active, children, setRef, to }: TitleProps) => {
 };
 
 const StyledUl = styled.ul`
+  padding-inline-start: unset;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
   list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
+  padding-left: ${p => p.theme.spacing.unit(5)}px;
   /** @todo check this out */
   margin-bottom: -1px;
 `;
 const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
-  x != null && typeof x === 'object' && x.hasOwnProperty('type');
+  x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type');
 
 const Container: React.FC = ({ children }) => {
   const { location } = useContext(__RouterContext);
@@ -86,7 +91,7 @@ const Container: React.FC = ({ children }) => {
 
       titles.push(
         <Flexbox.Item>
-          <Title active={isIndexActive} index={i} setRef={setRef(i)} to={c.props.to}>
+          <Title active={isIndexActive} setRef={setRef(i)} to={c.props.to}>
             {c.props.title}
           </Title>
         </Flexbox.Item>,
@@ -98,12 +103,14 @@ const Container: React.FC = ({ children }) => {
 
   return (
     <div>
-    <div onKeyDown={onKeyDown}>
-      <Flexbox.Container direction="row" gutter={2} as={StyledUl}>
-        {titles}
-      </Flexbox.Container>
-      <Separator />
-    </div>
+      {/* @fixme a11y */}
+      {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
+      <div onKeyDown={onKeyDown}>
+        <Flexbox.Container direction="row" gutter={2} as={StyledUl}>
+          {titles}
+        </Flexbox.Container>
+        <Separator />
+      </div>
 
       <div>{contents}</div>
     </div>

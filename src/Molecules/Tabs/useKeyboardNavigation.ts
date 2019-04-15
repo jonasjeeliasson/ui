@@ -32,8 +32,8 @@ export const useKeyboardNavigation = ({
     }
   };
 
-  const setRef = (index: number) => <RefType extends HTMLElement>(ref: RefType) => {
-    tabRefs[index] = ref;
+  const setRef = (index: number) => <RefType extends HTMLElement>(ref: RefType | null) => {
+    if (ref) tabRefs[index] = ref;
   };
 
   return { setRef, onKeyDown };

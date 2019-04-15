@@ -33,6 +33,7 @@ const getContainerMargins = (props: ThemedStyledProps<Props, Theme>): string => 
 const StyledFlexbox = styled.div<Props>`
   box-sizing: border-box;
   display: flex;
+  
   ${props => getContainerMargins(props)}
   ${({ height }) => (height ? `height: ${height};` : '')}
   ${({ direction }) => (direction ? `flex-direction: ${direction};` : '')}
@@ -46,7 +47,7 @@ export const Container = (props: Props) => {
   const { gutter, direction } = props;
 
   return (
-    <StyledFlexbox {...props}>
+    <StyledFlexbox {...props} gutter={gutter}>
       {React.Children.map(props.children, (child: any) => {
         /** the check below is needed for rendering conditional Flexbox Items, e.g
          * <Flexbox.Container>
