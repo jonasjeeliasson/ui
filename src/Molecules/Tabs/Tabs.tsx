@@ -1,6 +1,4 @@
 import React, { createContext, useState, useContext } from 'react';
-import { Route } from 'react-router';
-import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 import { Flexbox, Typography } from '../..';
 import NormalizedElements from '../../common/NormalizedElements';

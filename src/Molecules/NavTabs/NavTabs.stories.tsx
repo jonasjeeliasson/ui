@@ -3,18 +3,22 @@ import React from 'react';
 import { Route, Redirect } from 'react-router';
 import { HashRouter } from 'react-router-dom';
 import Tabs from './NavTabs';
+import { Typography, NavTabs } from '../../../'
 
 storiesOf('Molecules | NavTabs', module).add('Navtabs', () => (
   <HashRouter>
+    <Typography type="secondary">
     <Route exact path="/" render={() => <Redirect to="/transfer" />} />
-    <Tabs.Container>
-      <Tabs.Item title="Not Sweden" to="/transfer">
+    <NavTabs.Container>
+      <NavTabs.Item title="Not Sweden" to="/transfer">
         Ones children
-      </Tabs.Item>
-      <Tabs.Item title="Sweden" to="/markets">
+      </NavTabs.Item>
+      <NavTabs.Item title="Sweden" to="/markets">
         Twos children
-      </Tabs.Item>
-    </Tabs.Container>
+      </NavTabs.Item>
+    </NavTabs.Container>
+    </Typography>
+    
   </HashRouter>
 ));
 

@@ -4365,6 +4365,167 @@ exports[`Storyshots Molecules | LinkSell LinkSell disabled 1`] = `
 </span>
 `;
 
+exports[`Storyshots Molecules | NavTabs Navtabs 1`] = `
+<span
+  className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+  type="secondary"
+>
+  <div
+    onKeyDown={[Function]}
+  >
+    <ul
+      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 LUEkz NavTabs__StyledUl-gmhqhq-1 uAXsp"
+      direction="row"
+    >
+      <div
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 isDfyg"
+      >
+        <li
+          role="presentation"
+        >
+          <span
+            className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
+            type="secondary"
+          >
+            <div>
+              <a
+                active={true}
+                className="NavTabs__StyledLink-gmhqhq-0 dQdlCp"
+                href="#/transfer"
+                onClick={[Function]}
+                role="tab"
+                tabIndex={0}
+              >
+                Not Sweden
+              </a>
+            </div>
+          </span>
+        </li>
+      </div>
+      <div
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 isDfyg"
+      >
+        <li
+          role="presentation"
+        >
+          <span
+            className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+            type="secondary"
+          >
+            <div>
+              <a
+                active={false}
+                className="NavTabs__StyledLink-gmhqhq-0 kpSAhz"
+                href="#/markets"
+                onClick={[Function]}
+                role="tab"
+                tabIndex={-1}
+              >
+                Sweden
+              </a>
+            </div>
+          </span>
+        </li>
+      </div>
+    </ul>
+    <div>
+      <section
+        id="tabs-tabpanel-0"
+      >
+        <div>
+          Ones children
+        </div>
+      </section>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Storyshots Molecules | Tabs Default Tabs component 1`] = `
+<span
+  className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+  type="secondary"
+>
+  <div
+    onKeyDown={[Function]}
+  >
+    <ul
+      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 LUEkz Tabs__StyledUl-bqti0u-1 eUMfAr"
+      direction="row"
+    >
+      <div
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 isDfyg"
+      >
+        <li
+          role="presentation"
+        >
+          <span
+            className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
+            type="secondary"
+          >
+            <button
+              aria-selected={true}
+              className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 gZMhcT"
+              id="tabs-tab-0"
+              onClick={[Function]}
+              role="tab"
+              tabIndex={0}
+              type="button"
+            >
+              One
+            </button>
+          </span>
+        </li>
+      </div>
+      <div
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 isDfyg"
+      >
+        <li
+          role="presentation"
+        >
+          <span
+            className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+            type="secondary"
+          >
+            <button
+              aria-selected={false}
+              className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 kTTVYn"
+              id="tabs-tab-1"
+              onClick={[Function]}
+              role="tab"
+              tabIndex={-1}
+              type="button"
+            >
+              Node as well 👎
+            </button>
+          </span>
+        </li>
+      </div>
+    </ul>
+    <div>
+      <section
+        aria-labelledby="tabs-tab-0"
+        hidden={false}
+        id="tabs-tabpanel-0"
+        role="tabpanel"
+      >
+        <div>
+          Ones children
+        </div>
+      </section>
+      <section
+        aria-labelledby="tabs-tab-1"
+        hidden={true}
+        id="tabs-tabpanel-1"
+        role="tabpanel"
+      >
+        <div />
+      </section>
+    </div>
+  </div>
+</span>
+`;
+
 exports[`Storyshots Theme Colors (palette) 1`] = `
 Array [
   <h1>

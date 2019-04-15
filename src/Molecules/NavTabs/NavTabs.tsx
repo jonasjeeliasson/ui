@@ -1,5 +1,5 @@
-import React, { createContext, useState, useContext } from 'react';
-import { Route, matchPath, __RouterContext } from 'react-router';
+import React, { createContext, useContext } from 'react';
+import { matchPath, __RouterContext } from 'react-router';
 import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 import { Flexbox, Typography } from '../../index';
@@ -47,7 +47,6 @@ const Title = ({ active, children, index, setRef, to }) => {
           <StyledLink
             to={to}
             role="tab"
-            tabIndex={active ? 0 : -1}
             innerRef={setRef}
             active={active}
           >

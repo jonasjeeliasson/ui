@@ -15,8 +15,10 @@ import Link from './Molecules/Link';
 import LinkBuy from './Molecules/LinkBuy';
 import LinkSell from './Molecules/LinkSell';
 import Media from './Atoms/Media';
+import NavTabs from './Molecules/NavTabs';
 import Separator from './Atoms/Separator';
 import Spinner from './Atoms/Spinner';
+import Tabs from './Molecules/Tabs';
 import Typography from './Atoms/Typography';
 
 import theme from './theme';
@@ -44,4 +46,6 @@ export {
   Typography,
   List,
   ListItem,
+  Tabs,
+  NavTabs,
 };
