@@ -61,7 +61,7 @@ const StyledItemWithVerticalGutter = styled(StyledItem)<PropsWithGutter>`
   }}
 `;
 
-const withoutSCProps = R.omit(['css', 'as']);
+const withoutSCProps = R.omit(['css']);
 
 export const ItemWithHorisontalGutter: React.FunctionComponent<PropsWithGutter> = props => (
   <StyledItemWithHorisontalGutter {...withoutSCProps(props)} />

@@ -44,23 +44,21 @@ const Title: React.FC<TitleProps> = ({
   const active = activeFromProps;
 
   return (
-    <li role="presentation">
-      <Typography type="secondary" weight={active ? 'bold' : 'regular'}>
-        <StyledButton
-          ref={setRef}
-          type="button"
-          onClick={onTitleClick}
-          onKeyDown={onKeyDown}
-          aria-selected={active}
-          role="tab"
-          id={`tabs-tab-${index}`}
-          tabIndex={active ? 0 : -1}
-          active={active}
-        >
-          {children}
-        </StyledButton>
-      </Typography>
-    </li>
+    <Typography type="secondary" weight={active ? 'bold' : 'regular'}>
+      <StyledButton
+        ref={setRef}
+        type="button"
+        onClick={onTitleClick}
+        onKeyDown={onKeyDown}
+        aria-selected={active}
+        role="tab"
+        id={`tabs-tab-${index}`}
+        tabIndex={active ? 0 : -1}
+        active={active}
+      >
+        {children}
+      </StyledButton>
+    </Typography>
   );
 };
 
@@ -95,7 +93,7 @@ const Container: React.FC<ContainerProps> = ({ children, initialActiveTabId = 0 
       assert(false, 'Children type of <Tabs.Container> should be only <Tabs.Item>');
     } else {
       titles.push(
-        <Flexbox.Item>
+        <Flexbox.Item as="li" role="presentation">
           <Title
             active={isActive}
             index={i}

@@ -5,7 +5,10 @@ export type Props = {
   basis?: string;
   flex?: string;
   align?: 'auto' | 'flex-start' | 'flex-end' | 'center' | 'baseline' | 'stretch';
-  size?: number | 'string';
+  size?: number | string;
+  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+  /** a11y */
+  role?: string;
 };
 
 export type PropsWithGutter = {
