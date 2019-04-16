@@ -12,7 +12,7 @@ const Item: React.FC<ItemProps> = ({ children }) => {
   return <div>{children}</div>;
 };
 
-const styles = css<LinkProps & { active: boolean }>`
+const styles = css<LinkProps & { active: string }>`
   background: none;
   display: inline-block;
   border: none;
@@ -21,7 +21,7 @@ const styles = css<LinkProps & { active: boolean }>`
   padding-bottom: ${props => props.theme.spacing.unit(1)}px;
   color: ${props => props.theme.color.text};
   border-bottom: 2px solid
-    ${props => (props.active ? props.theme.color.borderActive : 'transparent')};
+    ${props => (props.active === 'true' ? props.theme.color.borderActive : 'transparent')};
 `;
 
 const StyledLink = styled(Link)`
@@ -43,7 +43,7 @@ const Title = ({ active, children, setRef, to, onKeyDown }: TitleProps) => {
           <StyledLink
             to={to}
             innerRef={setRef}
-            active={active}
+            active={String(active)}
             aria-current={active && 'page'}
             onKeyDown={onKeyDown}
           >
