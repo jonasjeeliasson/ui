@@ -71,7 +71,7 @@ const StyledUl = styled.ul`
   list-style: none;
   display: flex;
   /** @todo reconsider spacing */
-  padding-left: ${p => p.theme.spacing.unit(4)}px;
+  padding-left: ${p => p.theme.spacing.unit(3)}px;
   /** @todo check this out */
   margin-bottom: -1px;
 `;
@@ -127,7 +127,7 @@ const Container: React.FC<ContainerProps> = ({ children, initialActiveTabId = 0 
 
   return (
     <div>
-      <Flexbox.Container direction="row" gutter={2} as={StyledUl} role="tablist">
+      <Flexbox.Container direction="row" gutter={4} as={StyledUl} role="tablist">
         {titles}
       </Flexbox.Container>
       <Separator />

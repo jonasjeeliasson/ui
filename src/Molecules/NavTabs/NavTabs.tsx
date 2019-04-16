@@ -64,7 +64,7 @@ const StyledUl = styled.ul`
   list-style: none;
   display: flex;
   /** @todo reconsider spacing */
-  padding-left: ${p => p.theme.spacing.unit(4)}px;
+  padding-left: ${p => p.theme.spacing.unit(3)}px;
   /** @todo check this out */
   margin-bottom: -1px;
 `;
@@ -99,7 +99,7 @@ const Container: React.FC = ({ children }) => {
 
   return (
     <div>
-      <Flexbox.Container direction="row" gutter={2} as={StyledUl}>
+      <Flexbox.Container direction="row" gutter={4} as={StyledUl}>
         {titles}
       </Flexbox.Container>
       <Separator />
