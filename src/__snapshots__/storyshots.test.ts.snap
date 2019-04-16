@@ -4372,7 +4372,7 @@ exports[`Storyshots Molecules | NavTabs Default (extra space inside) 1`] = `
 >
   <div>
     <ul
-      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 LUEkz NavTabs__StyledUl-gmhqhq-1 iwFjIG"
+      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 LUEkz NavTabs__StyledUl-gmhqhq-1 bIBMDq"
       direction="row"
     >
       <div
@@ -4449,7 +4449,7 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
 >
   <div>
     <ul
-      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 LUEkz Tabs__StyledUl-bqti0u-1 fEWqHD"
+      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 LUEkz Tabs__StyledUl-bqti0u-1 eZbaNz"
       direction="row"
       role="tablist"
     >

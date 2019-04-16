@@ -72,7 +72,8 @@ const StyledUl = styled.ul`
   margin-inline-end: unset;
   list-style: none;
   display: flex;
-  padding-left: ${p => p.theme.spacing.unit(5)}px;
+  /** @todo reconsider spacing */
+  padding-left: ${p => p.theme.spacing.unit(4)}px;
   /** @todo check this out */
   margin-bottom: -1px;
 `;
