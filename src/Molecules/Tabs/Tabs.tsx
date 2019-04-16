@@ -1,16 +1,13 @@
-import React, { createContext, useState, useContext, MouseEventHandler } from 'react';
+import React, { createContext, useState, useContext } from 'react';
 import styled, { css } from 'styled-components';
 import { Flexbox, Typography, Separator } from '../..';
 import NormalizedElements from '../../common/NormalizedElements';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-const TabContext = createContext<undefined | boolean>(undefined);
+import { ContainerProps, ItemProps, TitleProps } from './Tabs.types';
 
-type ItemProps = {
-  title: React.ReactNode;
-  children: React.ReactNode | React.ReactNode[];
-};
+const TabContext = createContext<undefined | boolean>(undefined);
 
 const Item: React.FC<ItemProps> = ({ children }) => {
   const isItemActive = useContext(TabContext);
@@ -36,13 +33,6 @@ const StyledButton = styled(NormalizedElements.Button)`
   ${styles}
 `;
 
-type TitleProps = {
-  active: boolean;
-  onTitleClick: MouseEventHandler<HTMLButtonElement>;
-  index: number;
-  setRef: (el: HTMLButtonElement | null) => void;
-  onKeyDown: (e: React.KeyboardEvent) => void;
-};
 const Title: React.FC<TitleProps> = ({
   active: activeFromProps,
   children,
@@ -87,10 +77,6 @@ const StyledUl = styled.ul`
   margin-bottom: -1px;
 `;
 
-type ContainerProps = {
-  initialActiveTabId?: number;
-  children: React.ReactNode;
-};
 const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
   x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type');
 
@@ -109,7 +95,13 @@ const Container: React.FC<ContainerProps> = ({ children, initialActiveTabId = 0 
     } else {
       titles.push(
         <Flexbox.Item>
-          <Title active={isActive} index={i} onTitleClick={handleTitleClick(i)} onKeyDown={onKeyDown} setRef={setRef(i)}>
+          <Title
+            active={isActive}
+            index={i}
+            onTitleClick={handleTitleClick(i)}
+            onKeyDown={onKeyDown}
+            setRef={setRef(i)}
+          >
             <Typography type="secondary" weight={active === i ? 'bold' : 'regular'}>
               {c.props.title}
             </Typography>

@@ -1,4 +1,4 @@
-import React, { useContext, ReactNode } from 'react';
+import React, { useContext } from 'react';
 // @ts-ignore
 import { matchPath, __RouterContext } from 'react-router';
 import { Link, LinkProps } from 'react-router-dom';
@@ -6,12 +6,8 @@ import styled, { css } from 'styled-components';
 import { Flexbox, Typography, Separator } from '../../index';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from '../Tabs/useKeyboardNavigation';
+import { ItemProps, TitleProps } from './NavTabs.types';
 
-type ItemProps = {
-  children: React.ReactNode | React.ReactNode[];
-  to: string;
-  title: ReactNode;
-};
 const Item: React.FC<ItemProps> = ({ children }) => {
   return <div>{children}</div>;
 };
@@ -38,14 +34,6 @@ const StyledLink = styled(Link)`
   }
   ${styles}
 `;
-
-type TitleProps = {
-  active: boolean;
-  children: React.ReactNode;
-  setRef: (ref: HTMLAnchorElement | null) => void;
-  to: string;
-  onKeyDown: (e: React.KeyboardEvent) => void;
-};
 
 const Title = ({ active, children, setRef, to, onKeyDown }: TitleProps) => {
   return (
@@ -81,8 +69,8 @@ const Container: React.FC = ({ children }) => {
   const { setRef, onKeyDown } = useKeyboardNavigation({
     itemsLength: React.Children.count(children),
   });
-  const titles: ReactNode[] = [];
-  const contents: ReactNode[] = [];
+  const titles: React.ReactNode[] = [];
+  const contents: React.ReactNode[] = [];
 
   React.Children.forEach(children, (c, i) => {
     if (!isItemElement(c)) {

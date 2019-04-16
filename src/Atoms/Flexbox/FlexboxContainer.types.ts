@@ -7,7 +7,6 @@ export type Props = {
   direction?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
   wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
   gutter?: number;
-  noOuterGutter?: boolean;
   justifyContent?:
     | 'flex-start'
     | 'flex-end'
