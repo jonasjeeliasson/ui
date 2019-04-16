@@ -37,21 +37,19 @@ const StyledLink = styled(Link)`
 
 const Title = ({ active, children, setRef, to, onKeyDown }: TitleProps) => {
   return (
-    <li role="presentation">
-      <Typography type="secondary" weight={active ? 'bold' : 'regular'}>
-        <div>
-          <StyledLink
-            to={to}
-            innerRef={setRef}
-            active={String(active)}
-            aria-current={active && 'page'}
-            onKeyDown={onKeyDown}
-          >
-            {children}
-          </StyledLink>
-        </div>
-      </Typography>
-    </li>
+    <Typography type="secondary" weight={active ? 'bold' : 'regular'}>
+      <div>
+        <StyledLink
+          to={to}
+          innerRef={setRef}
+          active={String(active)}
+          aria-current={active && 'page'}
+          onKeyDown={onKeyDown}
+        >
+          {children}
+        </StyledLink>
+      </div>
+    </Typography>
   );
 };
 
@@ -86,7 +84,7 @@ const Container: React.FC = ({ children }) => {
       const isIndexActive = Boolean(matchPath(location.pathname, c.props.to));
 
       titles.push(
-        <Flexbox.Item>
+        <Flexbox.Item as="li" role="presentation">
           <Title active={isIndexActive} setRef={setRef(i)} to={c.props.to} onKeyDown={onKeyDown}>
             {c.props.title}
           </Title>

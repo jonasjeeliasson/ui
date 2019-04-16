@@ -4372,59 +4372,53 @@ exports[`Storyshots Molecules | NavTabs Default (extra space inside) 1`] = `
 >
   <div>
     <ul
-      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 LUEkz NavTabs__StyledUl-gmhqhq-1 bIBMDq"
+      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 fgRlGn NavTabs__StyledUl-gmhqhq-1 dgcaPL"
       direction="row"
     >
-      <div
-        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 isDfyg"
+      <li
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 kfTaEE"
+        role="presentation"
       >
-        <li
-          role="presentation"
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
+          type="secondary"
         >
-          <span
-            className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
-            type="secondary"
-          >
-            <div>
-              <a
-                active="true"
-                aria-current="page"
-                className="NavTabs__StyledLink-gmhqhq-0 hSwDrW"
-                href="#/transfer"
-                onClick={[Function]}
-                onKeyDown={[Function]}
-              >
-                Not Sweden
-              </a>
-            </div>
-          </span>
-        </li>
-      </div>
-      <div
-        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 isDfyg"
+          <div>
+            <a
+              active="true"
+              aria-current="page"
+              className="NavTabs__StyledLink-gmhqhq-0 hSwDrW"
+              href="#/transfer"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              Not Sweden
+            </a>
+          </div>
+        </span>
+      </li>
+      <li
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 kfTaEE"
+        role="presentation"
       >
-        <li
-          role="presentation"
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+          type="secondary"
         >
-          <span
-            className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
-            type="secondary"
-          >
-            <div>
-              <a
-                active="false"
-                aria-current={false}
-                className="NavTabs__StyledLink-gmhqhq-0 dMvjzK"
-                href="#/markets"
-                onClick={[Function]}
-                onKeyDown={[Function]}
-              >
-                Sweden
-              </a>
-            </div>
-          </span>
-        </li>
-      </div>
+          <div>
+            <a
+              active="false"
+              aria-current={false}
+              className="NavTabs__StyledLink-gmhqhq-0 dMvjzK"
+              href="#/markets"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              Sweden
+            </a>
+          </div>
+        </span>
+      </li>
     </ul>
     <div
       className="Separator__StyledSeparator-a5vdsz-0 eEBmzS"
@@ -4451,12 +4445,12 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
 >
   <div>
     <ul
-      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 LUEkz Tabs__StyledUl-bqti0u-1 eZbaNz"
+      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 fgRlGn Tabs__StyledUl-bqti0u-1 chtJYs"
       direction="row"
       role="tablist"
     >
       <li
-        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 isDfyg"
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 kfTaEE"
         role="presentation"
       >
         <span
@@ -4483,7 +4477,7 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
         </span>
       </li>
       <li
-        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 isDfyg"
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 kfTaEE"
         role="presentation"
       >
         <span
