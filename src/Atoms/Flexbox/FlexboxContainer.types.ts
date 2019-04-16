@@ -39,4 +39,7 @@ export type Props = {
     | 'space-around'
     | 'space-evenly'
     | 'stretch';
+
+  /** a11y */
+  role?: string;
 };
