@@ -4388,6 +4388,7 @@ exports[`Storyshots Molecules | NavTabs Default (extra space inside) 1`] = `
             <div>
               <a
                 active="true"
+                aria-current="page"
                 className="NavTabs__StyledLink-gmhqhq-0 hSwDrW"
                 href="#/transfer"
                 onClick={[Function]}
@@ -4412,6 +4413,7 @@ exports[`Storyshots Molecules | NavTabs Default (extra space inside) 1`] = `
             <div>
               <a
                 active="false"
+                aria-current={false}
                 className="NavTabs__StyledLink-gmhqhq-0 dMvjzK"
                 href="#/markets"
                 onClick={[Function]}
@@ -4453,66 +4455,60 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
       direction="row"
       role="tablist"
     >
-      <div
+      <li
         className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 isDfyg"
+        role="presentation"
       >
-        <li
-          role="presentation"
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
+          type="secondary"
         >
-          <span
-            className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
-            type="secondary"
+          <button
+            aria-selected={true}
+            className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 gZMhcT"
+            id="tabs-tab-0"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="tab"
+            tabIndex={0}
+            type="button"
           >
-            <button
-              aria-selected={true}
-              className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 gZMhcT"
-              id="tabs-tab-0"
-              onClick={[Function]}
-              onKeyDown={[Function]}
-              role="tab"
-              tabIndex={0}
-              type="button"
+            <span
+              className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
+              type="secondary"
             >
-              <span
-                className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
-                type="secondary"
-              >
-                One
-              </span>
-            </button>
-          </span>
-        </li>
-      </div>
-      <div
+              One
+            </span>
+          </button>
+        </span>
+      </li>
+      <li
         className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 isDfyg"
+        role="presentation"
       >
-        <li
-          role="presentation"
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+          type="secondary"
         >
-          <span
-            className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
-            type="secondary"
+          <button
+            aria-selected={false}
+            className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 kTTVYn"
+            id="tabs-tab-1"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
           >
-            <button
-              aria-selected={false}
-              className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 kTTVYn"
-              id="tabs-tab-1"
-              onClick={[Function]}
-              onKeyDown={[Function]}
-              role="tab"
-              tabIndex={-1}
-              type="button"
+            <span
+              className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+              type="secondary"
             >
-              <span
-                className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
-                type="secondary"
-              >
-                Node as well 👍
-              </span>
-            </button>
-          </span>
-        </li>
-      </div>
+              Node as well 👍
+            </span>
+          </button>
+        </span>
+      </li>
     </ul>
     <div
       className="Separator__StyledSeparator-a5vdsz-0 eEBmzS"
