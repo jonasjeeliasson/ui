@@ -10,6 +10,7 @@ export type AreaInfo = {
 export type AreaName = string;
 export type Gutter = number | { row: number; col: number };
 export type TemplateColumn = string[] | number[];
+export type TemplateRow = string[];
 type BaseProps = {
   children: React.ReactNode;
   height?: string;

@@ -9,7 +9,7 @@ const StyledLabeledValue = styled.div`
 `;
 
 const StyledLabel = styled.div`
-  margin-bottom: ${p => p.theme.spacing.unit(1)};
+  margin-bottom: ${p => p.theme.spacing.unit(1)}px;
 `;
 
 export const LabeledValue: LabeledValueComponent = props => (

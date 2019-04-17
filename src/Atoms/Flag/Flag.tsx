@@ -8,6 +8,7 @@ import { assert } from '../../common/utils';
 const StyledFlag = styled.svg<Props>`
   width: ${p => p.theme.spacing.unit(p.width || 5)}px;
   height: ${p => p.theme.spacing.unit(p.height || 5)}px;
+  vertical-align: middle;
 `;
 
 export const Flag: FlagComponent = props => {

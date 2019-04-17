@@ -43,14 +43,6 @@ storiesOf('Atoms | Typography', module)
             </Typography>
           ),
         },
-        {
-          title: 'Secondary with extrabold text',
-          component: (
-            <Typography type="secondary" weight="extrabold">
-              Secondary extrabold text
-            </Typography>
-          ),
-        },
       ]}
     />
   ))
@@ -69,11 +61,21 @@ storiesOf('Atoms | Typography', module)
             </Typography>
           ),
         },
+      ]}
+    />
+  ))
+  .add('Caption', () => (
+    <Display
+      items={[
         {
-          title: 'Tertiary extrabold text',
+          title: 'Caption Default',
+          component: <Typography type="caption">Caption text</Typography>,
+        },
+        {
+          title: 'Caption with bold text',
           component: (
-            <Typography type="tertiary" weight="extrabold">
-              Tertiary extrabold text
+            <Typography type="caption" weight="bold">
+              Caption bold text
             </Typography>
           ),
         },
@@ -95,6 +97,40 @@ storiesOf('Atoms | Typography', module)
             </Typography>
           ),
         },
+        {
+          title: 'With bold font weight',
+          component: (
+            <Typography type="title1" weight="bold">
+              Title1 text
+            </Typography>
+          ),
+        },
+      ]}
+    />
+  ))
+  .add('Title2', () => (
+    <Display
+      items={[
+        {
+          title: 'Title2 Default',
+          component: <Typography type="title2">Title2 text</Typography>,
+        },
+        {
+          title: 'With regular font weight',
+          component: (
+            <Typography type="title2" weight="regular">
+              Title2 text
+            </Typography>
+          ),
+        },
+        {
+          title: 'With bold font weight',
+          component: (
+            <Typography type="title2" weight="bold">
+              Title2 text
+            </Typography>
+          ),
+        },
       ]}
     />
   ))
@@ -109,7 +145,33 @@ storiesOf('Atoms | Typography', module)
           title: 'With regular font weight',
           component: (
             <Typography type="title3" weight="regular">
-              Title1 text
+              Title3 text
+            </Typography>
+          ),
+        },
+        {
+          title: 'With bold font weight',
+          component: (
+            <Typography type="title3" weight="bold">
+              Title3 text
+            </Typography>
+          ),
+        },
+      ]}
+    />
+  ))
+  .add('Hero', () => (
+    <Display
+      items={[
+        {
+          title: 'Hero Default',
+          component: <Typography type="hero">Hero text</Typography>,
+        },
+        {
+          title: 'With bold font weight',
+          component: (
+            <Typography type="hero" weight="bold">
+              Hero text
             </Typography>
           ),
         },

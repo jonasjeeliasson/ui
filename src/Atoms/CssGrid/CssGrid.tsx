@@ -2,7 +2,7 @@ import React from 'react';
 import R from 'ramda';
 import styled, { css, withTheme } from 'styled-components';
 import { Theme } from '../../theme/theme.types';
-import { Props, Gutter, TemplateColumn, Areas, AreaName, AreaInfo } from './CssGrid.types';
+import { Props, Gutter, TemplateColumn, TemplateRow, AreaName, AreaInfo } from './CssGrid.types';
 import { isUndefined, assert } from '../../common/utils';
 import { getAreasInfo } from './utils';
 
@@ -35,17 +35,9 @@ const getGutterStyles = (props: { gutter: Gutter; theme: Theme }) => {
   `;
 };
 
-const getTemplateColumns = (props: {
-  templateColumns?: TemplateColumn;
-  gutter: Gutter;
-  areas: Areas;
-}): string => {
-  const { gutter, areas, templateColumns } = props;
+const getTemplateColumns = (props: { templateColumns?: TemplateColumn }): string => {
+  const { templateColumns } = props;
   const oneColSize = 100 / 12;
-
-  if (isUndefined(gutter)) {
-    return `grid-template-columns: repeat(${areas[0].length}, 1fr);`;
-  }
 
   if (isUndefined(templateColumns)) {
     return '';
@@ -58,6 +50,16 @@ const getTemplateColumns = (props: {
   return `grid-template-columns: ${templateColumns
     .map((x: number) => `${x * oneColSize}fr`)
     .join(' ')};`;
+};
+
+const getTemplateRows = (props: { templateRows?: TemplateRow }): string => {
+  const { templateRows } = props;
+
+  if (isUndefined(templateRows)) {
+    return '';
+  }
+
+  return `grid-template-rows: ${templateRows.join(' ')};`;
 };
 
 const generateMSGridStyles = ({
@@ -168,11 +170,13 @@ const StyledDiv = styled.div<Props>`
       const templateColumnStyles =
         getTemplateColumns({
           ...innerProps,
-          gutter,
-          areas: props.areas,
           templateColumns,
         }) || '';
-      const templateRowsStyles = templateRows ? `grid-template-rows: ${templateRows};` : '';
+      const templateRowsStyles =
+        getTemplateRows({
+          ...innerProps,
+          templateRows,
+        }) || '';
       const baseStyles = `
           ${height ? `height: ${height};` : ''};
           ${areas ? `grid-template-areas: ${formatAreas(areas)};` : ''}

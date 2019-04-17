@@ -150,7 +150,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
 
 exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different screen sizes 1`] = `
 <div
-  className="CssGrid__StyledDiv-bu5cxy-0 jIOgaG"
+  className="CssGrid__StyledDiv-bu5cxy-0 bVggnP"
 >
   <div
     className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa dSufaw"
@@ -304,52 +304,9 @@ exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Currency Primary default 1`] = `
-<span
-  className="Typography__StyledTypography-sc-10mju41-0 fGqLJg"
-  type="primary"
->
-  SEK 234,234.00
-</span>
-`;
+exports[`Storyshots Atoms | Currency Default 1`] = `"SEK 234,234.00"`;
 
-exports[`Storyshots Atoms | Currency Secondary default 1`] = `
-<span
-  className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
-  type="secondary"
->
-  SEK 234,234.00
-</span>
-`;
-
-exports[`Storyshots Atoms | Currency Tertiary default 1`] = `
-<span
-  className="Typography__StyledTypography-sc-10mju41-0 gLQdVI"
-  type="tertiary"
->
-  SEK 234,234.00
-</span>
-`;
-
-exports[`Storyshots Atoms | Currency Title1 default 1`] = `
-<span
-  className="Typography__StyledTypography-sc-10mju41-0 deOBlG"
-  type="title1"
->
-  SEK 234,234.00
-</span>
-`;
-
-exports[`Storyshots Atoms | Currency Title3 default 1`] = `
-<span
-  className="Typography__StyledTypography-sc-10mju41-0 boZbTA"
-  type="title3"
->
-  SEK 234,234.00
-</span>
-`;
-
-exports[`Storyshots Atoms | Development Primary 1`] = `
+exports[`Storyshots Atoms | Currency Integration: Usage with different typographies  1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
   direction="column"
@@ -361,39 +318,14 @@ exports[`Storyshots Atoms | Development Primary 1`] = `
     <div
       className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Positive value
-    </div>
-    <div>
-      <span
-        className="Typography__StyledTypography-sc-10mju41-0 kGihn"
-        color={[Function]}
-        type="primary"
-      >
-        ▲
-        +
-        5.4
-        %
-      </span>
-    </div>
-  </div>
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
-    direction="row"
-  >
-    <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
-    >
-      Zero value
+      primary
     </div>
     <div>
       <span
         className="Typography__StyledTypography-sc-10mju41-0 fGqLJg"
-        color={[Function]}
         type="primary"
       >
-        0
-        0
-        %
+        SEK 234,234.00
       </span>
     </div>
   </div>
@@ -404,68 +336,14 @@ exports[`Storyshots Atoms | Development Primary 1`] = `
     <div
       className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Negative value
-    </div>
-    <div>
-      <span
-        className="Typography__StyledTypography-sc-10mju41-0 bQPSiO"
-        color={[Function]}
-        type="primary"
-      >
-        ▼
-        -2.1
-        %
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Atoms | Development Secondary 1`] = `
-<div
-  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
-  direction="column"
->
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
-    direction="row"
-  >
-    <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
-    >
-      Positive value
-    </div>
-    <div>
-      <span
-        className="Typography__StyledTypography-sc-10mju41-0 BGxyT"
-        color={[Function]}
-        type="secondary"
-      >
-        ▲
-        +
-        5.4
-        %
-      </span>
-    </div>
-  </div>
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
-    direction="row"
-  >
-    <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
-    >
-      Zero value
+      secondary
     </div>
     <div>
       <span
         className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
-        color={[Function]}
         type="secondary"
       >
-        0
-        0
-        %
+        SEK 234,234.00
       </span>
     </div>
   </div>
@@ -476,24 +354,111 @@ exports[`Storyshots Atoms | Development Secondary 1`] = `
     <div
       className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Negative value
+      tertiary
     </div>
     <div>
       <span
-        className="Typography__StyledTypography-sc-10mju41-0 geSxHq"
-        color={[Function]}
-        type="secondary"
+        className="Typography__StyledTypography-sc-10mju41-0 gLQdVI"
+        type="tertiary"
       >
-        ▼
-        -2.1
-        %
+        SEK 234,234.00
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      caption
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 gSUoKs"
+        type="caption"
+      >
+        SEK 234,234.00
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      title1
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 deOBlG"
+        type="title1"
+      >
+        SEK 234,234.00
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      title2
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 grdgqs"
+        type="title2"
+      >
+        SEK 234,234.00
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      title3
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 boZbTA"
+        type="title3"
+      >
+        SEK 234,234.00
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      hero
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 hSrSd"
+        type="hero"
+      >
+        SEK 234,234.00
       </span>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Atoms | Development Tertiary 1`] = `
+exports[`Storyshots Atoms | Development Default 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
   direction="column"
@@ -509,9 +474,8 @@ exports[`Storyshots Atoms | Development Tertiary 1`] = `
     </div>
     <div>
       <span
-        className="Typography__StyledTypography-sc-10mju41-0 jVSpeE"
-        color={[Function]}
-        type="tertiary"
+        className="Development__StyledDevelopment-sc-1cp7qvc-0 CmHhc"
+        value={5.4}
       >
         ▲
         +
@@ -531,11 +495,10 @@ exports[`Storyshots Atoms | Development Tertiary 1`] = `
     </div>
     <div>
       <span
-        className="Typography__StyledTypography-sc-10mju41-0 gLQdVI"
-        color={[Function]}
-        type="tertiary"
+        className="Development__StyledDevelopment-sc-1cp7qvc-0 dqImOj"
+        value={0}
       >
-        0
+        
         0
         %
       </span>
@@ -552,13 +515,684 @@ exports[`Storyshots Atoms | Development Tertiary 1`] = `
     </div>
     <div>
       <span
-        className="Typography__StyledTypography-sc-10mju41-0 eLEVFp"
-        color={[Function]}
-        type="tertiary"
+        className="Development__StyledDevelopment-sc-1cp7qvc-0 dusIEK"
+        value={-2.1}
       >
         ▼
         -2.1
         %
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | Development Integration: with different typographies 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      primary
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 fGqLJg"
+        type="primary"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+          direction="column"
+        >
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Positive value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 CmHhc"
+                value={5.4}
+              >
+                ▲
+                +
+                5.4
+                %
+              </span>
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Zero value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 dqImOj"
+                value={0}
+              >
+                
+                0
+                %
+              </span>
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Negative value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 dusIEK"
+                value={-2.1}
+              >
+                ▼
+                -2.1
+                %
+              </span>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      secondary
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+        type="secondary"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+          direction="column"
+        >
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Positive value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 CmHhc"
+                value={5.4}
+              >
+                ▲
+                +
+                5.4
+                %
+              </span>
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Zero value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 dqImOj"
+                value={0}
+              >
+                
+                0
+                %
+              </span>
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Negative value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 dusIEK"
+                value={-2.1}
+              >
+                ▼
+                -2.1
+                %
+              </span>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      tertiary
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 gLQdVI"
+        type="tertiary"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+          direction="column"
+        >
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Positive value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 CmHhc"
+                value={5.4}
+              >
+                ▲
+                +
+                5.4
+                %
+              </span>
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Zero value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 dqImOj"
+                value={0}
+              >
+                
+                0
+                %
+              </span>
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Negative value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 dusIEK"
+                value={-2.1}
+              >
+                ▼
+                -2.1
+                %
+              </span>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      caption
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 gSUoKs"
+        type="caption"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+          direction="column"
+        >
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Positive value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 CmHhc"
+                value={5.4}
+              >
+                ▲
+                +
+                5.4
+                %
+              </span>
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Zero value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 dqImOj"
+                value={0}
+              >
+                
+                0
+                %
+              </span>
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Negative value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 dusIEK"
+                value={-2.1}
+              >
+                ▼
+                -2.1
+                %
+              </span>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      title1
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 deOBlG"
+        type="title1"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+          direction="column"
+        >
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Positive value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 CmHhc"
+                value={5.4}
+              >
+                ▲
+                +
+                5.4
+                %
+              </span>
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Zero value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 dqImOj"
+                value={0}
+              >
+                
+                0
+                %
+              </span>
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Negative value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 dusIEK"
+                value={-2.1}
+              >
+                ▼
+                -2.1
+                %
+              </span>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      title2
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 grdgqs"
+        type="title2"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+          direction="column"
+        >
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Positive value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 CmHhc"
+                value={5.4}
+              >
+                ▲
+                +
+                5.4
+                %
+              </span>
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Zero value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 dqImOj"
+                value={0}
+              >
+                
+                0
+                %
+              </span>
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Negative value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 dusIEK"
+                value={-2.1}
+              >
+                ▼
+                -2.1
+                %
+              </span>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      title3
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 boZbTA"
+        type="title3"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+          direction="column"
+        >
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Positive value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 CmHhc"
+                value={5.4}
+              >
+                ▲
+                +
+                5.4
+                %
+              </span>
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Zero value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 dqImOj"
+                value={0}
+              >
+                
+                0
+                %
+              </span>
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Negative value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 dusIEK"
+                value={-2.1}
+              >
+                ▼
+                -2.1
+                %
+              </span>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      hero
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 hSrSd"
+        type="hero"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+          direction="column"
+        >
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Positive value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 CmHhc"
+                value={5.4}
+              >
+                ▲
+                +
+                5.4
+                %
+              </span>
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Zero value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 dqImOj"
+                value={0}
+              >
+                
+                0
+                %
+              </span>
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              Negative value
+            </div>
+            <div>
+              <span
+                className="Development__StyledDevelopment-sc-1cp7qvc-0 dusIEK"
+                value={-2.1}
+              >
+                ▼
+                -2.1
+                %
+              </span>
+            </div>
+          </div>
+        </div>
       </span>
     </div>
   </div>
@@ -581,7 +1215,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         fill="#28ff09"
         fillOpacity="14.118"
         focusable="false"
@@ -618,7 +1252,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -656,7 +1290,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         role="img"
         viewBox="0 0 640 480"
       >
@@ -772,7 +1406,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -811,7 +1445,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -850,7 +1484,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -907,7 +1541,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -941,7 +1575,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -975,7 +1609,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1017,7 +1651,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1068,7 +1702,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1164,7 +1798,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1215,7 +1849,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+        className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -1272,7 +1906,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
 
 exports[`Storyshots Atoms | Flag Default use 1`] = `
 <svg
-  className="Flag__StyledFlag-sc-14ojzvi-0 brFYNI"
+  className="Flag__StyledFlag-sc-14ojzvi-0 cXxNgr"
   focusable="false"
   role="img"
   viewBox="0 0 640 480"
@@ -1314,7 +1948,7 @@ exports[`Storyshots Atoms | Flag Default use 1`] = `
 
 exports[`Storyshots Atoms | Flag Different size  1`] = `
 <svg
-  className="Flag__StyledFlag-sc-14ojzvi-0 kcbqVL"
+  className="Flag__StyledFlag-sc-14ojzvi-0 kzLZfN"
   focusable="false"
   height={10}
   role="img"
@@ -1519,7 +2153,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div>
       <svg
         aria-hidden="true"
-        className="IconBase__StyledIconBase-sc-10cbji3-0 dIOzcS"
+        className="IconBase__StyledIconBase-sc-10cbji3-0 henrXt"
         focusable="false"
         role="presentation"
         size={5}
@@ -1543,7 +2177,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div>
       <svg
         aria-hidden="true"
-        className="IconBase__StyledIconBase-sc-10cbji3-0 dIOzcS"
+        className="IconBase__StyledIconBase-sc-10cbji3-0 henrXt"
         focusable="false"
         role="presentation"
         size={5}
@@ -1568,7 +2202,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div>
       <svg
         aria-hidden="true"
-        className="IconBase__StyledIconBase-sc-10cbji3-0 dIOzcS"
+        className="IconBase__StyledIconBase-sc-10cbji3-0 henrXt"
         focusable="false"
         role="presentation"
         size={5}
@@ -1586,7 +2220,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
 exports[`Storyshots Atoms | Icon Default use 1`] = `
 <svg
   aria-hidden="true"
-  className="IconBase__StyledIconBase-sc-10cbji3-0 dIOzcS"
+  className="IconBase__StyledIconBase-sc-10cbji3-0 henrXt"
   focusable="false"
   role="presentation"
   size={5}
@@ -1601,7 +2235,7 @@ exports[`Storyshots Atoms | Icon Default use 1`] = `
 exports[`Storyshots Atoms | Icon Different size and color 1`] = `
 <svg
   aria-hidden="true"
-  className="IconBase__StyledIconBase-sc-10cbji3-0 hdWrZg"
+  className="IconBase__StyledIconBase-sc-10cbji3-0 hxcJPF"
   focusable="false"
   role="presentation"
   size={10}
@@ -1686,6 +2320,14 @@ Array [
   </div>,
 ]
 `;
+
+exports[`Storyshots Atoms | Number Invalid value 1`] = `"-"`;
+
+exports[`Storyshots Atoms | Number Number with 0 decimals  1`] = `"100"`;
+
+exports[`Storyshots Atoms | Number Number with 2 decimals  1`] = `"10.00"`;
+
+exports[`Storyshots Atoms | Number Uses custom symbol for invalid value 1`] = `"X"`;
 
 exports[`Storyshots Atoms | Separator Separator default 1`] = `
 <div
@@ -3452,6 +4094,56 @@ exports[`Storyshots Atoms | TabTitle Integration: with Flexbox 1`] = `
 </div>
 `;
 
+exports[`Storyshots Atoms | Time Invalid value 1`] = `"-"`;
+
+exports[`Storyshots Atoms | Time Time  1`] = `"23:53:44"`;
+
+exports[`Storyshots Atoms | Time Uses custom symbol for invalid value 1`] = `"X"`;
+
+exports[`Storyshots Atoms | Typography Caption 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Caption Default
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 gSUoKs"
+        type="caption"
+      >
+        Caption text
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Caption with bold text
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 cuXmmF"
+        type="caption"
+      >
+        Caption bold text
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Atoms | Typography Colors 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
@@ -3592,6 +4284,50 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
 </div>
 `;
 
+exports[`Storyshots Atoms | Typography Hero 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Hero Default
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 hSrSd"
+        type="hero"
+      >
+        Hero text
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      With bold font weight
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 caRBWu"
+        type="hero"
+      >
+        Hero text
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Atoms | Typography Primary 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
@@ -3694,24 +4430,6 @@ exports[`Storyshots Atoms | Typography Secondary 1`] = `
       </span>
     </div>
   </div>
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
-    direction="row"
-  >
-    <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
-    >
-      Secondary with extrabold text
-    </div>
-    <div>
-      <span
-        className="Typography__StyledTypography-sc-10mju41-0 hqSOEV"
-        type="secondary"
-      >
-        Secondary extrabold text
-      </span>
-    </div>
-  </div>
 </div>
 `;
 
@@ -3753,24 +4471,6 @@ exports[`Storyshots Atoms | Typography Tertiary 1`] = `
         type="tertiary"
       >
         Tertiary bold text
-      </span>
-    </div>
-  </div>
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
-    direction="row"
-  >
-    <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
-    >
-      Tertiary extrabold text
-    </div>
-    <div>
-      <span
-        className="Typography__StyledTypography-sc-10mju41-0 kxUlWk"
-        type="tertiary"
-      >
-        Tertiary extrabold text
       </span>
     </div>
   </div>
@@ -3818,6 +4518,86 @@ exports[`Storyshots Atoms | Typography Title1 1`] = `
       </span>
     </div>
   </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      With bold font weight
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 kylcvO"
+        type="title1"
+      >
+        Title1 text
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | Typography Title2 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Title2 Default
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 grdgqs"
+        type="title2"
+      >
+        Title2 text
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      With regular font weight
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 boLiky"
+        type="title2"
+      >
+        Title2 text
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      With bold font weight
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 iOgpiO"
+        type="title2"
+      >
+        Title2 text
+      </span>
+    </div>
+  </div>
 </div>
 `;
 
@@ -3858,7 +4638,25 @@ exports[`Storyshots Atoms | Typography Title3 1`] = `
         className="Typography__StyledTypography-sc-10mju41-0 jZrWlk"
         type="title3"
       >
-        Title1 text
+        Title3 text
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      With bold font weight
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 fzFaWt"
+        type="title3"
+      >
+        Title3 text
       </span>
     </div>
   </div>
@@ -4212,12 +5010,31 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle with title as custom
 </div>
 `;
 
-exports[`Storyshots Molecules | LabeledValue LabeledValue secondary currency 1`] = `
+exports[`Storyshots Molecules | LabeledValue Default 1`] = `
 <div
   className="LabeledValue__StyledLabeledValue-hatse2-0 drexN"
 >
   <div
-    className="LabeledValue__StyledLabel-hatse2-1 eNBnEP"
+    className="LabeledValue__StyledLabel-hatse2-1 iVUlZm"
+  >
+    <span
+      className="Typography__StyledTypography-sc-10mju41-0 JofIB"
+      color={[Function]}
+      type="secondary"
+    >
+      Label
+    </span>
+  </div>
+  Value
+</div>
+`;
+
+exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue secondary currency 1`] = `
+<div
+  className="LabeledValue__StyledLabeledValue-hatse2-0 drexN"
+>
+  <div
+    className="LabeledValue__StyledLabel-hatse2-1 iVUlZm"
   >
     <span
       className="Typography__StyledTypography-sc-10mju41-0 JofIB"
@@ -4236,12 +5053,12 @@ exports[`Storyshots Molecules | LabeledValue LabeledValue secondary currency 1`]
 </div>
 `;
 
-exports[`Storyshots Molecules | LabeledValue LabeledValue title1 1`] = `
+exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue title1 1`] = `
 <div
   className="LabeledValue__StyledLabeledValue-hatse2-0 drexN"
 >
   <div
-    className="LabeledValue__StyledLabel-hatse2-1 eNBnEP"
+    className="LabeledValue__StyledLabel-hatse2-1 iVUlZm"
   >
     <span
       className="Typography__StyledTypography-sc-10mju41-0 JofIB"
@@ -4260,12 +5077,12 @@ exports[`Storyshots Molecules | LabeledValue LabeledValue title1 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | LabeledValue LabeledValue with negative development and currency 1`] = `
+exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with negative development and currency 1`] = `
 <div
   className="LabeledValue__StyledLabeledValue-hatse2-0 drexN"
 >
   <div
-    className="LabeledValue__StyledLabel-hatse2-1 eNBnEP"
+    className="LabeledValue__StyledLabel-hatse2-1 iVUlZm"
   >
     <span
       className="Typography__StyledTypography-sc-10mju41-0 JofIB"
@@ -4276,37 +5093,46 @@ exports[`Storyshots Molecules | LabeledValue LabeledValue with negative developm
     </span>
   </div>
   <div
-    className="LabeledValuestories__StyledChildsContainer-sc-1raww2x-0 eEzclV"
+    className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 LUEkz"
+    direction="row"
   >
     <div
-      className="LabeledValuestories__StyledDevContainer-sc-1raww2x-1 eLCfNR"
+      className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 isDfyg"
     >
       <span
-        className="Typography__StyledTypography-sc-10mju41-0 geSxHq"
-        color={[Function]}
+        className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
         type="secondary"
       >
-        ▼
-        -9.2
-        %
+        <span
+          className="Development__StyledDevelopment-sc-1cp7qvc-0 dusIEK"
+          value={-9.2}
+        >
+          ▼
+          -9.2
+          %
+        </span>
       </span>
     </div>
-    <span
-      className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
-      type="secondary"
+    <div
+      className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 isDfyg"
     >
-      -SEK 4,672,198.00
-    </span>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
+        type="secondary"
+      >
+        -SEK 4,672,198.00
+      </span>
+    </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Molecules | LabeledValue LabeledValue with positive development and currency 1`] = `
+exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with positive development and currency 1`] = `
 <div
   className="LabeledValue__StyledLabeledValue-hatse2-0 drexN"
 >
   <div
-    className="LabeledValue__StyledLabel-hatse2-1 eNBnEP"
+    className="LabeledValue__StyledLabel-hatse2-1 iVUlZm"
   >
     <span
       className="Typography__StyledTypography-sc-10mju41-0 JofIB"
@@ -4317,28 +5143,37 @@ exports[`Storyshots Molecules | LabeledValue LabeledValue with positive developm
     </span>
   </div>
   <div
-    className="LabeledValuestories__StyledChildsContainer-sc-1raww2x-0 eEzclV"
+    className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 LUEkz"
+    direction="row"
   >
     <div
-      className="LabeledValuestories__StyledDevContainer-sc-1raww2x-1 eLCfNR"
+      className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 isDfyg"
     >
       <span
-        className="Typography__StyledTypography-sc-10mju41-0 BGxyT"
-        color={[Function]}
+        className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
         type="secondary"
       >
-        ▲
-        +
-        9.2
-        %
+        <span
+          className="Development__StyledDevelopment-sc-1cp7qvc-0 CmHhc"
+          value={9.2}
+        >
+          ▲
+          +
+          9.2
+          %
+        </span>
       </span>
     </div>
-    <span
-      className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
-      type="secondary"
+    <div
+      className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 isDfyg"
     >
-      SEK 4,672,198.00
-    </span>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
+        type="secondary"
+      >
+        +SEK 4,672,198.00
+      </span>
+    </div>
   </div>
 </div>
 `;
@@ -4435,6 +5270,24 @@ exports[`Storyshots Molecules | LinkSell LinkSell disabled 1`] = `
   </span>
 </span>
 `;
+
+exports[`Storyshots Molecules | Percent Invalid value 1`] = `"-"`;
+
+exports[`Storyshots Molecules | Percent Percent with 0 decimals  1`] = `
+Array [
+  "100",
+  "%",
+]
+`;
+
+exports[`Storyshots Molecules | Percent Percent with 2 decimals  1`] = `
+Array [
+  "10.00",
+  "%",
+]
+`;
+
+exports[`Storyshots Molecules | Percent Uses custom symbol for invalid value 1`] = `"X"`;
 
 exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra space inside) 1`] = `
 <div

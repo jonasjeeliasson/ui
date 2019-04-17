@@ -2,5 +2,5 @@
 import initStoryshots from '@storybook/addon-storyshots';
 
 initStoryshots({
-  storyNameRegex: /^(?!Documentation).*$/,
+  storyNameRegex: /^(?!(Documentation|Experimental)).*$/,
 });

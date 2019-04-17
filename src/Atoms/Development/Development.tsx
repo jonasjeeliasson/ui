@@ -1,61 +1,42 @@
 import React from 'react';
+import styled from 'styled-components';
 import { injectIntl, InjectedIntlProps } from 'react-intl';
-import { DevelopmentComponent, DevelopmentProps } from './Development.types';
-import Typography from '../Typography';
+import { DevelopmentProps } from './Development.types';
 import { Theme } from '../../theme/theme.types';
 
 const getPrefix = (value: number) => {
   if (value > 0) return '▲';
   if (value < 0) return '▼';
-  return `${value}`;
+  return '';
 };
 
-const getColor = (value: number) => (t: Theme) => {
+const getColor = ({ value, theme }: { value: number; theme: Theme }) => {
   if (value > 0) {
-    return t.color.positive;
+    return theme.color.positive;
   }
 
   if (value < 0) {
-    return t.color.negative;
+    return theme.color.negative;
   }
-  return t.color.text;
+  return theme.color.text;
 };
 
-const FD: React.FC<DevelopmentProps & InjectedIntlProps> = ({ value, intl }) => (
-  <>
+const StyledDevelopment = styled.span<DevelopmentProps>`
+  color: ${getColor};
+`;
+
+const FormattedDevelopment: React.FC<DevelopmentProps & InjectedIntlProps> = ({
+  value,
+  intl,
+  className,
+}) => (
+  <StyledDevelopment className={className} value={value}>
     {getPrefix(value)}
     {value > 0 ? '+' : null}
     {intl.formatNumber(value)}
     {'%'}
-  </>
+  </StyledDevelopment>
 );
 
-const FormattedDevelopment = injectIntl(FD);
-
-// TODO: a HOC is needed here as well
-const Primary: DevelopmentComponent['Primary'] = ({ value, ...rest }) => (
-  <Typography type="primary" color={getColor(value)} {...rest}>
-    <FormattedDevelopment value={value} />
-  </Typography>
-);
-Primary.displayName = 'Development.Primary';
-
-const Secondary: DevelopmentComponent['Secondary'] = ({ value, ...rest }) => (
-  <Typography type="secondary" color={getColor(value)} {...rest}>
-    <FormattedDevelopment value={value} />
-  </Typography>
-);
-Secondary.displayName = 'Development.Secondary';
-
-const Tertiary: DevelopmentComponent['Secondary'] = ({ value, ...rest }) => (
-  <Typography type="tertiary" color={getColor(value)} {...rest}>
-    <FormattedDevelopment value={value} />
-  </Typography>
-);
-Tertiary.displayName = 'Development.Tertiary';
-
-export const Development: DevelopmentComponent = {
-  Primary,
-  Secondary,
-  Tertiary,
-};
+export const Development = injectIntl(FormattedDevelopment);
+Development.displayName = 'Development';

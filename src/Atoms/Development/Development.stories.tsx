@@ -1,34 +1,34 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Development } from '../..';
+import { Development, Typography } from '../..';
 import { Display } from '../../common/Display';
+import { TYPOGRAPHY_TYPES } from '../Typography/Typography';
 
 storiesOf('Atoms | Development', module)
-  .add('Primary', () => (
+  .add('Default', () => (
     <Display
       items={[
-        { title: 'Positive value', component: <Development.Primary value={5.4} /> },
-        { title: 'Zero value', component: <Development.Primary value={0} /> },
-        { title: 'Negative value', component: <Development.Primary value={-2.1} /> },
+        { title: 'Positive value', component: <Development value={5.4} /> },
+        { title: 'Zero value', component: <Development value={0} /> },
+        { title: 'Negative value', component: <Development value={-2.1} /> },
       ]}
     />
   ))
-  .add('Secondary', () => (
-    <Display
-      items={[
-        { title: 'Positive value', component: <Development.Secondary value={5.4} /> },
-        { title: 'Zero value', component: <Development.Secondary value={0} /> },
-        { title: 'Negative value', component: <Development.Secondary value={-2.1} /> },
-      ]}
-    />
-  ))
-  .add('Tertiary', () => (
-    <Display
-      items={[
-        { title: 'Positive value', component: <Development.Tertiary value={5.4} /> },
-        { title: 'Zero value', component: <Development.Tertiary value={0} /> },
-        { title: 'Negative value', component: <Development.Tertiary value={-2.1} /> },
-      ]}
-    />
-  ));
+  .add('Integration: with different typographies', () => {
+    const items = Object.values(TYPOGRAPHY_TYPES).map(type => ({
+      title: type,
+      component: (
+        <Typography type={type}>
+          <Display
+            items={[
+              { title: 'Positive value', component: <Development value={5.4} /> },
+              { title: 'Zero value', component: <Development value={0} /> },
+              { title: 'Negative value', component: <Development value={-2.1} /> },
+            ]}
+          />
+        </Typography>
+      ),
+    }));
+    return <Display items={items} />;
+  });

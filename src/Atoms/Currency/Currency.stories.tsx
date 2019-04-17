@@ -2,7 +2,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, number, select } from '@storybook/addon-knobs';
 
-import { Currency } from '../..';
+import { Currency, Typography } from '../..';
+import { Display } from '../../common/Display';
+import { TYPOGRAPHY_TYPES } from '../Typography/Typography';
 
 const inputs = (): [number, string] => {
   const value = number('value', 234234);
@@ -21,23 +23,19 @@ const inputs = (): [number, string] => {
 
 storiesOf('Atoms | Currency', module)
   .addDecorator(withKnobs)
-  .add('Primary default', () => {
+  .add('Default', () => {
     const [value, currency] = inputs();
-    return <Currency.Primary value={value} currency={currency} />;
+    return <Currency value={value} currency={currency} />;
   })
-  .add('Secondary default', () => {
+  .add('Integration: Usage with different typographies ', () => {
     const [value, currency] = inputs();
-    return <Currency.Secondary value={value} currency={currency} />;
-  })
-  .add('Tertiary default', () => {
-    const [value, currency] = inputs();
-    return <Currency.Tertiary value={value} currency={currency} />;
-  })
-  .add('Title1 default', () => {
-    const [value, currency] = inputs();
-    return <Currency.Title1 value={value} currency={currency} />;
-  })
-  .add('Title3 default', () => {
-    const [value, currency] = inputs();
-    return <Currency.Title3 value={value} currency={currency} />;
+    const items = Object.values(TYPOGRAPHY_TYPES).map(type => ({
+      title: type,
+      component: (
+        <Typography type={type}>
+          <Currency value={value} currency={currency} />
+        </Typography>
+      ),
+    }));
+    return <Display items={items} />;
   });

@@ -22,6 +22,9 @@ import TabsWithState from './Molecules/TabsWithState';
 import Typography from './Atoms/Typography';
 import TabTitle from './Atoms/TabTitle';
 
+import Number from './Atoms/Number';
+import Time from './Atoms/Time';
+import Percent from './Molecules/Percent';
 import theme from './theme';
 
 /** Runtime code */
@@ -41,8 +44,11 @@ export {
   LinkBuy,
   LinkSell,
   Media,
+  Number,
+  Percent,
   Separator,
   Spinner,
+  Time,
   theme,
   Typography,
   List,

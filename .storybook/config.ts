@@ -32,6 +32,8 @@ setIntlConfig({
   defaultLocale: 'en',
   getMessages: () => {},
   getFormats: () => {},
+  // Solves problem with snapshots for time component
+  timeZone: 'UTC',
 });
 
 addDecorator(withIntl);

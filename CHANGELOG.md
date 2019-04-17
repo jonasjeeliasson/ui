@@ -1,3 +1,52 @@
+# [1.0.0-beta.17](https://github.com/nordnet/ui/compare/v1.0.0-beta.16@beta...v1.0.0-beta.17@beta) (2019-04-17)
+
+
+### Bug Fixes
+
+* some fixes ([#84](https://github.com/nordnet/ui/issues/84)) ([dfb738b](https://github.com/nordnet/ui/commit/dfb738b))
+
+# [1.0.0-beta.16](https://github.com/nordnet/ui/compare/v1.0.0-beta.15@beta...v1.0.0-beta.16@beta) (2019-04-17)
+
+
+### Bug Fixes
+
+* add edge cases ([#60](https://github.com/nordnet/ui/issues/60)) ([1c6919c](https://github.com/nordnet/ui/commit/1c6919c))
+
+# [1.0.0-beta.15](https://github.com/nordnet/ui/compare/v1.0.0-beta.14@beta...v1.0.0-beta.15@beta) (2019-04-17)
+
+
+### Features
+
+* add contract for list with titles ([#82](https://github.com/nordnet/ui/issues/82)) ([f2ffafe](https://github.com/nordnet/ui/commit/f2ffafe))
+
+# [1.0.0-beta.14](https://github.com/nordnet/ui/compare/v1.0.0-beta.13@beta...v1.0.0-beta.14@beta) (2019-04-16)
+
+
+### Bug Fixes
+
+* add favicon ([4449df1](https://github.com/nordnet/ui/commit/4449df1))
+
+# [1.0.0-beta.13](https://github.com/nordnet/ui/compare/v1.0.0-beta.12@beta...v1.0.0-beta.13@beta) (2019-04-16)
+
+
+### Bug Fixes
+
+* add checks for allowed weights and add missing typography types ([#81](https://github.com/nordnet/ui/issues/81)) ([06100eb](https://github.com/nordnet/ui/commit/06100eb))
+
+# [1.0.0-beta.12](https://github.com/nordnet/ui/compare/v1.0.0-beta.11@beta...v1.0.0-beta.12@beta) (2019-04-15)
+
+
+### Features
+
+* 🎸 remove font from development and currency ([6c02e9b](https://github.com/nordnet/ui/commit/6c02e9b))
+
+
+### BREAKING CHANGES
+
+* 🧨 Development.Primary is removed as well as Currency.Primary and other
+types of this components. From now on wrap everythign font-related in
+<Typography></Typography> component
+
 # [1.0.0-beta.11](https://github.com/nordnet/ui/compare/v1.0.0-beta.10@beta...v1.0.0-beta.11@beta) (2019-04-10)
 
 
