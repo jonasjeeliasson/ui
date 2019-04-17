@@ -15,10 +15,10 @@ import Link from './Molecules/Link';
 import LinkBuy from './Molecules/LinkBuy';
 import LinkSell from './Molecules/LinkSell';
 import Media from './Atoms/Media';
-import NavTabs from './Molecules/NavTabs';
+import TabsNav from './Molecules/TabsNav';
 import Separator from './Atoms/Separator';
 import Spinner from './Atoms/Spinner';
-import StatefulTabs from './Molecules/StatefulTabs';
+import TabsWithState from './Molecules/TabsWithState';
 import Typography from './Atoms/Typography';
 import TabTitle from './Atoms/TabTitle';
 
@@ -47,7 +47,7 @@ export {
   Typography,
   List,
   ListItem,
-  StatefulTabs,
-  NavTabs,
+  TabsWithState,
+  TabsNav,
   TabTitle,
 };

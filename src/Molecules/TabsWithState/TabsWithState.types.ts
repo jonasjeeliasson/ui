@@ -15,3 +15,7 @@ export type ContainerProps = {
   initialActiveTabId?: number;
   children: React.ReactNode;
 };
+
+export type ItemComponent = React.FC<ItemProps>;
+export type TitleComponent = React.FC<TitleProps>;
+export type ContainerComponent = React.FC<ContainerProps> & { Tab: ItemComponent };

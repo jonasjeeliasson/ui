@@ -1,22 +1,21 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Flexbox, Typography, Separator, TabTitle } from '../..';
-import NormalizedElements from '../../common/NormalizedElements';
+import NormalizedElements from '../../common/NormalizedElements/index';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-import { ContainerProps, ItemProps, TitleProps } from './StatefulTabs.types';
+import {
+  ContainerComponent,
+  ItemComponent,
+  TitleComponent,
+  ItemProps,
+} from './TabsWithState.types';
 
-const TabContext = createContext<undefined | boolean>(undefined);
-
-const Item: React.FC<ItemProps> = ({ children }) => {
-  const isItemActive = useContext(TabContext);
-  assert(
-    typeof isItemActive !== 'undefined',
-    `Please don't use <Tabs.Item/> outside of <Tabs.Container />`,
-  );
-  return <div>{isItemActive ? children : null}</div>;
+const Item: ItemComponent = ({ children }) => {
+  return <>{children}</>;
 };
+Item.displayName = 'TabsWithState.Content';
 
 const StyledButton = styled(NormalizedElements.Button)`
   background: none;
@@ -26,7 +25,7 @@ const StyledButton = styled(NormalizedElements.Button)`
   padding: 0;
 `;
 
-const Title: React.FC<TitleProps> = ({
+const Title: TitleComponent = ({
   active: activeFromProps,
   children,
   onTitleClick,
@@ -53,7 +52,7 @@ const Title: React.FC<TitleProps> = ({
     </Typography>
   );
 };
-
+Title.displayName = 'TabsWithState.Title';
 const StyledUl = styled.ul`
   margin-top: 0;
   list-style: none;
@@ -65,9 +64,9 @@ const StyledUl = styled.ul`
 `;
 
 const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
-  x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type');
+  x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type') && x.type === Item;
 
-const Container: React.FC<ContainerProps> = ({ children, initialActiveTabId = 0 }) => {
+const TabsWithState: ContainerComponent = ({ children, initialActiveTabId = 0 }) => {
   const [active, setActive] = useState(initialActiveTabId);
   const handleTitleClick = (i: number) => () => setActive(i);
   const { setRef, onKeyDown } = useKeyboardNavigation({
@@ -78,7 +77,7 @@ const Container: React.FC<ContainerProps> = ({ children, initialActiveTabId = 0 
   React.Children.forEach(children, (c, i) => {
     const isActive = i === active;
     if (!isItemElement(c)) {
-      assert(false, 'Children type of <Tabs.Container> should be only <Tabs.Item>');
+      assert(false, 'There should be only <Tabs.Item> inside of  <Tabs.Container>');
     } else {
       titles.push(
         <Flexbox.Item as="li" role="presentation">
@@ -98,16 +97,14 @@ const Container: React.FC<ContainerProps> = ({ children, initialActiveTabId = 0 
 
       if (isActive) {
         contents = (
-          <TabContext.Provider value={isActive}>
-            <section
-              id={`tabs-tabpanel-${i}`}
-              role="tabpanel"
-              aria-labelledby={`tabs-tab-${i}`}
-              hidden={!isActive}
-            >
-              {c}
-            </section>
-          </TabContext.Provider>
+          <section
+            id={`tabs-tabpanel-${i}`}
+            role="tabpanel"
+            aria-labelledby={`tabs-tab-${i}`}
+            hidden={!isActive}
+          >
+            {c}
+          </section>
         );
       }
     }
@@ -124,5 +121,7 @@ const Container: React.FC<ContainerProps> = ({ children, initialActiveTabId = 0 
     </div>
   );
 };
+TabsWithState.displayName = 'TabsWithState';
+TabsWithState.Tab = Item;
 
-export default { Item, Container };
+export default TabsWithState;

@@ -3,14 +3,15 @@ import React, { useContext } from 'react';
 import { matchPath, __RouterContext } from 'react-router';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { Flexbox, Typography, Separator, TabTitle } from '../..';
+import { Flexbox, Typography, TabTitle } from '../..';
 import { assert } from '../../common/utils';
-import { useKeyboardNavigation } from '../StatefulTabs/useKeyboardNavigation';
-import { ItemProps, TitleProps } from './NavTabs.types';
+import { useKeyboardNavigation } from '../TabsWithState/useKeyboardNavigation';
+import { ItemComponent, ItemProps, TitleComponent, Component } from './TabsNav.types';
 
-const Item: React.FC<ItemProps> = ({ children }) => {
+const Item: ItemComponent = ({ children }) => {
   return <div>{children}</div>;
 };
+Item.displayName = 'TabsNav.Item';
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -22,7 +23,7 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Title = ({ active, children, setRef, to, onKeyDown }: TitleProps) => {
+const Title: TitleComponent = ({ active, children, setRef, to, onKeyDown }) => {
   return (
     <Typography type="secondary" weight={active ? 'bold' : 'regular'}>
       <div>
@@ -33,6 +34,7 @@ const Title = ({ active, children, setRef, to, onKeyDown }: TitleProps) => {
     </Typography>
   );
 };
+Title.displayName = 'TabsNav.Title';
 
 const StyledUl = styled.ul`
   margin-top: 0;
@@ -46,13 +48,12 @@ const StyledUl = styled.ul`
 const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
   x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type');
 
-const Container: React.FC = ({ children }) => {
+const TabsNav: Component = ({ children }) => {
   const { location } = useContext(__RouterContext);
   const { setRef, onKeyDown } = useKeyboardNavigation({
     itemsLength: React.Children.count(children),
   });
   const titles: React.ReactNode[] = [];
-  const contents: React.ReactNode[] = [];
 
   React.Children.forEach(children, (c, i) => {
     if (!isItemElement(c)) {
@@ -67,21 +68,16 @@ const Container: React.FC = ({ children }) => {
           </Title>
         </Flexbox.Item>,
       );
-
-      if (isIndexActive) contents.push(<section>{c}</section>);
     }
   });
 
   return (
-    <div>
-      <Flexbox.Container direction="row" gutter={4} as={StyledUl}>
-        {titles}
-      </Flexbox.Container>
-      <Separator />
-
-      <div>{contents}</div>
-    </div>
+    <Flexbox.Container direction="row" gutter={4} as={StyledUl}>
+      {titles}
+    </Flexbox.Container>
   );
 };
+TabsNav.displayName = 'TabsNav';
+TabsNav.Tab = Item;
 
-export default { Item, Container };
+export default TabsNav;
