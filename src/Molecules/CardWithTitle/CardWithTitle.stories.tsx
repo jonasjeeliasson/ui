@@ -12,4 +12,9 @@ storiesOf('Molecules | CardWithTitle', module)
   ))
   .add('CardWithTitle as article', () => (
     <CardWithTitle as="article">A CardWithTitle as a article containing content</CardWithTitle>
+  ))
+  .add('CardWithTitle with title as custom component article', () => (
+    <CardWithTitle title={<div>Custom component</div>}>
+      A CardWithTitle as a article containing content
+    </CardWithTitle>
   ));
