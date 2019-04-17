@@ -1,5 +1,4 @@
 export type ItemProps = {
-  children: React.ReactNode | React.ReactNode[];
   to: string;
   title: React.ReactNode;
 };

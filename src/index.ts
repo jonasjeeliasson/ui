@@ -18,8 +18,9 @@ import Media from './Atoms/Media';
 import NavTabs from './Molecules/NavTabs';
 import Separator from './Atoms/Separator';
 import Spinner from './Atoms/Spinner';
-import Tabs from './Molecules/Tabs';
+import StatefulTabs from './Molecules/StatefulTabs';
 import Typography from './Atoms/Typography';
+import TabTitle from './Atoms/TabTitle';
 
 import theme from './theme';
 
@@ -46,6 +47,7 @@ export {
   Typography,
   List,
   ListItem,
-  Tabs,
+  StatefulTabs,
   NavTabs,
+  TabTitle,
 };

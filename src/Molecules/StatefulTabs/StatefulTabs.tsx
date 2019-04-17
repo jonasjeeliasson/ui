@@ -1,11 +1,11 @@
 import React, { createContext, useState, useContext } from 'react';
-import styled, { css } from 'styled-components';
-import { Flexbox, Typography, Separator } from '../..';
+import styled from 'styled-components';
+import { Flexbox, Typography, Separator, TabTitle } from '../..';
 import NormalizedElements from '../../common/NormalizedElements';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-import { ContainerProps, ItemProps, TitleProps } from './Tabs.types';
+import { ContainerProps, ItemProps, TitleProps } from './StatefulTabs.types';
 
 const TabContext = createContext<undefined | boolean>(undefined);
 
@@ -18,19 +18,12 @@ const Item: React.FC<ItemProps> = ({ children }) => {
   return <div>{isItemActive ? children : null}</div>;
 };
 
-const styles = css<{ active: boolean }>`
+const StyledButton = styled(NormalizedElements.Button)`
   background: none;
   display: inline-block;
   border: none;
   margin: 0;
   padding: 0;
-  padding-bottom: ${props => props.theme.spacing.unit(1)}px;
-  border-bottom: 2px solid
-    ${props => (props.active ? props.theme.color.borderActive : 'transparent')};
-`;
-
-const StyledButton = styled(NormalizedElements.Button)`
-  ${styles}
 `;
 
 const Title: React.FC<TitleProps> = ({
@@ -54,24 +47,19 @@ const Title: React.FC<TitleProps> = ({
         role="tab"
         id={`tabs-tab-${index}`}
         tabIndex={active ? 0 : -1}
-        active={active}
       >
-        {children}
+        <TabTitle active={active}>{children}</TabTitle>
       </StyledButton>
     </Typography>
   );
 };
 
 const StyledUl = styled.ul`
-  padding-inline-start: unset;
-  margin-block-start: unset;
-  margin-block-end: unset;
-  margin-inline-start: unset;
-  margin-inline-end: unset;
+  margin-top: 0;
   list-style: none;
   display: flex;
   /** @todo reconsider spacing */
-  padding-left: ${p => p.theme.spacing.unit(3)}px;
+  padding-left: ${p => p.theme.spacing.unit(5)}px;
   /** @todo check this out */
   margin-bottom: -1px;
 `;
