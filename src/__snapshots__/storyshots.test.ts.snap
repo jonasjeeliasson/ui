@@ -2931,6 +2931,57 @@ exports[`Storyshots Atoms | Spinner Spinner default 1`] = `
 </span>
 `;
 
+exports[`Storyshots Atoms | TabTitle Active 1`] = `
+<div
+  className="TabTitle__StyledDiv-sc-1sa0gl6-0 gnUtpL"
+>
+  This is tab title
+</div>
+`;
+
+exports[`Storyshots Atoms | TabTitle Default 1`] = `
+<div
+  className="TabTitle__StyledDiv-sc-1sa0gl6-0 dxzHpI"
+>
+  This is tab title
+</div>
+`;
+
+exports[`Storyshots Atoms | TabTitle Integration: with Flexbox 1`] = `
+<div
+  className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 gCOxfs"
+  direction="row"
+>
+  <div
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+  >
+    <div
+      className="TabTitle__StyledDiv-sc-1sa0gl6-0 dxzHpI"
+    >
+      TabTitle1
+    </div>
+  </div>
+  <div
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+  >
+    <div
+      className="TabTitle__StyledDiv-sc-1sa0gl6-0 gnUtpL"
+    >
+      TabTitle2
+    </div>
+  </div>
+  <div
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
+  >
+    <div
+      className="TabTitle__StyledDiv-sc-1sa0gl6-0 dxzHpI"
+    >
+      TabTitle3
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Atoms | Table Default 1`] = `
 <table
   className="Table__StyledTable-vgcwcw-0 bEpsJF"
@@ -12899,57 +12950,6 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography 1`] = `
 </span>
 `;
 
-exports[`Storyshots Atoms | TabTitle Active 1`] = `
-<div
-  className="TabTitle__StyledDiv-sc-1sa0gl6-0 gnUtpL"
->
-  This is tab title
-</div>
-`;
-
-exports[`Storyshots Atoms | TabTitle Default 1`] = `
-<div
-  className="TabTitle__StyledDiv-sc-1sa0gl6-0 dxzHpI"
->
-  This is tab title
-</div>
-`;
-
-exports[`Storyshots Atoms | TabTitle Integration: with Flexbox 1`] = `
-<div
-  className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 gCOxfs"
-  direction="row"
->
-  <div
-    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
-  >
-    <div
-      className="TabTitle__StyledDiv-sc-1sa0gl6-0 dxzHpI"
-    >
-      TabTitle1
-    </div>
-  </div>
-  <div
-    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
-  >
-    <div
-      className="TabTitle__StyledDiv-sc-1sa0gl6-0 gnUtpL"
-    >
-      TabTitle2
-    </div>
-  </div>
-  <div
-    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 ivEfY"
-  >
-    <div
-      className="TabTitle__StyledDiv-sc-1sa0gl6-0 dxzHpI"
-    >
-      TabTitle3
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Atoms | Time Invalid value 1`] = `"-"`;
 
 exports[`Storyshots Atoms | Time Time  1`] = `"23:53:44"`;
@@ -13814,10 +13814,10 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
 
 exports[`Storyshots Molecules | CardWithTitle Basic CardWithTitle 1`] = `
 <div
-  className="CardWithTitle__StyledCard-sc-1ny6tjx-0 cuvWlc Card__StyledCard-sc-1e5czjc-0 gwDvCn"
+  className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
 >
   <div
-    className="CardWithTitle__StyledTitle-sc-1ny6tjx-1 kfhMLM"
+    className="CardWithTitle__StyledTitle-sc-1ny6tjx-0 eRrxeH"
   >
     <span
       className="Typography__StyledTypography-sc-10mju41-0 boZbTA"
@@ -13832,7 +13832,7 @@ exports[`Storyshots Molecules | CardWithTitle Basic CardWithTitle 1`] = `
 
 exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article 1`] = `
 <article
-  className="CardWithTitle__StyledCard-sc-1ny6tjx-0 cuvWlc"
+  className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
 >
   A CardWithTitle as a article containing content
 </article>
@@ -13840,7 +13840,7 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article 1`] = `
 
 exports[`Storyshots Molecules | CardWithTitle CardWithTitle with no title 1`] = `
 <div
-  className="CardWithTitle__StyledCard-sc-1ny6tjx-0 cuvWlc Card__StyledCard-sc-1e5czjc-0 gwDvCn"
+  className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
 >
   A CardWithTitle without title
 </div>
@@ -13848,10 +13848,10 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle with no title 1`] = 
 
 exports[`Storyshots Molecules | CardWithTitle CardWithTitle with title as custom component article 1`] = `
 <div
-  className="CardWithTitle__StyledCard-sc-1ny6tjx-0 cuvWlc Card__StyledCard-sc-1e5czjc-0 gwDvCn"
+  className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
 >
   <div
-    className="CardWithTitle__StyledTitle-sc-1ny6tjx-1 kfhMLM"
+    className="CardWithTitle__StyledTitle-sc-1ny6tjx-0 eRrxeH"
   >
     <span
       className="Typography__StyledTypography-sc-10mju41-0 boZbTA"
@@ -14403,6 +14403,109 @@ Array [
 
 exports[`Storyshots Molecules | Percent Uses custom symbol for invalid value 1`] = `"X"`;
 
+exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
+<span
+  className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+  type="secondary"
+>
+  <div>
+    <ul
+      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 fgRlGn Tabs__StyledUl-bqti0u-1 DjWwg"
+      direction="row"
+      role="tablist"
+    >
+      <li
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 kfTaEE"
+        role="presentation"
+      >
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
+          type="secondary"
+        >
+          <button
+            aria-selected={true}
+            className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 BOZSX"
+            id="tabs-tab-0"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="tab"
+            tabIndex={0}
+            type="button"
+          >
+            <div
+              className="TabTitle__StyledDiv-sc-1sa0gl6-0 gnUtpL"
+            >
+              <span
+                className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
+                type="secondary"
+              >
+                One
+              </span>
+            </div>
+          </button>
+        </span>
+      </li>
+      <li
+        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 kfTaEE"
+        role="presentation"
+      >
+        <span
+          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+          type="secondary"
+        >
+          <button
+            aria-selected={false}
+            className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 BOZSX"
+            id="tabs-tab-1"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            <div
+              className="TabTitle__StyledDiv-sc-1sa0gl6-0 dxzHpI"
+            >
+              <span
+                className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
+                type="secondary"
+              >
+                <div>
+                  Node as well
+                  <span
+                    aria-label="goodjob"
+                    role="img"
+                  >
+                    👍
+                  </span>
+                </div>
+              </span>
+            </div>
+          </button>
+        </span>
+      </li>
+    </ul>
+    <div
+      className="Separator__StyledSeparator-a5vdsz-0 eEBmzS"
+    />
+    <div>
+      <section
+        aria-labelledby="tabs-tab-0"
+        hidden={false}
+        id="tabs-tabpanel-0"
+        role="tabpanel"
+      >
+        <div
+          className="Tabsstories__SpacingInside-sc-1496d70-0 gMNEQa"
+        >
+          Ones children
+        </div>
+      </section>
+    </div>
+  </div>
+</span>
+`;
+
 exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra space inside) 1`] = `
 <div
   className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 bbQxpp"
@@ -14421,7 +14524,6 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra sp
       >
         <li
           className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 kfTaEE"
-          role="presentation"
         >
           <span
             className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
@@ -14446,7 +14548,6 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra sp
         </li>
         <li
           className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 kfTaEE"
-          role="presentation"
         >
           <span
             className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
@@ -14493,115 +14594,12 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router (extra sp
 </div>
 `;
 
-exports[`Storyshots Molecules | TabsWithState Default (extra space inside) 1`] = `
-<span
-  className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
-  type="secondary"
->
-  <div>
-    <ul
-      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 fgRlGn TabsWithState__StyledUl-o4la6f-1 jlvFgM"
-      direction="row"
-      role="tablist"
-    >
-      <li
-        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 kfTaEE"
-        role="presentation"
-      >
-        <span
-          className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
-          type="secondary"
-        >
-          <button
-            aria-selected={true}
-            className="NormalizedButton__Button-ey7f5x-0 TabsWithState__StyledButton-o4la6f-0 gFmISb"
-            id="tabs-tab-0"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            role="tab"
-            tabIndex={0}
-            type="button"
-          >
-            <div
-              className="TabTitle__StyledDiv-sc-1sa0gl6-0 gnUtpL"
-            >
-              <span
-                className="Typography__StyledTypography-sc-10mju41-0 jkuzsy"
-                type="secondary"
-              >
-                One
-              </span>
-            </div>
-          </button>
-        </span>
-      </li>
-      <li
-        className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 kfTaEE"
-        role="presentation"
-      >
-        <span
-          className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
-          type="secondary"
-        >
-          <button
-            aria-selected={false}
-            className="NormalizedButton__Button-ey7f5x-0 TabsWithState__StyledButton-o4la6f-0 gFmISb"
-            id="tabs-tab-1"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            role="tab"
-            tabIndex={-1}
-            type="button"
-          >
-            <div
-              className="TabTitle__StyledDiv-sc-1sa0gl6-0 dxzHpI"
-            >
-              <span
-                className="Typography__StyledTypography-sc-10mju41-0 ljVmVF"
-                type="secondary"
-              >
-                <div>
-                  Node as well
-                  <span
-                    aria-label="goodjob"
-                    role="img"
-                  >
-                    👍
-                  </span>
-                </div>
-              </span>
-            </div>
-          </button>
-        </span>
-      </li>
-    </ul>
-    <div
-      className="Separator__StyledSeparator-a5vdsz-0 eEBmzS"
-    />
-    <div>
-      <section
-        aria-labelledby="tabs-tab-0"
-        hidden={false}
-        id="tabs-tabpanel-0"
-        role="tabpanel"
-      >
-        <div
-          className="TabsWithStatestories__SpacingInside-svm4a3-0 jQChef"
-        >
-          Ones children
-        </div>
-      </section>
-    </div>
-  </div>
-</span>
-`;
-
 exports[`Storyshots Organisms | CardWithTabs Default (extra space inside) 1`] = `
 <div
-  className="CardWithTitle__StyledCard-sc-1ny6tjx-0 cuvWlc Card__StyledCard-sc-1e5czjc-0 gwDvCn"
+  className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
 >
   <div
-    className="CardWithTitle__StyledTitle-sc-1ny6tjx-1 kfhMLM"
+    className="CardWithTitle__StyledTitle-sc-1ny6tjx-0 eRrxeH"
   >
     <span
       className="Typography__StyledTypography-sc-10mju41-0 boZbTA"
@@ -14618,7 +14616,7 @@ exports[`Storyshots Organisms | CardWithTabs Default (extra space inside) 1`] = 
   </div>
   <div>
     <ul
-      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 fgRlGn TabsWithState__StyledUl-o4la6f-1 jlvFgM"
+      className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 fgRlGn Tabs__StyledUl-bqti0u-1 DjWwg"
       direction="row"
       role="tablist"
     >
@@ -14632,7 +14630,7 @@ exports[`Storyshots Organisms | CardWithTabs Default (extra space inside) 1`] = 
         >
           <button
             aria-selected={true}
-            className="NormalizedButton__Button-ey7f5x-0 TabsWithState__StyledButton-o4la6f-0 gFmISb"
+            className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 BOZSX"
             id="tabs-tab-0"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -14663,7 +14661,7 @@ exports[`Storyshots Organisms | CardWithTabs Default (extra space inside) 1`] = 
         >
           <button
             aria-selected={false}
-            className="NormalizedButton__Button-ey7f5x-0 TabsWithState__StyledButton-o4la6f-0 gFmISb"
+            className="NormalizedButton__Button-ey7f5x-0 Tabs__StyledButton-bqti0u-0 BOZSX"
             id="tabs-tab-1"
             onClick={[Function]}
             onKeyDown={[Function]}
