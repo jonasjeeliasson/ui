@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-// @ts-ignore
 import flags from './flags';
 import { FlagComponent, Props } from './Flag.types';
 import { assert } from '../../common/utils';

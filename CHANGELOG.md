@@ -1,3 +1,44 @@
+# [1.0.0-beta.22](https://github.com/nordnet/ui/compare/v1.0.0-beta.21@beta...v1.0.0-beta.22@beta) (2019-04-23)
+
+
+### Bug Fixes
+
+* flag ruining build ([#99](https://github.com/nordnet/ui/issues/99)) ([510d3b0](https://github.com/nordnet/ui/commit/510d3b0))
+
+# [1.0.0-beta.21](https://github.com/nordnet/ui/compare/v1.0.0-beta.20@beta...v1.0.0-beta.21@beta) (2019-04-23)
+
+
+### Bug Fixes
+
+* downgrade react-router-dom ([#97](https://github.com/nordnet/ui/issues/97)) ([41cbaee](https://github.com/nordnet/ui/commit/41cbaee))
+
+# [1.0.0-beta.20](https://github.com/nordnet/ui/compare/v1.0.0-beta.19@beta...v1.0.0-beta.20@beta) (2019-04-23)
+
+
+### Bug Fixes
+
+* build ([5af2123](https://github.com/nordnet/ui/commit/5af2123))
+
+
+### Features
+
+* 🎸 error message for link without to prop ([#94](https://github.com/nordnet/ui/issues/94)) ([143ad8a](https://github.com/nordnet/ui/commit/143ad8a))
+* replace with dumbed down spinner ([#86](https://github.com/nordnet/ui/issues/86)) ([445db6d](https://github.com/nordnet/ui/commit/445db6d))
+
+# [1.0.0-beta.19](https://github.com/nordnet/ui/compare/v1.0.0-beta.18@beta...v1.0.0-beta.19@beta) (2019-04-17)
+
+
+### Features
+
+* add table ([#85](https://github.com/nordnet/ui/issues/85)) ([c15919c](https://github.com/nordnet/ui/commit/c15919c))
+
+# [1.0.0-beta.18](https://github.com/nordnet/ui/compare/v1.0.0-beta.17@beta...v1.0.0-beta.18@beta) (2019-04-17)
+
+
+### Features
+
+* add list with titles ([#83](https://github.com/nordnet/ui/issues/83)) ([099899c](https://github.com/nordnet/ui/commit/099899c))
+
 # [1.0.0-beta.17](https://github.com/nordnet/ui/compare/v1.0.0-beta.16@beta...v1.0.0-beta.17@beta) (2019-04-17)
 
 

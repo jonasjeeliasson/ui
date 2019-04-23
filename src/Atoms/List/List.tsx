@@ -8,7 +8,7 @@ const StyledList = styled.ul<Props>`
   padding: 0;
 `;
 
-export const List: React.FunctionComponent<Props> = ({ as = 'ul', children }) => (
-  <StyledList as={as}>{children}</StyledList>
+export const List: React.FunctionComponent<Props> = ({ as = 'ul', className, children }) => (
+  <StyledList className={className} as={as}>{children}</StyledList>
 );
 List.displayName = 'List';

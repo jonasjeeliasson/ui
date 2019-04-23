@@ -5,8 +5,9 @@ type ColorFn = (t: Theme) => Values<Theme['color']>;
 
 export type Props = {
   size?: number;
-  color?: ColorFn | 'inherit';
+  color?: ColorFn;
 };
+
 export type PropsWithTheme = Props & {
   theme: Theme;
 };

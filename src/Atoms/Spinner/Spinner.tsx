@@ -2,60 +2,7 @@ import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { Props, PropsWithTheme } from './Spinner.types';
 
-function generateRgb(degree: number, limit: number) {
-  const multiplier = 255 / limit;
-  const value = Math.round(degree * multiplier);
-
-  return `rgb(${value}, ${value}, ${value})`;
-}
-
-function conicalGradient(size: number, limit: number, clipPathId: string) {
-  const sectionSize = size / 2;
-  const gradientSectionsA = [];
-  const gradientSectionsB = [];
-  const rotationMultiplier = 360 / limit;
-
-  for (let i = 0; i < limit; i += 1) {
-    const rotation = i * rotationMultiplier;
-    const item = (
-      <rect
-        key={rotation}
-        width={sectionSize}
-        height={sectionSize}
-        fill={generateRgb(i, limit)}
-        x={sectionSize}
-        transform={`rotate(${rotation} ${sectionSize} ${sectionSize})`}
-      />
-    );
-
-    if (i > limit / 2) {
-      gradientSectionsB.push(item);
-    } else {
-      gradientSectionsA.push(item);
-    }
-  }
-
-  return (
-    <g className="spinner__gradient">
-      <g>{gradientSectionsA.map(section => section)}</g>
-      <g clipPath={`url(#${clipPathId})`}>{gradientSectionsB.map(section => section)}</g>
-    </g>
-  );
-}
-
-function renderCircleAsHtml(radius: number, color: string, maskId: string) {
-  return {
-    __html: `<circle class="spinner__circle" cx="${radius}" cy="${radius}" r="${radius}" fill="${color}" mask="url(#${maskId})"></circle>`,
-  };
-}
-
-const StyledSpinner = styled.svg<Props>`
-  display: 'block';
-  width: '100%';
-  height: '100%';
-`;
-
-const StyledSpan = styled.span<Props>`
+const Animation = styled.span`
   @keyframes spinner {
     from {
       transform: rotate(0deg);
@@ -64,53 +11,50 @@ const StyledSpan = styled.span<Props>`
       transform: rotate(360deg);
     }
   }
-  animation: spinner 1s linear infinite;
-  width: ${p => p.size}px;
-  height: ${p => p.size}px;
-  &, & *, & *::after, & *::after: {
-    box-sizing: border-box;
-  }
   display: inline-block;
+  animation: spinner 1s linear infinite;
 `;
 
-const RawSpinner: React.FC<PropsWithTheme> = props => {
-  const size = props.theme.spacing.unit(props.size || 4);
-  const clipPathId = `spinner__clip-path--${size}`;
-  const radius = size / 2;
-  const stroke = radius / 4;
-  const maskId = `spinner__mask--${size}-${stroke}-${20}`;
-  const usedColor =
-    typeof props.color === 'function'
-      ? props.color(props.theme)
-      : props.color || props.theme.color.cta;
+const StyledSvg = styled.svg`
+  display: block;
+`;
+
+const RawSpinner: React.FC<PropsWithTheme> = ({ theme, size, color }) => {
+  const calculatedSize = theme.spacing.unit(size || 4);
+  const usedColor = typeof color === 'function' ? color(theme) : color || theme.color.cta;
+  const sanatizedColor = usedColor.replace(/#\s?/g, '');
+  const id1 = `spinner-${sanatizedColor}-1`;
+  const id2 = `spinner-${sanatizedColor}-2`;
 
   return (
-    <StyledSpan size={size}>
-      <StyledSpinner viewBox={`0 0 ${size} ${size}`}>
+    <Animation>
+      <StyledSvg width={calculatedSize} height={calculatedSize} viewBox="0 0 24 24">
         <defs>
-          <clipPath id={clipPathId}>
-            <rect x="0" y="0" width={radius} height={size} />
-          </clipPath>
-          <mask id={maskId} maskUnits="objectBoundingBox">
-            <rect width={size} height={size} fill={props.theme.color.spinnerWhite} />
-            {conicalGradient(size, 20, clipPathId)}
-            <circle
-              cx={radius}
-              cy={radius}
-              r={radius - stroke}
-              fill={props.theme.color.spinnerBlack}
-            />
-            <circle
-              cx={radius}
-              cy={stroke / 2}
-              r={stroke / 2}
-              fill={props.theme.color.spinnerWhite}
-            />
-          </mask>
+          <linearGradient id={id1} x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stopColor={usedColor} stopOpacity="0" />
+            <stop offset="100%" stopColor={usedColor} stopOpacity=".5" />
+          </linearGradient>
+          <linearGradient id={id2} x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stopColor={usedColor} stopOpacity=".5" />
+            <stop offset="100%" stopColor={usedColor} />
+          </linearGradient>
         </defs>
-        <g dangerouslySetInnerHTML={renderCircleAsHtml(radius, usedColor, maskId)} />
-      </StyledSpinner>
-    </StyledSpan>
+        <g fill="none" fillRule="evenodd">
+          <path
+            fill={`url(#${id1})`}
+            d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
+          />
+          <path
+            fill={`url(#${id2})`}
+            d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
+            transform="rotate(-180 6 12)"
+          />
+        </g>
+      </StyledSvg>
+    </Animation>
   );
 };
+
 export const Spinner: React.FC<Props> = withTheme(RawSpinner);
+
+Spinner.displayName = 'Spinner';

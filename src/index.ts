@@ -19,12 +19,14 @@ import TabsNav from './Molecules/TabsNav';
 import Separator from './Atoms/Separator';
 import Spinner from './Atoms/Spinner';
 import TabsWithState from './Molecules/TabsWithState';
+import { Table, Tbody, Td, Tfoot, Th, Thead, Tr } from './Atoms/Table';
 import Typography from './Atoms/Typography';
 import TabTitle from './Atoms/TabTitle';
 
 import Number from './Atoms/Number';
 import Time from './Atoms/Time';
 import Percent from './Molecules/Percent';
+import ListWithTitles from './Molecules/ListWithTitles';
 import theme from './theme';
 
 /** Runtime code */
@@ -43,6 +45,7 @@ export {
   Link,
   LinkBuy,
   LinkSell,
+  ListWithTitles,
   Media,
   Number,
   Percent,
@@ -50,6 +53,13 @@ export {
   Spinner,
   Time,
   theme,
+  Table,
+  Tbody,
+  Td,
+  Tfoot,
+  Th,
+  Thead,
+  Tr,
   Typography,
   List,
   ListItem,
