@@ -1,17 +1,17 @@
-import React, { useContext } from 'react';
+import React from 'react';
 // @ts-ignore
-import { matchPath, __RouterContext } from 'react-router';
+import { matchPath, withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Flexbox, Typography, TabTitle } from '../..';
 import { assert } from '../../common/utils';
-import { useKeyboardNavigation } from '../TabsWithState/useKeyboardNavigation';
+import { useKeyboardNavigation } from '../Tabs/useKeyboardNavigation';
 import { ItemComponent, ItemProps, TitleComponent, Component } from './TabsNav.types';
 
 const Item: ItemComponent = ({ children }) => {
   return <div>{children}</div>;
 };
-Item.displayName = 'TabsNav.Item';
+Item.displayName = 'TabsNav.Tab';
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -46,10 +46,9 @@ const StyledUl = styled.ul`
   margin-bottom: -1px;
 `;
 const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
-  x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type');
+  x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type') && x.type === Item;
 
-const TabsNav: Component = ({ children }) => {
-  const { location } = useContext(__RouterContext);
+const TabsNav: Component = (withRouter(({ children, location }) => {
   const { setRef, onKeyDown } = useKeyboardNavigation({
     itemsLength: React.Children.count(children),
   });
@@ -57,12 +56,12 @@ const TabsNav: Component = ({ children }) => {
 
   React.Children.forEach(children, (c, i) => {
     if (!isItemElement(c)) {
-      assert(false, 'Children type of <Tabs.Container> should be only <Tabs.Item>');
+      assert(false, 'There should be only <TabsNav.Tab> children inside of <TabsNav> component');
     } else {
       const isIndexActive = Boolean(matchPath(location.pathname, c.props.to));
 
       titles.push(
-        <Flexbox.Item as="li" role="presentation">
+        <Flexbox.Item as="li">
           <Title active={isIndexActive} setRef={setRef(i)} to={c.props.to} onKeyDown={onKeyDown}>
             {c.props.title}
           </Title>
@@ -76,7 +75,7 @@ const TabsNav: Component = ({ children }) => {
       {titles}
     </Flexbox.Container>
   );
-};
+}) as unknown) as Component;
 TabsNav.displayName = 'TabsNav';
 TabsNav.Tab = Item;
 

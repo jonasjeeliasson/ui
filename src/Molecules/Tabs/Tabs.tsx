@@ -5,17 +5,12 @@ import NormalizedElements from '../../common/NormalizedElements/index';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-import {
-  ContainerComponent,
-  ItemComponent,
-  TitleComponent,
-  ItemProps,
-} from './TabsWithState.types';
+import { ContainerComponent, ItemComponent, TitleComponent, ItemProps } from './Tabs.types';
 
 const Item: ItemComponent = ({ children }) => {
   return <>{children}</>;
 };
-Item.displayName = 'TabsWithState.Content';
+Item.displayName = 'Tabs.Content';
 
 const StyledButton = styled(NormalizedElements.Button)`
   background: none;
@@ -23,12 +18,13 @@ const StyledButton = styled(NormalizedElements.Button)`
   border: none;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 `;
 
 const Title: TitleComponent = ({
   active: activeFromProps,
   children,
-  onTitleClick,
+  onClick,
   onKeyDown,
   index,
   setRef,
@@ -40,7 +36,7 @@ const Title: TitleComponent = ({
       <StyledButton
         ref={setRef}
         type="button"
-        onClick={onTitleClick}
+        onClick={onClick}
         onKeyDown={onKeyDown}
         aria-selected={active}
         role="tab"
@@ -52,7 +48,7 @@ const Title: TitleComponent = ({
     </Typography>
   );
 };
-Title.displayName = 'TabsWithState.Title';
+Title.displayName = 'Tabs.Title';
 const StyledUl = styled.ul`
   margin-top: 0;
   list-style: none;
@@ -66,7 +62,7 @@ const StyledUl = styled.ul`
 const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
   x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type') && x.type === Item;
 
-const TabsWithState: ContainerComponent = ({ children, initialActiveTabId = 0 }) => {
+const Tabs: ContainerComponent = ({ children, initialActiveTabId = 0 }) => {
   const [active, setActive] = useState(initialActiveTabId);
   const handleTitleClick = (i: number) => () => setActive(i);
   const { setRef, onKeyDown } = useKeyboardNavigation({
@@ -77,14 +73,15 @@ const TabsWithState: ContainerComponent = ({ children, initialActiveTabId = 0 })
   React.Children.forEach(children, (c, i) => {
     const isActive = i === active;
     if (!isItemElement(c)) {
-      assert(false, 'There should be only <Tabs.Item> inside of  <Tabs.Container>');
+      assert(false, 'There should be only <Tabs.Tab> children inside of <Tabs> component');
     } else {
       titles.push(
-        <Flexbox.Item as="li" role="presentation">
+        // eslint-disable-next-line react/no-array-index-key
+        <Flexbox.Item as="li" role="presentation" key={`tabs-${i}`}>
           <Title
             active={isActive}
             index={i}
-            onTitleClick={handleTitleClick(i)}
+            onClick={handleTitleClick(i)}
             onKeyDown={onKeyDown}
             setRef={setRef(i)}
           >
@@ -121,7 +118,7 @@ const TabsWithState: ContainerComponent = ({ children, initialActiveTabId = 0 })
     </div>
   );
 };
-TabsWithState.displayName = 'TabsWithState';
-TabsWithState.Tab = Item;
+Tabs.displayName = 'Tabs';
+Tabs.Tab = Item;
 
-export default TabsWithState;
+export default Tabs;

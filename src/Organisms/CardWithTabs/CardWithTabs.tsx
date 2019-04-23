@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { TabsWithState, CardWithTitle } from '../..';
+import { Tabs, CardWithTitle } from '../..';
 import { Component } from './CardWithTabs.types';
 
 const Spacing = styled.div`
@@ -12,8 +12,8 @@ const Spacing = styled.div`
 
 export const CardWithTabs: Component = ({ title, children }) => (
   <CardWithTitle title={<Spacing>{title}</Spacing>}>
-    <TabsWithState>{children}</TabsWithState>
+    <Tabs>{children}</Tabs>
   </CardWithTitle>
 );
 
-CardWithTabs.Tab = TabsWithState.Tab;
+CardWithTabs.Tab = Tabs.Tab;

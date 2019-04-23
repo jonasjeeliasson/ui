@@ -5,7 +5,7 @@ export type ItemProps = {
 
 export type TitleProps = {
   active: boolean;
-  onTitleClick: React.MouseEventHandler<HTMLButtonElement>;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
   index: number;
   setRef: (el: HTMLButtonElement | null) => void;
   onKeyDown: (e: React.KeyboardEvent) => void;

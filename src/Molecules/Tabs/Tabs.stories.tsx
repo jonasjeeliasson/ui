@@ -2,8 +2,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
 
-import { TabsWithState, Typography } from '../../index';
-// import Separator from '.Atoms/Separator';
+import { Tabs, Typography } from '../..';
 
 const SpacingInside = styled.div`
   padding-left: ${p => p.theme.spacing.unit(5)}px;
@@ -11,13 +10,13 @@ const SpacingInside = styled.div`
   padding-top: ${p => p.theme.spacing.unit(4)}px;
 `;
 
-storiesOf('Molecules | TabsWithState', module).add('Default (extra space inside)', () => (
+storiesOf('Molecules | Tabs', module).add('Default (extra space inside)', () => (
   <Typography type="secondary">
-    <TabsWithState>
-      <TabsWithState.Tab title="One">
+    <Tabs>
+      <Tabs.Tab title="One">
         <SpacingInside>Ones children</SpacingInside>
-      </TabsWithState.Tab>
-      <TabsWithState.Tab
+      </Tabs.Tab>
+      <Tabs.Tab
         title={
           <div>
             Node as well
@@ -31,7 +30,7 @@ storiesOf('Molecules | TabsWithState', module).add('Default (extra space inside)
           Moving focus from a tab will put it on the next <a href="#link">focusable</a> Tab in the
           tab panel.
         </SpacingInside>
-      </TabsWithState.Tab>
-    </TabsWithState>
+      </Tabs.Tab>
+    </Tabs>
   </Typography>
 ));
