@@ -2124,6 +2124,80 @@ exports[`Storyshots Atoms | Number Integration: with different typographies 1`] 
 
 exports[`Storyshots Atoms | Number Invalid value 1`] = `"-"`;
 
+exports[`Storyshots Atoms | Number Number ticks 1`] = `
+Array [
+  <pre>
+    ticks = [
+  {
+    "decimals": 4,
+    "fromPrice": 0,
+    "toPrice": 0.9999,
+    "tick": 0.0001
+  },
+  {
+    "decimals": 2,
+    "fromPrice": 1,
+    "toPrice": 99999.98,
+    "tick": 0.01
+  },
+  {
+    "decimals": 1,
+    "fromPrice": 100000,
+    "toPrice": 999999.89,
+    "tick": 0.1
+  }
+]
+  </pre>,
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+    direction="column"
+  >
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        value = 0.55555
+      </div>
+      <div>
+        
+        0.5556
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        value = 10.333
+      </div>
+      <div>
+        
+        10.33
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        value = 100001.22
+      </div>
+      <div>
+        
+        100,001.2
+      </div>
+    </div>
+  </div>,
+]
+`;
+
 exports[`Storyshots Atoms | Number Number with 2 decimals  1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"

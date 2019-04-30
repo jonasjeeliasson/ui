@@ -26,6 +26,40 @@ storiesOf('Atoms | Number', module)
       />
     );
   })
+  .add('Number ticks', () => {
+    const ticks = [
+      {
+        decimals: 4,
+        fromPrice: 0,
+        toPrice: 0.9999,
+        tick: 0.0001
+      },
+      {
+        decimals: 2,
+        fromPrice: 1,
+        toPrice: 99999.98,
+        tick: 0.01
+      },
+      {
+        decimals: 1,
+        fromPrice: 100000,
+        toPrice: 999999.89,
+        tick: 0.1
+      }
+    ]
+    return (
+      <>
+        <pre>{`ticks = ${JSON.stringify(ticks, null, 2)}`}</pre>
+        <Display
+          items={[
+            { title: 'value = 0.55555', component: <Number value={0.55555} ticks={ticks} /> },
+            { title: 'value = 10.333', component: <Number value={10.333} ticks={ticks} /> },
+            { title: 'value = 100001.22', component: <Number value={100001.22} ticks={ticks} /> },
+          ]}
+        />
+      </>
+    );
+  })
   .add('Number with percentage', () => {
     return <Number value={2.3} percentage />;
   })
