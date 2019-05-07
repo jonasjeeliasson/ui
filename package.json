@@ -129,6 +129,7 @@
     "husky": "2.1.0",
     "jest": "24.7.1",
     "jest-environment-jsdom-fourteen": "0.1.0",
+    "jest-styled-components": "^6.3.1",
     "lint-staged": "8.1.5",
     "prettier": "1.17.0",
     "react": "16.8.6",
