@@ -1,0 +1,1 @@
+{"version":3,"file":"main.008022557453406e7fce.bundle.js","sources":["webpack:///./src/theme/index.ts"],"sourcesContent":["import { createTheme } from './theme';\n\nconst theme = createTheme();\n\nexport default theme;\n"],"mappings":"AAAA","sourceRoot":""}
