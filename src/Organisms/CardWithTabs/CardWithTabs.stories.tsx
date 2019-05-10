@@ -14,7 +14,28 @@ const Red = styled.div`
   color: red;
 `;
 
-storiesOf('Organisms | CardWithTabs', module).add(
+storiesOf('Organisms | CardWithTabs', module).
+add(
+  'with initialActiveTabIndex',
+  () => (
+    <CardWithTabs
+      title={
+        <Typography type="title3" as="h2">
+          Title for the card
+        </Typography>
+      }
+      initialActiveTabIndex={1}
+    >
+      <CardWithTabs.Tab title="Tab title 1">
+        1
+      </CardWithTabs.Tab>
+      <CardWithTabs.Tab title="Tab title 2">
+        2
+      </CardWithTabs.Tab>
+    </CardWithTabs>
+  ),
+).
+add(
   'Integration: with Typography and extra space inside',
   () => (
     <CardWithTabs

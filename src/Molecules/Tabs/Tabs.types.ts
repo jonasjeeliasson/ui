@@ -12,7 +12,7 @@ export type TitleProps = {
 };
 
 export type ContainerProps = {
-  initialActiveTabId?: number;
+  initialActiveTabIndex?: number;
   children: React.ReactNode;
 };
 

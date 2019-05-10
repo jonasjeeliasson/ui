@@ -268,3 +268,253 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   </div>
 </div>
 `;
+
+exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c6 {
+  box-sizing: border-box;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -8px;
+  margin-right: -8px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c5 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c12 {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBE8;
+}
+
+.c9 {
+  background: none;
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 4px;
+  color: #282823;
+  border-bottom: 2px solid transparent;
+}
+
+.c11 {
+  background: none;
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 4px;
+  color: #282823;
+  border-bottom: 2px solid #0046FF;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c1 {
+  padding: 20px;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background: none;
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c4 {
+  padding: 0 20px;
+  margin-bottom: -1px;
+}
+
+@media (min-width:360px) {
+  .c7 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+@media (min-width:360px) {
+  .c2 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width:360px) {
+  .c10 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<div
+  className="c0"
+>
+  <header
+    className="c1"
+  >
+    <h2
+      className="c2"
+      type="title3"
+    >
+      Title for the card
+    </h2>
+  </header>
+  <div>
+    <ul
+      className="c3 c4 c5"
+    >
+      <li
+        className="c6"
+        role="presentation"
+      >
+        <span
+          className="c7"
+          type="secondary"
+        >
+          <button
+            aria-selected={false}
+            className="c8"
+            id="tabs-tab-0"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            <div
+              className="c9"
+            >
+              <span
+                className="c7"
+                type="secondary"
+              >
+                Tab title 1
+              </span>
+            </div>
+          </button>
+        </span>
+      </li>
+      <li
+        className="c6"
+        role="presentation"
+      >
+        <span
+          className="c10"
+          type="secondary"
+        >
+          <button
+            aria-selected={true}
+            className="c8"
+            id="tabs-tab-1"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="tab"
+            tabIndex={0}
+            type="button"
+          >
+            <div
+              className="c11"
+            >
+              <span
+                className="c10"
+                type="secondary"
+              >
+                Tab title 2
+              </span>
+            </div>
+          </button>
+        </span>
+      </li>
+    </ul>
+    <div
+      className="c12"
+    />
+    <div>
+      <section
+        aria-labelledby="tabs-tab-1"
+        hidden={false}
+        id="tabs-tabpanel-1"
+        role="tabpanel"
+      >
+        2
+      </section>
+    </div>
+  </div>
+</div>
+`;
