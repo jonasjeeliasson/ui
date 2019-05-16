@@ -35,6 +35,11 @@ const getNumberOptions = (value: number, ticks?: Ticks, decimals?: number) => {
   return {};
 };
 
+export const getRoundedValue = (value: number, ticks?: Ticks, decimals?: number) => {
+  const dec = ticks ? getTickDecimals(value, ticks) : decimals;
+  return dec === 0 ? 0 : +Number(value).toPrecision(dec);
+}
+
 const NumberComponent: NumberComponentType = ({
   intl,
   value,
@@ -47,9 +52,10 @@ const NumberComponent: NumberComponentType = ({
   if (typeof value === 'undefined' || value === null || !Number.isFinite(value)) return <>-</>;
   if (typeof currency !== 'undefined' && currency === null) return <>-</>;
 
+  const roundedValue = getRoundedValue(value, ticks, decimals);
   return (
     <>
-      {getPrefix(sign, value)}
+      {getPrefix(sign, roundedValue)}
       {intl.formatNumber(value, getNumberOptions(value, ticks, decimals))}
       {percentage && '%'}
       {currency && ` ${currency}`}

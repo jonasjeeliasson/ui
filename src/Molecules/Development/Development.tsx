@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { DevelopmentProps, DevelopmentComponent } from './Development.types';
 import { Number as NumberComponent } from '../..';
 import { Theme } from '../../theme/theme.types';
+import { getRoundedValue } from '../../Atoms/Number/Number';
 
 const getPrefix = (value?: number | null) => {
   if (!value) return '';
@@ -18,12 +19,16 @@ const StyledDevelopment = styled.span<DevelopmentProps>`
   color: ${getColor};
 `;
 
-const Development: DevelopmentComponent = ({ value, className, icon = false, ...props }) => (
-  <StyledDevelopment className={className} value={value}>
-    <span aria-hidden>{icon && getPrefix(value)}</span>
-    <NumberComponent value={value} sign {...props} />
-  </StyledDevelopment>
-);
+const Development: DevelopmentComponent = props => {
+  const { value, decimals, ticks, className, icon = false, } = props;
+  const roundedValue = typeof value !== 'undefined' && value !== null ? getRoundedValue(value, ticks, decimals) : value;
+  return (
+    <StyledDevelopment className={className} value={roundedValue}>
+      <span aria-hidden>{icon && getPrefix(roundedValue)}</span>
+      <NumberComponent sign {...props} />
+    </StyledDevelopment>
+  )
+};
 
 export { Development };
 Development.displayName = 'Development';

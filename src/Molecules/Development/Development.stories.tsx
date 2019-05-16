@@ -58,6 +58,14 @@ storiesOf('Molecules | Development', module)
       ]}
     />
   ))
+  .add('Regression: value is non-zero, but rounded value is 0', () => (
+    <Display
+      items={[
+        { title: '`value = 0.3`', component: <Development value={0.3} decimals={0} /> },
+        { title: '`value = -0.3`', component: <Development value={-0.3} decimals={0} /> },
+      ]}
+    />
+  ))
   .add('Integration: with different typographies', () => {
     const items = Object.values(TYPOGRAPHY_TYPES).map(type => ({
       title: type,
