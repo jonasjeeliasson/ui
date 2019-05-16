@@ -20,14 +20,17 @@ const StyledDevelopment = styled.span<DevelopmentProps>`
 `;
 
 const Development: DevelopmentComponent = props => {
-  const { value, decimals, ticks, className, icon = false, } = props;
-  const roundedValue = typeof value !== 'undefined' && value !== null ? getRoundedValue(value, ticks, decimals) : value;
+  const { value, decimals, ticks, className, icon = false } = props;
+  const roundedValue =
+    typeof value !== 'undefined' && value !== null
+      ? getRoundedValue(value, ticks, decimals)
+      : value;
   return (
     <StyledDevelopment className={className} value={roundedValue}>
       <span aria-hidden>{icon && getPrefix(roundedValue)}</span>
       <NumberComponent sign {...props} />
     </StyledDevelopment>
-  )
+  );
 };
 
 export { Development };

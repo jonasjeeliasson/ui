@@ -101,10 +101,8 @@ storiesOf('Atoms | Number', module)
   })
   .add('Regression: value is positive, but rounded value is 0', () => (
     <Display
-        items={[
-          { title: 'value = 0.1', component: <Number value={0.1} sign decimals={0} /> },
-        ]}
-      />
+      items={[{ title: 'value = 0.1', component: <Number value={0.1} sign decimals={0} /> }]}
+    />
   ))
   .add('Integration: with different typographies', () => {
     const items = Object.values(TYPOGRAPHY_TYPES).map(type => ({

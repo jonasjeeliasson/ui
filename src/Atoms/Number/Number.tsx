@@ -1,6 +1,6 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
-import * as R from 'ramda'
+import * as R from 'ramda';
 import { NumberComponent as NumberComponentType, Ticks } from './Number.types';
 import { assert } from '../../common/utils';
 
@@ -10,7 +10,7 @@ const getTickDecimals = (value: number, ticks: Ticks) => {
   if (process.env.NODE_ENV !== 'production') {
     // @ts-ignore
     const wrongTick = ticks.find(R.or(R.has('from_price'), R.has('to_price')));
-    assert(!wrongTick, `Found ticks with snake cased keys, they should be camelcased.`)
+    assert(!wrongTick, `Found ticks with snake cased keys, they should be camelcased.`);
   }
   const tick = ticks.find(t => value >= t.fromPrice && value < t.toPrice + (t.tick || 0));
 
@@ -38,7 +38,7 @@ const getNumberOptions = (value: number, ticks?: Ticks, decimals?: number) => {
 export const getRoundedValue = (value: number, ticks?: Ticks, decimals?: number) => {
   const dec = ticks ? getTickDecimals(value, ticks) : decimals;
   return dec === 0 ? 0 : +Number(value).toPrecision(dec);
-}
+};
 
 const NumberComponent: NumberComponentType = ({
   intl,
