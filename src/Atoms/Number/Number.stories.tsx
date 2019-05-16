@@ -35,6 +35,7 @@ storiesOf('Atoms | Number', module)
           { title: 'value = 10.378', component: <Number value={10.378} decimals={2} /> },
           { title: 'value = 10.333', component: <Number value={10.333} decimals={2} /> },
           { title: 'value = 10', component: <Number value={10} decimals={2} /> },
+          { title: 'value = 10.5', component: <Number value={10.5} decimals={2} /> },
         ]}
       />
     );
@@ -67,6 +68,7 @@ storiesOf('Atoms | Number', module)
           items={[
             { title: 'value = 0.55555', component: <Number value={0.55555} ticks={ticks} /> },
             { title: 'value = 10.333', component: <Number value={10.333} ticks={ticks} /> },
+            { title: 'value = 10.5', component: <Number value={10.5} ticks={ticks} /> },
             { title: 'value = 100001.22', component: <Number value={100001.22} ticks={ticks} /> },
           ]}
         />
