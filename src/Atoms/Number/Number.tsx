@@ -96,13 +96,14 @@ const NumberComponent: NumberComponentType = ({
     minimumDecimals,
     maximumDecimals,
   });
+  const formattedNumber = intl.formatNumber(
+    value,
+    getNumberOptions(value, { ticks, decimals, minimumDecimals, maximumDecimals }),
+  );
   return (
     <>
       {getPrefix(sign, roundedValue)}
-      {intl.formatNumber(
-        value,
-        getNumberOptions(value, { ticks, decimals, minimumDecimals, maximumDecimals }),
-      )}
+      {formattedNumber !== '-0' ? formattedNumber : '0'}
       {percentage && '%'}
       {currency && ` ${currency}`}
     </>
