@@ -1450,7 +1450,7 @@ exports[`Storyshots Molecules | Development Regression: value is non-zero, but r
           aria-hidden={true}
         />
         
-        -0
+        0
       </span>
     </div>
   </div>
@@ -1472,7 +1472,7 @@ exports[`Storyshots Molecules | Development Regression: value is non-zero, but r
           aria-hidden={true}
         />
         
-        -0
+        0
       </span>
     </div>
   </div>
