@@ -1,7 +1,12 @@
+import React from 'react';
 import styled from 'styled-components';
+import R from 'ramda';
+
+// eslint-disable-next-line react/button-has-type
+const CleanButton = (props: any) => <button {...R.omit(['color', 'fullWidth', 'size'], props)} />;
 
 /** From Normalize.css v8.0.1 */
-export const Button = styled.button`
+export const Button = styled(CleanButton)`
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;

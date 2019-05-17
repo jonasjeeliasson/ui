@@ -25,6 +25,52 @@ storiesOf('Molecules | Button', module)
       Button
     </Button>
   ))
+  .add('Button primary with colors', () => (
+    <Display
+      horizontal
+      items={[
+        {
+          title: 't => t.color.cta',
+          component: (
+            <Button variant="primary" color={t => t.color.cta} onClick={action('clicked')}>
+              Button
+            </Button>
+          ),
+        },
+        {
+          title: 't => t.color.negative',
+          component: (
+            <Button variant="primary" color={t => t.color.negative} onClick={action('clicked')}>
+              Button
+            </Button>
+          ),
+        },
+      ]}
+    />
+  ))
+  .add('Button secondary with colors', () => (
+    <Display
+      horizontal
+      items={[
+        {
+          title: 't => t.color.cta',
+          component: (
+            <Button variant="secondary" color={t => t.color.cta} onClick={action('clicked')}>
+              Button
+            </Button>
+          ),
+        },
+        {
+          title: 't => t.color.negative',
+          component: (
+            <Button variant="secondary" color={t => t.color.negative} onClick={action('clicked')}>
+              Button
+            </Button>
+          ),
+        },
+      ]}
+    />
+  ))
   .add('Button primary with size modified', () => (
     <Display
       horizontal

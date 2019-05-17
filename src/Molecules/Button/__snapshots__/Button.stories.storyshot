@@ -1,5 +1,238 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Molecules | Button Button primary with colors 1`] = `
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c3 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background-color: #0046FF;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  color: #FFFFFF;
+  height: 32px;
+  line-height: 28px;
+  padding: 0 8px;
+  display: inline-block;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3:hover {
+  background-color: hsl(223.5,100%,45%);
+  color: #FFFFFF;
+}
+
+.c3:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c5 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background-color: #FF1900;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  color: #FFFFFF;
+  height: 32px;
+  line-height: 28px;
+  padding: 0 8px;
+  display: inline-block;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5:hover {
+  background-color: hsl(5.899999999999977,100%,45%);
+  color: #FFFFFF;
+}
+
+.c5:active {
+  background-color: hsl(5.899999999999977,100%,40%);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-bottom: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+@media (min-width:360px) {
+  .c4 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<div
+  className="c0"
+  direction="row"
+>
+  <div
+    className="c1"
+    direction="column"
+  >
+    <div
+      className="c2"
+    >
+      t =&gt; t.color.cta
+    </div>
+    <div>
+      <button
+        className="c3"
+        onClick={[Function]}
+        type="button"
+        variant="primary"
+      >
+        <span
+          className="c4"
+          color="inherit"
+          type="secondary"
+        >
+          Button
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="column"
+  >
+    <div
+      className="c2"
+    >
+      t =&gt; t.color.negative
+    </div>
+    <div>
+      <button
+        className="c5"
+        onClick={[Function]}
+        type="button"
+        variant="primary"
+      >
+        <span
+          className="c4"
+          color="inherit"
+          type="secondary"
+        >
+          Button
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -254,7 +487,6 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
       <button
         className="c3"
         onClick={[Function]}
-        size="s"
         type="button"
       >
         <span
@@ -280,7 +512,6 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
       <button
         className="c5"
         onClick={[Function]}
-        size="m"
         type="button"
       >
         <span
@@ -306,7 +537,6 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
       <button
         className="c6"
         onClick={[Function]}
-        size="l"
         type="button"
       >
         <span
@@ -315,6 +545,239 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
           type="primary"
         >
           Large
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Button Button secondary with colors 1`] = `
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c3 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  border: 2px solid #0046FF;
+  color: #0046FF;
+  height: 32px;
+  line-height: 28px;
+  padding: 0 8px;
+  display: inline-block;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3:hover {
+  background-color: hsl(223.5,100%,45%);
+  color: #FFFFFF;
+}
+
+.c3:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c5 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  border: 2px solid #FF1900;
+  color: #FF1900;
+  height: 32px;
+  line-height: 28px;
+  padding: 0 8px;
+  display: inline-block;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5:hover {
+  background-color: hsl(5.899999999999977,100%,45%);
+  color: #FFFFFF;
+}
+
+.c5:active {
+  background-color: hsl(5.899999999999977,100%,40%);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-bottom: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+@media (min-width:360px) {
+  .c4 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<div
+  className="c0"
+  direction="row"
+>
+  <div
+    className="c1"
+    direction="column"
+  >
+    <div
+      className="c2"
+    >
+      t =&gt; t.color.cta
+    </div>
+    <div>
+      <button
+        className="c3"
+        onClick={[Function]}
+        type="button"
+        variant="secondary"
+      >
+        <span
+          className="c4"
+          color="inherit"
+          type="secondary"
+        >
+          Button
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="column"
+  >
+    <div
+      className="c2"
+    >
+      t =&gt; t.color.negative
+    </div>
+    <div>
+      <button
+        className="c5"
+        onClick={[Function]}
+        type="button"
+        variant="secondary"
+      >
+        <span
+          className="c4"
+          color="inherit"
+          type="secondary"
+        >
+          Button
         </span>
       </button>
     </div>
@@ -579,8 +1042,8 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
       <button
         className="c3"
         onClick={[Function]}
-        size="s"
         type="button"
+        variant="secondary"
       >
         <span
           className="c4"
@@ -605,8 +1068,8 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
       <button
         className="c5"
         onClick={[Function]}
-        size="m"
         type="button"
+        variant="secondary"
       >
         <span
           className="c4"
@@ -631,8 +1094,8 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
       <button
         className="c6"
         onClick={[Function]}
-        size="l"
         type="button"
+        variant="secondary"
       >
         <span
           className="c7"
@@ -980,6 +1443,7 @@ exports[`Storyshots Molecules | Button Button with variant 1`] = `
   className="c0"
   onClick={[Function]}
   type="button"
+  variant="secondary"
 >
   <span
     className="c1"
@@ -1153,6 +1617,7 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
       className="c4"
       onClick={[Function]}
       type="reset"
+      variant="secondary"
     >
       <span
         className="c3"

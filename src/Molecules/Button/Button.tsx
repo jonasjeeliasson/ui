@@ -19,12 +19,29 @@ const BORDER_SIZE = 2;
 const isSecondary = (variant: ButtonProps['variant']) => variant === 'secondary';
 
 const getBackgroundColor = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
-  const { disabled, theme, variant } = props;
+  const { disabled, theme, variant, color: colorFn } = props;
   if (disabled) {
     return `background-color: ${theme.color.disabled};`;
   }
 
   if (variant === 'secondary') {
+    if (colorFn) {
+      const color = colorFn(theme);
+      assert(
+        color === theme.color.cta || color === theme.color.negative,
+        'Button: color is incorrect, use only `t => t.color.cta` or `t => t.color.negative`',
+      );
+      return `
+      background-color: ${theme.color.buttonSecondaryBackground};
+      &:hover{
+          background-color: ${Color(color).darken(0.1)};
+          color: ${theme.color.buttonText};
+      }
+      &:active{
+          background-color: ${Color(color).darken(0.2)};
+      }
+  `;
+    }
     return `
         background-color: ${theme.color.buttonSecondaryBackground};
         &:hover{
@@ -35,6 +52,25 @@ const getBackgroundColor = (props: ThemedStyledProps<ButtonProps | LinkProps, Th
             background-color: ${Color(theme.color.cta).darken(0.2)};
         }
     `;
+  }
+
+  if (colorFn) {
+    const color = colorFn(theme);
+    assert(
+      color === theme.color.cta || color === theme.color.negative,
+      'Button: color is incorrect, use only `t => t.color.cta` or `t => t.color.negative`',
+    );
+
+    return `
+    background-color: ${color};
+    &:hover{
+        background-color: ${Color(color).darken(0.1)};
+        color: ${theme.color.buttonText};
+    }
+    &:active{
+        background-color: ${Color(color).darken(0.2)};
+    }
+`;
   }
 
   return `
@@ -56,14 +92,25 @@ const getHeight = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => 
 };
 
 const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
-  const { theme, variant, fullWidth } = props;
+  const { theme, variant, fullWidth, color: colorFn } = props;
   const height = getHeight(props);
+
+  const color = colorFn && colorFn(theme);
+  const getColorWithDefault = (defaultColor: string) =>
+    isSecondary(variant) ? color || theme.color.cta : defaultColor;
+
+  if (color) {
+    assert(
+      color === theme.color.cta || color === theme.color.negative,
+      'Button: color is incorrect, use only `t => t.color.cta` or `t => t.color.negative`',
+    );
+  }
 
   return `
     ${getBackgroundColor(props)}
     box-sizing: border-box;
-    border: ${BORDER_SIZE}px solid ${isSecondary(variant) ? theme.color.cta : 'transparent'};
-    color: ${isSecondary(variant) ? theme.color.cta : theme.color.buttonText};
+    border: ${BORDER_SIZE}px solid ${getColorWithDefault('transparent')};
+    color: ${getColorWithDefault(theme.color.buttonText)};
     height: ${height}px;
     line-height: ${height - BORDER_SIZE * 2}px;
     padding: 0 ${theme.spacing.unit(2)}px;
@@ -85,7 +132,18 @@ const StyledLink = styled(RouterLink)<LinkProps>`
 
 export const Button: ButtonComponent = props => {
   const typeIsNotPresent = typeof props.type === 'undefined';
-  const { disabled, onClick, size, type = 'button', variant, fullWidth, to, children, rel } = props;
+  const {
+    disabled,
+    onClick,
+    size,
+    type = 'button',
+    variant,
+    fullWidth,
+    to,
+    children,
+    rel,
+    color,
+  } = props;
   const toAndDisabledAreNotPresentTogether = !(to && disabled);
 
   assert(
@@ -125,6 +183,7 @@ export const Button: ButtonComponent = props => {
       type={type}
       variant={variant}
       fullWidth={fullWidth}
+      color={color}
     >
       <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
         {children}

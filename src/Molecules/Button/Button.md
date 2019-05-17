@@ -16,6 +16,8 @@ If the `to` prop is specified then the output will always be a link and all the 
 - `variant` - a string that can be either `primary` or `secondary`, default it's `primary`.
 - `size` - a string that can be `s`, `m` or `l`, default it's `m`.
 - `fullWidth` - a boolean value, default it's `false`.
+- `color` - function, selector from the theme, e.g. `t => t.color.cta`. Currently only cta and negative are available.
+
 
 ### Button Props
 
