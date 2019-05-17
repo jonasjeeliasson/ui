@@ -58,6 +58,10 @@ storiesOf('Atoms | Number', module)
             title: 'value =',
             component: <Number value={10.66666} minimumDecimals={2} maximumDecimals={4} />,
           },
+          {
+            title: 'value =',
+            component: <Number value={10} minimumDecimals={2} maximumDecimals={4} />,
+          },
         ]}
       />
     );

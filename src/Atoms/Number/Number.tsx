@@ -56,7 +56,8 @@ const getDecimalsFromMinMax = (
   maximumDecimals: number = Number.MAX_VALUE,
   minimumDecimals: number = 0,
 ) => {
-  const decimals = value.toString().split('.')[1].length || 0;
+  const splitted = value.toString().split('.');
+  const decimals = splitted && splitted[1] ? splitted[1].length : 0;
   if (decimals <= minimumDecimals) return minimumDecimals;
   if (decimals >= maximumDecimals) return maximumDecimals;
   return decimals;
