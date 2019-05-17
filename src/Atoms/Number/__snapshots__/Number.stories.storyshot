@@ -1215,137 +1215,19 @@ Array [
 `;
 
 exports[`Storyshots Atoms | Number Number with min/max digits 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 0px;
-}
-
-.c0 > * {
-  padding: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  border: 1px solid #eee;
-}
-
-.c1 > * {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 {
-  border-right: 1px solid #eee;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-<div
-  className="c0"
-  direction="column"
->
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
-      value =
-    </div>
-    <div>
-      
-      10.38
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
-      value =
-    </div>
-    <div>
-      
-      10.10
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
-      value =
-    </div>
-    <div>
-      
-      10.333
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
-      value =
-    </div>
-    <div>
-      
-      10.10
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
-      value =
-    </div>
-    <div>
-      
-      10.6667
-    </div>
-  </div>
+<div>
+  
+  10.38
+  
+  10.10
+  
+  10.333
+  
+  10.10
+  
+  10.6667
+  
+  10.00
 </div>
 `;
 
