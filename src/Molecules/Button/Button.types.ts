@@ -1,5 +1,8 @@
 import React from 'react';
 import { LinkProps as ReactRouterDomLinkProps } from 'react-router-dom';
+import { Theme } from '../../theme/theme.types';
+
+type Colors = Theme['color'];
 
 export type SharedProps = {
   /** @default primary */
@@ -9,6 +12,7 @@ export type SharedProps = {
   /** @default false */
   fullWidth?: boolean;
   children: React.ReactChild | React.ReactChild[];
+  color?: (t: Theme) => Colors['cta'] | Colors['negative'];
 };
 
 export type ButtonProps = {
