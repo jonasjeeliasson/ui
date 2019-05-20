@@ -1,1 +1,0 @@
-{"version":3,"file":"main.aee8e6c1a298d8197749.bundle.js","sources":["webpack:///./src/Atoms/Number/index.ts"],"sourcesContent":["import Number from './Number';\n\nexport default Number;\n"],"mappings":"AAAA","sourceRoot":""}
