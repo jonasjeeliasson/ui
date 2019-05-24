@@ -3,6 +3,14 @@
 exports[`Storyshots Atoms | Flag Available flags 1`] = `
 .c3 {
   height: 20px;
+  box-sizing: border-box;
+  display: block;
+  width: 26.666666666666668px;
+  overflow: hidden;
+}
+
+.c4 {
+  height: 20px;
   border: 1px solid #EBEBE8;
   box-sizing: border-box;
   display: block;
@@ -311,7 +319,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -441,7 +449,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -664,7 +672,7 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
     </div>
     <div>
       <svg
-        className="c3"
+        className="c4"
         focusable="false"
         role="img"
         viewBox="0 0 640 480"
@@ -773,7 +781,6 @@ exports[`Storyshots Atoms | Flag Available flags 1`] = `
 exports[`Storyshots Atoms | Flag Default use 1`] = `
 .c0 {
   height: 20px;
-  border: 1px solid #EBEBE8;
   box-sizing: border-box;
   display: block;
   width: 26.666666666666668px;
@@ -824,7 +831,6 @@ exports[`Storyshots Atoms | Flag Default use 1`] = `
 exports[`Storyshots Atoms | Flag Different size  1`] = `
 .c0 {
   height: 40px;
-  border: 1px solid #EBEBE8;
   box-sizing: border-box;
   display: block;
   width: 53.333333333333336px;
@@ -875,7 +881,6 @@ exports[`Storyshots Atoms | Flag Different size  1`] = `
 exports[`Storyshots Atoms | Flag Inline 1`] = `
 .c0 {
   height: 20px;
-  border: 1px solid #EBEBE8;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;

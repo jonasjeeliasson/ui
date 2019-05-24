@@ -1127,7 +1127,6 @@ exports[`Storyshots Atoms | Table Integration: Table (stickyHeader) with Typogra
 
 .c12 {
   height: 20px;
-  border: 1px solid #EBEBE8;
   box-sizing: border-box;
   display: block;
   width: 26.666666666666668px;
@@ -5783,7 +5782,6 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography 1`] = `
 
 .c12 {
   height: 16px;
-  border: 1px solid #EBEBE8;
   box-sizing: border-box;
   display: block;
   width: 21.333333333333332px;
@@ -10456,7 +10454,6 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography and ellipsi
 
 .c13 {
   height: 16px;
-  border: 1px solid #EBEBE8;
   box-sizing: border-box;
   display: block;
   width: 21.333333333333332px;
