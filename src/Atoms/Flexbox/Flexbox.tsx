@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import R from 'ramda';
 import { Theme } from '../../theme/theme.types';
 import { Props } from './Flexbox.types';
@@ -40,9 +40,11 @@ const getGutterStyles = ({
 }) => {
   return direction === 'row' || direction === 'row-reverse'
     ? `
-  margin-left: ${theme.spacing.unit(gutter)}px;
-`
+    margin-top: 0;
+    margin-left: ${theme.spacing.unit(gutter)}px;
+    `
     : `
+      margin-left: 0;
       margin-top: ${theme.spacing.unit(gutter)}px;
     `;
 };
@@ -93,10 +95,20 @@ const sanitizeProps = R.omit([
 ]);
 const SanitizedDiv = (props: Props) => <div {...sanitizeProps(props)} />;
 
+const getStylesForSize = (size: string) => css<Partial<Props>>`
+  ${p => p.theme.media.greaterThan(p.theme.size[size])} {
+    ${p => (p.container ? getContainerStyles({ ...p, ...p[size] }) : '')}
+    ${p => (p.item ? getItemStyles({ ...p, ...p[size] }) : '')}
+  }
+`;
+
 const StyledFlexbox = styled(SanitizedDiv)<Props>`
   box-sizing: border-box;
   ${p => (p.container ? getContainerStyles(p) : '')}
   ${p => (p.item ? getItemStyles(p) : '')}
+  ${p => (p.sm ? getStylesForSize('sm') : '')}
+  ${p => (p.md ? getStylesForSize('md') : '')}
+  ${p => (p.lg ? getStylesForSize('lg') : '')}
 `;
 
 export const Flexbox: React.FC<Props> = props => <StyledFlexbox {...props} />;

@@ -56,4 +56,11 @@ export type ItemProps = {
   role?: string;
 };
 
-export type Props = ItemProps & ContainerProps & { className?: string };
+type InternalProps = ItemProps & ContainerProps & { className?: string };
+type MediaRelatedProps<T> = {
+  sm?: Partial<T>;
+  md?: Partial<T>;
+  lg?: Partial<T>;
+};
+
+export type Props = MediaRelatedProps<InternalProps> & InternalProps;

@@ -116,4 +116,27 @@ storiesOf('Atoms | Flexbox', module)
         </Flexbox>
       </Flexbox>
     );
+  })
+  .add('Flexbox depending on screen size', () => {
+    return (
+      <Flexbox container gutter={0} direction="column" md={{ gutter: 10, direction: 'row' }}>
+        <Flexbox item>
+          <Content>First element here</Content>
+        </Flexbox>
+        <Flexbox item>
+          <Content>Second element here</Content>
+        </Flexbox>
+        <Flexbox item>
+          <Content>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus neque in venenatis
+            faucibus. Fusce vitae maximus diam. Ut placerat lacus id porttitor tristique. Mauris in
+            neque tempus, venenatis metus vitae, pellentesque massa. Etiam blandit lacus diam,
+            dignissim posuere massa semper maximus. In pretium commodo nisl sed ultrices. Duis
+            gravida diam ac nisl sodales mollis. Quisque iaculis semper mi, eu interdum elit
+            molestie quis. Vivamus rutrum cursus interdum. Suspendisse vehicula quam mi, a efficitur
+            ante egestas eget.
+          </Content>
+        </Flexbox>
+      </Flexbox>
+    );
   });
