@@ -25,6 +25,7 @@ import Link from './Molecules/Link';
 import LinkBuy from './Molecules/LinkBuy';
 import LinkSell from './Molecules/LinkSell';
 import CardWithTitle from './Molecules/CardWithTitle';
+import CollapsibleCard from './Molecules/CollapsibleCard';
 import Avatar from './Molecules/Avatar';
 import Button from './Molecules/Button';
 import ListWithTitles from './Molecules/ListWithTitles';
@@ -44,6 +45,7 @@ export {
   Card,
   CardWithTabs,
   CardWithTitle,
+  CollapsibleCard,
   CssGrid,
   Development,
   Flag,

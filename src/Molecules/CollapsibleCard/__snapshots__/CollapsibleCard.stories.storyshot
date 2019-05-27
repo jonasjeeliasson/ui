@@ -1,0 +1,564 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Account overview | CollapsibleCard Collapsed by default 1`] = `
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 > *:not(:first-child) {
+  margin-left: 16px;
+}
+
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: #282823;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c7 {
+  overflow: hidden;
+  will-change: height;
+  height: 0px;
+  -webkit-transition: height 0.16s ease-out;
+  transition: height 0.16s ease-out;
+}
+
+.c7[hidden] {
+  display: none;
+}
+
+.c1 {
+  position: relative;
+  background: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 20px 20px;
+  border: 0;
+}
+
+.c1::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 1;
+}
+
+.c5 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+}
+
+.c9 {
+  margin: 0;
+}
+
+@media (min-width:360px) {
+  .c4 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width:360px) {
+  .c8 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+<div
+  className="c0"
+>
+  <button
+    aria-expanded={false}
+    className="c1"
+    onClick={[Function]}
+    type="button"
+  >
+    <div
+      className="c2"
+      justifyContent="space-between"
+    >
+      <div
+        className="c3"
+      >
+        <h2
+          className="c4"
+          type="title3"
+        >
+          Collapsed by default
+        </h2>
+      </div>
+      <div
+        className="c3"
+      >
+        <svg
+          aria-hidden="true"
+          className="c5 c6"
+          focusable="false"
+          role="presentation"
+          size={2}
+          viewBox="0 0 24 24"
+        >
+          <polygon
+            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            transform="rotate(-180 12 12)"
+          />
+        </svg>
+      </div>
+    </div>
+  </button>
+  <div
+    className="c7"
+    height="0px"
+    hidden={true}
+    onTransitionEnd={[Function]}
+  >
+    <p
+      className="c8 c9"
+      type="primary"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Account overview | CollapsibleCard Collapsible with custom component as title 1`] = `
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 > *:not(:first-child) {
+  margin-left: 16px;
+}
+
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: #282823;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c7 {
+  overflow: hidden;
+  will-change: height;
+  height: auto;
+  -webkit-transition: height 0.16s ease-out;
+  transition: height 0.16s ease-out;
+}
+
+.c7[hidden] {
+  display: none;
+}
+
+.c1 {
+  position: relative;
+  background: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 20px 20px;
+  border: 0;
+}
+
+.c1::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 0;
+}
+
+.c5 {
+  -webkit-transform: rodate(0);
+  -ms-transform: rodate(0);
+  transform: rodate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+}
+
+.c9 {
+  margin: 0;
+}
+
+@media (min-width:360px) {
+  .c4 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width:360px) {
+  .c8 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+<div
+  className="c0"
+>
+  <button
+    aria-expanded={true}
+    className="c1"
+    onClick={[Function]}
+    type="button"
+  >
+    <div
+      className="c2"
+      justifyContent="space-between"
+    >
+      <div
+        className="c3"
+      >
+        <h2
+          className="c4"
+          type="title3"
+        >
+          <div>
+            Custom title
+          </div>
+        </h2>
+      </div>
+      <div
+        className="c3"
+      >
+        <svg
+          aria-hidden="true"
+          className="c5 c6"
+          focusable="false"
+          role="presentation"
+          size={2}
+          viewBox="0 0 24 24"
+        >
+          <polygon
+            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            transform="rotate(-180 12 12)"
+          />
+        </svg>
+      </div>
+    </div>
+  </button>
+  <div
+    className="c7"
+    height={null}
+    hidden={false}
+    onTransitionEnd={[Function]}
+  >
+    <p
+      className="c8 c9"
+      type="primary"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Account overview | CollapsibleCard Default 1`] = `
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 > *:not(:first-child) {
+  margin-left: 16px;
+}
+
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: #282823;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c7 {
+  overflow: hidden;
+  will-change: height;
+  height: auto;
+  -webkit-transition: height 0.16s ease-out;
+  transition: height 0.16s ease-out;
+}
+
+.c7[hidden] {
+  display: none;
+}
+
+.c1 {
+  position: relative;
+  background: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 20px 20px;
+  border: 0;
+}
+
+.c1::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 0;
+}
+
+.c5 {
+  -webkit-transform: rodate(0);
+  -ms-transform: rodate(0);
+  transform: rodate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+}
+
+.c9 {
+  margin: 0;
+}
+
+@media (min-width:360px) {
+  .c4 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width:360px) {
+  .c8 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+<div
+  className="c0"
+>
+  <button
+    aria-expanded={true}
+    className="c1"
+    onClick={[Function]}
+    type="button"
+  >
+    <div
+      className="c2"
+      justifyContent="space-between"
+    >
+      <div
+        className="c3"
+      >
+        <h2
+          className="c4"
+          type="title3"
+        >
+          Collapsible
+        </h2>
+      </div>
+      <div
+        className="c3"
+      >
+        <svg
+          aria-hidden="true"
+          className="c5 c6"
+          focusable="false"
+          role="presentation"
+          size={2}
+          viewBox="0 0 24 24"
+        >
+          <polygon
+            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            transform="rotate(-180 12 12)"
+          />
+        </svg>
+      </div>
+    </div>
+  </button>
+  <div
+    className="c7"
+    height={null}
+    hidden={false}
+    onTransitionEnd={[Function]}
+  >
+    <p
+      className="c8 c9"
+      type="primary"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+</div>
+`;
