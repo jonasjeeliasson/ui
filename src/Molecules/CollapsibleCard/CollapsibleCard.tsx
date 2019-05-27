@@ -18,6 +18,7 @@ const StyledCollapsible = styled.div<{
 `;
 
 const StyledButton = styled.button<IndicatorsProps>`
+  touch-action: none;
   position: relative;
   background: none;
   cursor: pointer;
@@ -131,7 +132,12 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
     }
   };
 
-  const toggle = () => {
+  const toggle = (e: React.MouseEvent | React.TouchEvent) => {
+    // If touchstart was fired, prevent the following click event
+    // https://developer.mozilla.org/en-US/docs/Web/API/Touch_events/Supporting_both_TouchEvent_and_MouseEvent
+    // The browser will fire touchstart before click, if touchstart is supported,
+    // this will make it feel more responsive.
+    e.preventDefault();
     if (collapsed) {
       setExpanding(true);
     } else {
@@ -141,7 +147,13 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
 
   return (
     <Card>
-      <StyledButton type="button" onClick={toggle} collapsed={collapsed} aria-expanded={!collapsed}>
+      <StyledButton
+        type="button"
+        onClick={toggle}
+        onTouchStart={toggle}
+        collapsed={collapsed}
+        aria-expanded={!collapsed}
+      >
         <Flexbox container gutter={4} alignItems="center" justifyContent="space-between">
           <Flexbox item>
             <Typography type="title3" as={heading}>
