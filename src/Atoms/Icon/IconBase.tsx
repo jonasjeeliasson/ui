@@ -12,7 +12,7 @@ const StyledIconBase = styled.svg<StyledIconBaseProps>`
     fill: currentColor;
     flex-shrink: 0;
     color: ${p.colorFn ? p.colorFn(p.theme) : p.theme.color.text};
-    
+
     display: ${p.inline ? 'inline-block' : 'block'};
     ${p.inline ? 'vertical-align: middle;' : ''}
     `;

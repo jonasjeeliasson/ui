@@ -3,6 +3,7 @@ import { Attachement } from './components/Attachement';
 import { CheckMarkCircle } from './components/CheckMarkCircle';
 import { ChevronDown } from './components/ChevronDown';
 import { ChevronUp } from './components/ChevronUp';
+import { Bolt } from './components/Bolt';
 import { CrossCircle } from './components/CrossCircle';
 import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
@@ -18,6 +19,7 @@ export default {
   CheckMarkCircle,
   ChevronDown,
   ChevronUp,
+  Bolt,
   CrossCircle,
   DirectionDown,
   DirectionUp,
