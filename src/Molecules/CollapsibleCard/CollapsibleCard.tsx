@@ -56,6 +56,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
   title,
   children,
   collapsedInitial: collapsedInitial = false,
+  heading = 'h2',
 }) => {
   const [collapsed, setCollapsed] = useState(collapsedInitial);
   const [collapsing, setCollapsing] = useState(false);
@@ -143,7 +144,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
       <StyledButton type="button" onClick={toggle} collapsed={collapsed} aria-expanded={!collapsed}>
         <Flexbox container gutter={4} alignItems="center" justifyContent="space-between">
           <Flexbox item>
-            <Typography type="title3" as="h2">
+            <Typography type="title3" as={heading}>
               {title}
             </Typography>
           </Flexbox>
