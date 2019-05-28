@@ -12,7 +12,7 @@ const getPrefix = (value?: number | null) => {
 };
 
 const getColor = ({ value, theme }: { value?: number; theme: Theme }) => {
-  if (!value) return theme.color.text;
+  if (!value || !Number.isFinite(value)) return theme.color.text;
   return value > 0 ? theme.color.positive : theme.color.negative;
 };
 

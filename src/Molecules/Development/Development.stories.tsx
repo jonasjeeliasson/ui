@@ -58,6 +58,14 @@ storiesOf('Molecules | Development', module)
       ]}
     />
   ))
+  .add('Regression: infinity', () => (
+    <Display
+      items={[
+        { title: '+Infinity', component: <Development value={Infinity} /> },
+        { title: '-Infinity', component: <Development value={-Infinity} /> },
+      ]}
+    />
+  ))
   .add('Regression: value is non-zero, but rounded value is 0', () => (
     <Display
       items={[
