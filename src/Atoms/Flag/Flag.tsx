@@ -38,7 +38,7 @@ const FLAGS_WITH_WHITE_BACKGROUND = ['fi', 'jp', 'ru'];
 export const Flag: FlagComponent = ({ country, height, inline }) => {
   assert(Boolean(country), 'Flag: You need to supply a country code');
   const FlagPathComponent = country ? flags[country.toLowerCase()] : null;
-  const grayBorder = FLAGS_WITH_WHITE_BACKGROUND.some(R.equals(country.toLowerCase()));
+  const grayBorder = !!country && FLAGS_WITH_WHITE_BACKGROUND.some(R.equals(country.toLowerCase()));
   return FlagPathComponent ? (
     <StyledSvg
       inline={inline}
