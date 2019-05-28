@@ -1760,3 +1760,1764 @@ exports[`Storyshots Molecules | Development With icon 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots Organisms | Development As currency 1`] = `
+.c3 {
+  color: #00D200;
+}
+
+.c5 {
+  color: #FF1900;
+}
+
+.c4 {
+  color: #282823;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Positive value
+    </div>
+    <div>
+      <span
+        className="c3"
+        value={50}
+      >
+        <span
+          aria-hidden={true}
+        />
+        +
+        50
+         USD
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Zero value
+    </div>
+    <div>
+      <span
+        className="c4"
+        value={0}
+      >
+        <span
+          aria-hidden={true}
+        />
+        
+        0
+         USD
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Negative value
+    </div>
+    <div>
+      <span
+        className="c5"
+        value={-200}
+      >
+        <span
+          aria-hidden={true}
+        />
+        
+        -200
+         USD
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Organisms | Development As percentage 1`] = `
+.c3 {
+  color: #00D200;
+}
+
+.c5 {
+  color: #FF1900;
+}
+
+.c4 {
+  color: #282823;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Positive value
+    </div>
+    <div>
+      <span
+        className="c3"
+        value={5.4}
+      >
+        <span
+          aria-hidden={true}
+        />
+        +
+        5.4
+        %
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Zero value
+    </div>
+    <div>
+      <span
+        className="c4"
+        value={0}
+      >
+        <span
+          aria-hidden={true}
+        />
+        
+        0
+        %
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Negative value
+    </div>
+    <div>
+      <span
+        className="c5"
+        value={-2.1}
+      >
+        <span
+          aria-hidden={true}
+        />
+        
+        -2.1
+        %
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Organisms | Development Default 1`] = `
+.c3 {
+  color: #00D200;
+}
+
+.c5 {
+  color: #FF1900;
+}
+
+.c4 {
+  color: #282823;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Positive value
+    </div>
+    <div>
+      <span
+        className="c3"
+        value={50}
+      >
+        <span
+          aria-hidden={true}
+        />
+        +
+        50
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Zero value
+    </div>
+    <div>
+      <span
+        className="c4"
+        value={0}
+      >
+        <span
+          aria-hidden={true}
+        />
+        
+        0
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Negative value
+    </div>
+    <div>
+      <span
+        className="c5"
+        value={-200}
+      >
+        <span
+          aria-hidden={true}
+        />
+        
+        -200
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Organisms | Development Integration: with different typographies 1`] = `
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 1.0434782608695652;
+}
+
+.c4 {
+  color: #00D200;
+}
+
+.c6 {
+  color: #FF1900;
+}
+
+.c5 {
+  color: #282823;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+@media (min-width:360px) {
+  .c3 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:360px) {
+  .c7 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+@media (min-width:360px) {
+  .c8 {
+    font-size: 12px;
+    line-height: 1.6666666666666667;
+  }
+}
+
+@media (min-width:360px) {
+  .c9 {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width:360px) {
+  .c10 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+@media (min-width:360px) {
+  .c11 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:360px) {
+  .c12 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width:360px) {
+  .c13 {
+    font-size: 48px;
+    line-height: 1.0833333333333333;
+  }
+}
+
+<div
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      primary
+    </div>
+    <div>
+      <span
+        className="c3"
+        type="primary"
+      >
+        <div
+          className="c0"
+          direction="column"
+        >
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Positive value
+            </div>
+            <div>
+              <span
+                className="c4"
+                value={5.4}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                +
+                5.4
+              </span>
+            </div>
+          </div>
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Zero value
+            </div>
+            <div>
+              <span
+                className="c5"
+                value={0}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                
+                0
+              </span>
+            </div>
+          </div>
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Negative value
+            </div>
+            <div>
+              <span
+                className="c6"
+                value={-2.1}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                
+                -2.1
+              </span>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      secondary
+    </div>
+    <div>
+      <span
+        className="c7"
+        type="secondary"
+      >
+        <div
+          className="c0"
+          direction="column"
+        >
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Positive value
+            </div>
+            <div>
+              <span
+                className="c4"
+                value={5.4}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                +
+                5.4
+              </span>
+            </div>
+          </div>
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Zero value
+            </div>
+            <div>
+              <span
+                className="c5"
+                value={0}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                
+                0
+              </span>
+            </div>
+          </div>
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Negative value
+            </div>
+            <div>
+              <span
+                className="c6"
+                value={-2.1}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                
+                -2.1
+              </span>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      tertiary
+    </div>
+    <div>
+      <span
+        className="c8"
+        type="tertiary"
+      >
+        <div
+          className="c0"
+          direction="column"
+        >
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Positive value
+            </div>
+            <div>
+              <span
+                className="c4"
+                value={5.4}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                +
+                5.4
+              </span>
+            </div>
+          </div>
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Zero value
+            </div>
+            <div>
+              <span
+                className="c5"
+                value={0}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                
+                0
+              </span>
+            </div>
+          </div>
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Negative value
+            </div>
+            <div>
+              <span
+                className="c6"
+                value={-2.1}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                
+                -2.1
+              </span>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      caption
+    </div>
+    <div>
+      <span
+        className="c9"
+        type="caption"
+      >
+        <div
+          className="c0"
+          direction="column"
+        >
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Positive value
+            </div>
+            <div>
+              <span
+                className="c4"
+                value={5.4}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                +
+                5.4
+              </span>
+            </div>
+          </div>
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Zero value
+            </div>
+            <div>
+              <span
+                className="c5"
+                value={0}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                
+                0
+              </span>
+            </div>
+          </div>
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Negative value
+            </div>
+            <div>
+              <span
+                className="c6"
+                value={-2.1}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                
+                -2.1
+              </span>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      title1
+    </div>
+    <div>
+      <span
+        className="c10"
+        type="title1"
+      >
+        <div
+          className="c0"
+          direction="column"
+        >
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Positive value
+            </div>
+            <div>
+              <span
+                className="c4"
+                value={5.4}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                +
+                5.4
+              </span>
+            </div>
+          </div>
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Zero value
+            </div>
+            <div>
+              <span
+                className="c5"
+                value={0}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                
+                0
+              </span>
+            </div>
+          </div>
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Negative value
+            </div>
+            <div>
+              <span
+                className="c6"
+                value={-2.1}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                
+                -2.1
+              </span>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      title2
+    </div>
+    <div>
+      <span
+        className="c11"
+        type="title2"
+      >
+        <div
+          className="c0"
+          direction="column"
+        >
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Positive value
+            </div>
+            <div>
+              <span
+                className="c4"
+                value={5.4}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                +
+                5.4
+              </span>
+            </div>
+          </div>
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Zero value
+            </div>
+            <div>
+              <span
+                className="c5"
+                value={0}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                
+                0
+              </span>
+            </div>
+          </div>
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Negative value
+            </div>
+            <div>
+              <span
+                className="c6"
+                value={-2.1}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                
+                -2.1
+              </span>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      title3
+    </div>
+    <div>
+      <span
+        className="c12"
+        type="title3"
+      >
+        <div
+          className="c0"
+          direction="column"
+        >
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Positive value
+            </div>
+            <div>
+              <span
+                className="c4"
+                value={5.4}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                +
+                5.4
+              </span>
+            </div>
+          </div>
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Zero value
+            </div>
+            <div>
+              <span
+                className="c5"
+                value={0}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                
+                0
+              </span>
+            </div>
+          </div>
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Negative value
+            </div>
+            <div>
+              <span
+                className="c6"
+                value={-2.1}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                
+                -2.1
+              </span>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      hero
+    </div>
+    <div>
+      <span
+        className="c13"
+        type="hero"
+      >
+        <div
+          className="c0"
+          direction="column"
+        >
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Positive value
+            </div>
+            <div>
+              <span
+                className="c4"
+                value={5.4}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                +
+                5.4
+              </span>
+            </div>
+          </div>
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Zero value
+            </div>
+            <div>
+              <span
+                className="c5"
+                value={0}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                
+                0
+              </span>
+            </div>
+          </div>
+          <div
+            className="c1"
+            direction="row"
+          >
+            <div
+              className="c2"
+            >
+              Negative value
+            </div>
+            <div>
+              <span
+                className="c6"
+                value={-2.1}
+              >
+                <span
+                  aria-hidden={true}
+                />
+                
+                -2.1
+              </span>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Organisms | Development Regression: infinity 1`] = `
+.c3 {
+  color: #282823;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      +Infinity
+    </div>
+    <div>
+      <span
+        className="c3"
+        value={Infinity}
+      >
+        <span
+          aria-hidden={true}
+        />
+        -
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      -Infinity
+    </div>
+    <div>
+      <span
+        className="c3"
+        value={-Infinity}
+      >
+        <span
+          aria-hidden={true}
+        />
+        -
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Organisms | Development Regression: value is non-zero, but rounded value is 0 1`] = `
+.c3 {
+  color: #282823;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      \`value = 0.3\`
+    </div>
+    <div>
+      <span
+        className="c3"
+        value={0}
+      >
+        <span
+          aria-hidden={true}
+        />
+        
+        0
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      \`value = -0.3\`
+    </div>
+    <div>
+      <span
+        className="c3"
+        value={-0}
+      >
+        <span
+          aria-hidden={true}
+        />
+        
+        0
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      \`value = -0.3\`
+    </div>
+    <div>
+      <span
+        className="c3"
+        value={-0}
+      >
+        <span
+          aria-hidden={true}
+        />
+        
+        0
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      \`value = 0.3\`
+    </div>
+    <div>
+      <span
+        className="c3"
+        value={0}
+      >
+        <span
+          aria-hidden={true}
+        />
+        
+        0
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Organisms | Development With icon 1`] = `
+.c3 {
+  color: #00D200;
+}
+
+.c5 {
+  color: #FF1900;
+}
+
+.c4 {
+  color: #282823;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Positive value
+    </div>
+    <div>
+      <span
+        className="c3"
+        value={50}
+      >
+        <span
+          aria-hidden={true}
+        >
+          ▲
+        </span>
+        +
+        50
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Zero value
+    </div>
+    <div>
+      <span
+        className="c4"
+        value={0}
+      >
+        <span
+          aria-hidden={true}
+        >
+          
+        </span>
+        
+        0
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Negative value
+    </div>
+    <div>
+      <span
+        className="c5"
+        value={-200}
+      >
+        <span
+          aria-hidden={true}
+        >
+          ▼
+        </span>
+        
+        -200
+      </span>
+    </div>
+  </div>
+</div>
+`;

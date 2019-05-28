@@ -18,7 +18,6 @@ import VisuallyHidden from './Atoms/VisuallyHidden';
 
 /** Molecules */
 import Number from './Molecules/Number';
-import Development from './Molecules/Development/index';
 import PageWrapper from './Molecules/PageWrapper';
 import LabeledValue from './Molecules/LabeledValue';
 import Link from './Molecules/Link';
@@ -35,6 +34,7 @@ import TabsNav from './Molecules/TabsNav';
 
 /** Organisms */
 import CardWithTabs from './Organisms/CardWithTabs';
+import Development from './Organisms/Development';
 
 import theme, { createTheme } from './theme';
 /** Runtime code */

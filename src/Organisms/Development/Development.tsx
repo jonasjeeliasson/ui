@@ -4,7 +4,7 @@ import * as R from 'ramda';
 import { DevelopmentProps, DevelopmentComponent } from './Development.types';
 import { Number as NumberComponent } from '../..';
 import { Theme } from '../../theme/theme.types';
-import { getRoundedValue } from '../Number/Number';
+import { getRoundedValue } from '../../Molecules/Number/Number';
 
 const getPrefix = (value?: number | null) => {
   if (!value) return '';
