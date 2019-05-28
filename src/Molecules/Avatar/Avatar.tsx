@@ -13,7 +13,7 @@ const StyledDiv = styled.div`
     p.theme.spacing.unit(8) - 1}px; /* FIXME: font is buggy, so baseline is 1px off */
   text-align: center;
 `;
-// eslint-disable-next-line react/prop-types
+
 export const Avatar: React.FunctionComponent<Props> = ({ children }) => (
   <StyledDiv>
     <Typography type="tertiary" color={t => t.color.textLight}>
