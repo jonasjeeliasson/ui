@@ -22,7 +22,6 @@ jobs:
         - npm run lint
         - npm run test-ci
         - npm run build
-        - npm run build-storybook
 
     - stage: release
       script:
