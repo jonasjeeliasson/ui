@@ -1,1 +1,0 @@
-{"version":3,"file":"main.a0e003bd9a8b5f6142a5.bundle.js","sources":["webpack:///./src/Molecules/Number/index.ts"],"sourcesContent":["import Number from './Number';\n\nexport default Number;\n"],"mappings":"AAAA","sourceRoot":""}
