@@ -1,7 +1,6 @@
 language: node_js
 node_js:
-  # Latest stable
-  - "node"
+  - 10
 
 before_install:
   # Download latest yarn since travis defaults to v1.3.2
