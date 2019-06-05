@@ -119,7 +119,7 @@ storiesOf('Atoms | Flexbox', module)
   })
   .add('Flexbox depending on screen size', () => {
     return (
-      <Flexbox container gutter={0} direction="column" md={{ gutter: 10, direction: 'row' }}>
+      <Flexbox container gutter={4} direction="column" md={{ gutter: 10, direction: 'row' }}>
         <Flexbox item>
           <Content>First element here</Content>
         </Flexbox>

@@ -11,5 +11,10 @@ import se from './se';
 import us from './us';
 import jp from './jp';
 import cn from './cn';
+import india from './in';
+import za from './za';
+import hk from './hk';
+import br from './br';
+import au from './au';
 
-export default { ca, de, eu, fr, ru, gb, dk, fi, no, se, us, jp, cn };
+export default { ca, de, eu, fr, ru, gb, dk, fi, no, se, us, jp, cn, in: india, za, hk, br, au };

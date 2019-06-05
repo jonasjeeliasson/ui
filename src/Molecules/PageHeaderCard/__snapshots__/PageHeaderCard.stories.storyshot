@@ -1,0 +1,448 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c4 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 > *:not(:first-child) {
+  margin-top: 0;
+  margin-left: 8px;
+}
+
+.c8 {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBE8;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: inherit;
+}
+
+.c2 {
+  margin: 0 auto;
+}
+
+.c5 {
+  padding: 12px;
+}
+
+.c9 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.c10 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background-color: #0046FF;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  color: #FFFFFF;
+  height: 32px;
+  line-height: 28px;
+  padding: 0 16px;
+  display: inline-block;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c12:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c12:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+@media (min-width:768px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media not all and (max-width:767px) {
+  .c7 {
+    display: none;
+  }
+}
+
+@media (min-width:360px) {
+  .c6 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:360px) {
+  .c13 {
+    font-size: 14px;
+    line-height: inherit;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    padding-left: 0px;
+    padding-top: 8px;
+    padding-right: 0px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    max-width: 718px;
+  }
+}
+
+@media (min-width:992px) {
+  .c1 {
+    max-width: 942px;
+  }
+}
+
+@media (min-width:1300px) {
+  .c1 {
+    max-width: 1250px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className=""
+  >
+    <div
+      className="c1 c2"
+    >
+      <div
+        className="c3"
+        sm={
+          Object {
+            "alignItems": "center",
+            "direction": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <h1
+              className="c6"
+              type="title2"
+            >
+              Your darkest loaves
+            </h1>
+          </div>
+        </div>
+        <div
+          className="c7"
+        >
+          <div
+            className="c4"
+          >
+            <div
+              className="c8"
+            />
+          </div>
+        </div>
+        <div
+          className="c4"
+        >
+          <div
+            className="c9"
+          >
+            <div
+              className="c10"
+            >
+              <div
+                className="c11"
+                justifyContent="space-between"
+              >
+                <div
+                  className="c4"
+                >
+                  The eternal techlead, The portugese friend
+                </div>
+                <div
+                  className="c4"
+                >
+                  <button
+                    className="c12"
+                    type="button"
+                  >
+                    <span
+                      className="c13"
+                      color="inherit"
+                      type="secondary"
+                    >
+                      Click here to recruit carl
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | PageHeader Regular page header 1`] = `
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c4 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c2 {
+  margin: 0 auto;
+}
+
+.c5 {
+  padding: 12px;
+}
+
+@media (min-width:768px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:360px) {
+  .c6 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    padding-left: 0px;
+    padding-top: 8px;
+    padding-right: 0px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    max-width: 718px;
+  }
+}
+
+@media (min-width:992px) {
+  .c1 {
+    max-width: 942px;
+  }
+}
+
+@media (min-width:1300px) {
+  .c1 {
+    max-width: 1250px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className=""
+  >
+    <div
+      className="c1 c2"
+    >
+      <div
+        className="c3"
+        sm={
+          Object {
+            "alignItems": "center",
+            "direction": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <h1
+              className="c6"
+              type="title2"
+            >
+              Your darkest loaves
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

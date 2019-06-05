@@ -53,6 +53,7 @@ export type Props = {
   weight?: string;
   'aria-hidden'?: boolean;
   type?: Types;
+  lineHeight?: 'inherit';
   /**
    * primary has font-weight: regular, font-size: 16px (mobile) and 16px (desktop)
    * secondary has font-weight: regular, font-size: 14px (mobile) and 14px (desktop)

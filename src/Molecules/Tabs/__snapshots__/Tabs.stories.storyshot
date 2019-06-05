@@ -17,6 +17,7 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
 }
 
 .c1 > *:not(:first-child) {
+  margin-top: 0;
   margin-left: 16px;
 }
 
@@ -238,6 +239,7 @@ exports[`Storyshots Molecules | Tabs Default 1`] = `
 }
 
 .c1 > *:not(:first-child) {
+  margin-top: 0;
   margin-left: 16px;
 }
 
@@ -461,6 +463,7 @@ exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
 }
 
 .c2 > *:not(:first-child) {
+  margin-top: 0;
   margin-left: 16px;
 }
 

@@ -1352,6 +1352,68 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
+        disabledText
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c11"
+          color="#A0A09B"
+        />
+        <div>
+          #A0A09B
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c11"
+          color="#A0A09B"
+        />
+        <div>
+          #A0A09B
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        disabledBackground
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c12"
+          color="#EBEBE8"
+        />
+        <div>
+          #EBEBE8
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c12"
+          color="#EBEBE8"
+        />
+        <div>
+          #EBEBE8
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
         divider
       </td>
       <td

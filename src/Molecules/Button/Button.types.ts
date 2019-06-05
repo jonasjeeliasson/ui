@@ -13,6 +13,7 @@ export type SharedProps = {
   fullWidth?: boolean;
   children: React.ReactChild | React.ReactChild[];
   color?: ColorFn;
+  className?: string;
 };
 
 export type ButtonProps = {
@@ -20,7 +21,7 @@ export type ButtonProps = {
   onClick?: (e: React.MouseEvent) => void;
   /** @default button */
   type?: 'button' | 'reset' | 'submit';
-  to?: never;
+  to?: ReactRouterDomLinkProps['to'];
   rel?: never;
   colorFn?: ColorFn;
 } & SharedProps;

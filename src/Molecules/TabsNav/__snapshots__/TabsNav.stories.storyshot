@@ -28,6 +28,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
 }
 
 .c3 > *:not(:first-child) {
+  margin-top: 0;
   margin-left: 16px;
 }
 

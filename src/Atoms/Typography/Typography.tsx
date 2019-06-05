@@ -38,7 +38,7 @@ export const TYPOGRAPHY_TYPES: Record<Types, Types> = {
 };
 
 const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
-  const { type, weight, theme } = props;
+  const { type, weight, theme, lineHeight } = props;
   let sizeMobile;
   let sizeDesktop;
   let lineHeightMobile;
@@ -126,11 +126,11 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
       weight && allowedWeights.includes(weight) ? WEIGHTS[weight] : WEIGHTS[defaultWeight]
     };
     font-size: ${sizeMobile}px;
-    line-height: ${lineHeightMobile / sizeMobile};
+    line-height: ${lineHeight ? 'inherit' : lineHeightMobile / sizeMobile};
 
     ${theme.media.greaterThan(theme.size[SMALL_DEVICE_BP])} {
       font-size: ${sizeDesktop}px;
-      line-height: ${lineHeightDesktop / sizeDesktop};
+      line-height: ${lineHeight ? 'inherit' : lineHeightDesktop / sizeDesktop};
     }
   `;
 };
@@ -144,7 +144,7 @@ const StyledTypography = styled.span<Props>`
 ` as React.FC<Props>;
 
 export const Typography: React.FC<Props> = props => {
-  const { as, className, children, color, type, weight } = props;
+  const { as, className, children, color, type, weight, lineHeight } = props;
 
   return (
     <StyledTypography
@@ -153,6 +153,7 @@ export const Typography: React.FC<Props> = props => {
       color={color}
       type={type}
       weight={weight}
+      lineHeight={lineHeight}
       {...pickAriaAttributes(props)}
     >
       {children}

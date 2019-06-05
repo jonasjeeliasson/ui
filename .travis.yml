@@ -22,7 +22,6 @@ jobs:
         - npm run lint
         - npm run test-ci
         - npm run build
-        - npm run build-storybook
 
     - stage: release
       script:
@@ -30,7 +29,7 @@ jobs:
       after_script:
         - npm run build-storybook
         - npm run docs-publish
-      if: (NOT type IN (pull_request)) AND (branch = beta)
+      if: (NOT type IN (pull_request)) AND ((branch = beta) OR (branch = master))
 
 stages:
   - name: test-and-build

@@ -7,7 +7,7 @@ exports[`Storyshots Molecules | Button Button primary with colors 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: inherit;
 }
 
 .c3 {
@@ -23,7 +23,7 @@ exports[`Storyshots Molecules | Button Button primary with colors 1`] = `
   color: #FFFFFF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: inline-block;
   border-radius: 0;
   cursor: pointer;
@@ -73,7 +73,7 @@ exports[`Storyshots Molecules | Button Button primary with colors 1`] = `
   color: #FFFFFF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: inline-block;
   border-radius: 0;
   cursor: pointer;
@@ -170,7 +170,7 @@ exports[`Storyshots Molecules | Button Button primary with colors 1`] = `
 @media (min-width:360px) {
   .c4 {
     font-size: 14px;
-    line-height: 1.7142857142857142;
+    line-height: inherit;
   }
 }
 
@@ -240,7 +240,7 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: inherit;
 }
 
 .c7 {
@@ -249,56 +249,7 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-}
-
-.c5 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  background-color: #0046FF;
-  box-sizing: border-box;
-  border: 2px solid transparent;
-  color: #FFFFFF;
-  height: 32px;
-  line-height: 28px;
-  padding: 0 8px;
-  display: inline-block;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c5,
-.c5[type='button'],
-.c5[type='reset'],
-.c5[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c5::-moz-focus-inner,
-.c5[type='button']::-moz-focus-inner,
-.c5[type='reset']::-moz-focus-inner,
-.c5[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c5:-moz-focusring,
-.c5[type='button']:-moz-focusring,
-.c5[type='reset']:-moz-focusring,
-.c5[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c5:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c5:active {
-  background-color: hsl(223.5,100%,40%);
+  line-height: inherit;
 }
 
 .c3 {
@@ -350,6 +301,55 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
   background-color: hsl(223.5,100%,40%);
 }
 
+.c5 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background-color: #0046FF;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  color: #FFFFFF;
+  height: 32px;
+  line-height: 28px;
+  padding: 0 12px;
+  display: inline-block;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c5:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
 .c6 {
   font-family: inherit;
   font-size: 100%;
@@ -363,7 +363,7 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
   color: #FFFFFF;
   height: 40px;
   line-height: 36px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: inline-block;
   border-radius: 0;
   cursor: pointer;
@@ -459,14 +459,14 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
 @media (min-width:360px) {
   .c4 {
     font-size: 14px;
-    line-height: 1.7142857142857142;
+    line-height: inherit;
   }
 }
 
 @media (min-width:360px) {
   .c7 {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: inherit;
   }
 }
 
@@ -559,7 +559,7 @@ exports[`Storyshots Molecules | Button Button secondary with colors 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: inherit;
 }
 
 .c3 {
@@ -575,7 +575,7 @@ exports[`Storyshots Molecules | Button Button secondary with colors 1`] = `
   color: #0046FF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: inline-block;
   border-radius: 0;
   cursor: pointer;
@@ -625,7 +625,7 @@ exports[`Storyshots Molecules | Button Button secondary with colors 1`] = `
   color: #FF1900;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: inline-block;
   border-radius: 0;
   cursor: pointer;
@@ -722,7 +722,7 @@ exports[`Storyshots Molecules | Button Button secondary with colors 1`] = `
 @media (min-width:360px) {
   .c4 {
     font-size: 14px;
-    line-height: 1.7142857142857142;
+    line-height: inherit;
   }
 }
 
@@ -792,7 +792,7 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: inherit;
 }
 
 .c7 {
@@ -801,57 +801,7 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-}
-
-.c5 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  background-color: #FFFFFF;
-  box-sizing: border-box;
-  border: 2px solid #0046FF;
-  color: #0046FF;
-  height: 32px;
-  line-height: 28px;
-  padding: 0 8px;
-  display: inline-block;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c5,
-.c5[type='button'],
-.c5[type='reset'],
-.c5[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c5::-moz-focus-inner,
-.c5[type='button']::-moz-focus-inner,
-.c5[type='reset']::-moz-focus-inner,
-.c5[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c5:-moz-focusring,
-.c5[type='button']:-moz-focusring,
-.c5[type='reset']:-moz-focusring,
-.c5[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c5:hover {
-  background-color: hsl(223.5,100%,45%);
-  color: #FFFFFF;
-}
-
-.c5:active {
-  background-color: hsl(223.5,100%,40%);
+  line-height: inherit;
 }
 
 .c3 {
@@ -904,6 +854,56 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
   background-color: hsl(223.5,100%,40%);
 }
 
+.c5 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  border: 2px solid #0046FF;
+  color: #0046FF;
+  height: 32px;
+  line-height: 28px;
+  padding: 0 12px;
+  display: inline-block;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5:hover {
+  background-color: hsl(223.5,100%,45%);
+  color: #FFFFFF;
+}
+
+.c5:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
 .c6 {
   font-family: inherit;
   font-size: 100%;
@@ -917,7 +917,7 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
   color: #0046FF;
   height: 40px;
   line-height: 36px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: inline-block;
   border-radius: 0;
   cursor: pointer;
@@ -1014,14 +1014,14 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
 @media (min-width:360px) {
   .c4 {
     font-size: 14px;
-    line-height: 1.7142857142857142;
+    line-height: inherit;
   }
 }
 
 @media (min-width:360px) {
   .c7 {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: inherit;
   }
 }
 
@@ -1117,7 +1117,7 @@ exports[`Storyshots Molecules | Button Button that is full width 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: inherit;
 }
 
 .c0 {
@@ -1133,7 +1133,7 @@ exports[`Storyshots Molecules | Button Button that is full width 1`] = `
   color: #FFFFFF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: block;
   width: 100%;
   border-radius: 0;
@@ -1173,7 +1173,7 @@ exports[`Storyshots Molecules | Button Button that is full width 1`] = `
 @media (min-width:360px) {
   .c1 {
     font-size: 14px;
-    line-height: 1.7142857142857142;
+    line-height: inherit;
   }
 }
 
@@ -1199,7 +1199,7 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: inherit;
 }
 
 .c3 {
@@ -1215,7 +1215,7 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
   color: #FFFFFF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: inline-block;
   border-radius: 0;
   cursor: pointer;
@@ -1311,7 +1311,7 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
 @media (min-width:360px) {
   .c4 {
     font-size: 14px;
-    line-height: 1.7142857142857142;
+    line-height: inherit;
   }
 }
 
@@ -1379,7 +1379,7 @@ exports[`Storyshots Molecules | Button Button with variant 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: inherit;
 }
 
 .c0 {
@@ -1395,7 +1395,7 @@ exports[`Storyshots Molecules | Button Button with variant 1`] = `
   color: #0046FF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: inline-block;
   border-radius: 0;
   cursor: pointer;
@@ -1435,7 +1435,7 @@ exports[`Storyshots Molecules | Button Button with variant 1`] = `
 @media (min-width:360px) {
   .c1 {
     font-size: 14px;
-    line-height: 1.7142857142857142;
+    line-height: inherit;
   }
 }
 
@@ -1477,7 +1477,7 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: inherit;
 }
 
 .c2 {
@@ -1493,7 +1493,7 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
   color: #FFFFFF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: block;
   width: 100%;
   border-radius: 0;
@@ -1543,7 +1543,7 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
   color: #0046FF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: block;
   width: 100%;
   border-radius: 0;
@@ -1584,7 +1584,7 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
 @media (min-width:360px) {
   .c3 {
     font-size: 14px;
-    line-height: 1.7142857142857142;
+    line-height: inherit;
   }
 }
 
@@ -1638,7 +1638,7 @@ exports[`Storyshots Molecules | Button Default usage 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: inherit;
 }
 
 .c0 {
@@ -1654,7 +1654,7 @@ exports[`Storyshots Molecules | Button Default usage 1`] = `
   color: #FFFFFF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: inline-block;
   border-radius: 0;
   cursor: pointer;
@@ -1693,7 +1693,7 @@ exports[`Storyshots Molecules | Button Default usage 1`] = `
 @media (min-width:360px) {
   .c1 {
     font-size: 14px;
-    line-height: 1.7142857142857142;
+    line-height: inherit;
   }
 }
 
@@ -1719,7 +1719,7 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: inherit;
 }
 
 .c0 {
@@ -1729,16 +1729,16 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  background-color: #A0A09B;
+  background-color: #EBEBE8;
   box-sizing: border-box;
   border: 2px solid transparent;
-  color: #FFFFFF;
+  color: #A0A09B;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: inline-block;
   border-radius: 0;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 .c0,
@@ -1766,7 +1766,7 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
 @media (min-width:360px) {
   .c1 {
     font-size: 14px;
-    line-height: 1.7142857142857142;
+    line-height: inherit;
   }
 }
 
@@ -1786,6 +1786,82 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
 </button>
 `;
 
+exports[`Storyshots Molecules | Button Disabled link looking like a button 1`] = `
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: inherit;
+}
+
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background-color: #EBEBE8;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  color: #A0A09B;
+  height: 32px;
+  line-height: 28px;
+  padding: 0 12px;
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c0,
+.c0[type='button'],
+.c0[type='reset'],
+.c0[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c0::-moz-focus-inner,
+.c0[type='button']::-moz-focus-inner,
+.c0[type='reset']::-moz-focus-inner,
+.c0[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c0:-moz-focusring,
+.c0[type='button']:-moz-focusring,
+.c0[type='reset']:-moz-focusring,
+.c0[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+@media (min-width:360px) {
+  .c1 {
+    font-size: 14px;
+    line-height: inherit;
+  }
+}
+
+<button
+  className="c0"
+  disabled={true}
+  onClick={[Function]}
+  type="button"
+  variant="secondary"
+>
+  <span
+    className="c1"
+    color="inherit"
+    type="secondary"
+  >
+    Button
+  </span>
+</button>
+`;
+
 exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -1793,7 +1869,7 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: inherit;
 }
 
 .c3 {
@@ -1803,7 +1879,7 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
   color: #FFFFFF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1825,7 +1901,7 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
   color: #0046FF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1901,7 +1977,7 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
 @media (min-width:360px) {
   .c4 {
     font-size: 14px;
-    line-height: 1.7142857142857142;
+    line-height: inherit;
   }
 }
 
@@ -1970,7 +2046,7 @@ exports[`Storyshots Molecules | Button Link looking like a button that is full w
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: inherit;
 }
 
 .c0 {
@@ -1980,7 +2056,7 @@ exports[`Storyshots Molecules | Button Link looking like a button that is full w
   color: #FFFFFF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: block;
   width: 100%;
   -webkit-text-decoration: none;
@@ -1999,7 +2075,7 @@ exports[`Storyshots Molecules | Button Link looking like a button that is full w
 @media (min-width:360px) {
   .c1 {
     font-size: 14px;
-    line-height: 1.7142857142857142;
+    line-height: inherit;
   }
 }
 
@@ -2026,7 +2102,7 @@ exports[`Storyshots Molecules | Button Link looking like a button with rel as no
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: inherit;
 }
 
 .c0 {
@@ -2036,7 +2112,7 @@ exports[`Storyshots Molecules | Button Link looking like a button with rel as no
   color: #FFFFFF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: block;
   width: 100%;
   -webkit-text-decoration: none;
@@ -2055,7 +2131,7 @@ exports[`Storyshots Molecules | Button Link looking like a button with rel as no
 @media (min-width:360px) {
   .c1 {
     font-size: 14px;
-    line-height: 1.7142857142857142;
+    line-height: inherit;
   }
 }
 
@@ -2114,7 +2190,7 @@ Array [
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: inherit;
 }
 
 .c3 {
@@ -2124,7 +2200,7 @@ Array [
   color: #FFFFFF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2147,7 +2223,7 @@ Array [
   color: #FFFFFF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2223,7 +2299,7 @@ Array [
 @media (min-width:360px) {
   .c4 {
     font-size: 14px;
-    line-height: 1.7142857142857142;
+    line-height: inherit;
   }
 }
 
@@ -2327,7 +2403,7 @@ Array [
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: inherit;
 }
 
 .c3 {
@@ -2337,7 +2413,7 @@ Array [
   color: #0046FF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2360,7 +2436,7 @@ Array [
   color: #FF1900;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2436,7 +2512,7 @@ Array [
 @media (min-width:360px) {
   .c4 {
     font-size: 14px;
-    line-height: 1.7142857142857142;
+    line-height: inherit;
   }
 }
 
@@ -2531,7 +2607,7 @@ exports[`Storyshots Molecules | Button Link looking like a buttons composed in a
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: inherit;
 }
 
 .c2 {
@@ -2541,7 +2617,7 @@ exports[`Storyshots Molecules | Button Link looking like a buttons composed in a
   color: #FFFFFF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: block;
   width: 100%;
   -webkit-text-decoration: none;
@@ -2564,7 +2640,7 @@ exports[`Storyshots Molecules | Button Link looking like a buttons composed in a
   color: #0046FF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: block;
   width: 100%;
   -webkit-text-decoration: none;
@@ -2584,7 +2660,7 @@ exports[`Storyshots Molecules | Button Link looking like a buttons composed in a
 @media (min-width:360px) {
   .c3 {
     font-size: 14px;
-    line-height: 1.7142857142857142;
+    line-height: inherit;
   }
 }
 

@@ -3,11 +3,11 @@ import { storiesOf } from '@storybook/react';
 import MD from 'react-markdown';
 
 import docs from './Development.md';
-import { Development, Typography } from '../..';
+import { Development, Typography } from '../../index';
 import { Display } from '../../common/Display/index';
 import { TYPOGRAPHY_TYPES } from '../../Atoms/Typography/Typography';
 
-storiesOf('Molecules | Development', module)
+storiesOf('Organisms | Development', module)
   .add('Documentation', () => (
     <Typography>
       <MD source={docs} />
@@ -55,6 +55,14 @@ storiesOf('Molecules | Development', module)
         { title: 'Positive value', component: <Development value={50} currency="USD" /> },
         { title: 'Zero value', component: <Development value={0} currency="USD" /> },
         { title: 'Negative value', component: <Development value={-200} currency="USD" /> },
+      ]}
+    />
+  ))
+  .add('Regression: infinity', () => (
+    <Display
+      items={[
+        { title: '+Infinity', component: <Development value={Infinity} /> },
+        { title: '-Infinity', component: <Development value={-Infinity} /> },
       ]}
     />
   ))

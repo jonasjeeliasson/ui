@@ -132,6 +132,7 @@ exports[`Storyshots Atoms | Flexbox Flexbox container item 1`] = `
 }
 
 .c0 > *:not(:first-child) {
+  margin-top: 0;
   margin-left: 20px;
 }
 
@@ -147,6 +148,7 @@ exports[`Storyshots Atoms | Flexbox Flexbox container item 1`] = `
 }
 
 .c1 > *:not(:first-child) {
+  margin-left: 0;
   margin-top: 20px;
 }
 
@@ -187,6 +189,90 @@ exports[`Storyshots Atoms | Flexbox Flexbox container item 1`] = `
   >
     <div
       className="c3"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus neque in venenatis faucibus. Fusce vitae maximus diam. Ut placerat lacus id porttitor tristique. Mauris in neque tempus, venenatis metus vitae, pellentesque massa. Etiam blandit lacus diam, dignissim posuere massa semper maximus. In pretium commodo nisl sed ultrices. Duis gravida diam ac nisl sodales mollis. Quisque iaculis semper mi, eu interdum elit molestie quis. Vivamus rutrum cursus interdum. Suspendisse vehicula quam mi, a efficitur ante egestas eget.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | Flexbox Flexbox depending on screen size 1`] = `
+.c1 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:first-child) {
+  margin-left: 0;
+  margin-top: 16px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #eee;
+  height: 100%;
+}
+
+@media (min-width:992px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c0 > *:not(:first-child) {
+    margin-top: 0;
+    margin-left: 40px;
+  }
+}
+
+<div
+  className="c0"
+  md={
+    Object {
+      "direction": "row",
+      "gutter": 10,
+    }
+  }
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      First element here
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      Second element here
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus neque in venenatis faucibus. Fusce vitae maximus diam. Ut placerat lacus id porttitor tristique. Mauris in neque tempus, venenatis metus vitae, pellentesque massa. Etiam blandit lacus diam, dignissim posuere massa semper maximus. In pretium commodo nisl sed ultrices. Duis gravida diam ac nisl sodales mollis. Quisque iaculis semper mi, eu interdum elit molestie quis. Vivamus rutrum cursus interdum. Suspendisse vehicula quam mi, a efficitur ante egestas eget.
     </div>
@@ -304,6 +390,7 @@ exports[`Storyshots Atoms | Flexbox Flexbox with custom gutter 1`] = `
 }
 
 .c0 > *:not(:first-child) {
+  margin-top: 0;
   margin-left: 20px;
 }
 

@@ -129,6 +129,10 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
   line-height: 1.3333333333333333;
 }
 
+.c1 {
+  padding: 20px;
+}
+
 .c5 {
   color: #0046FF;
   -webkit-text-decoration: none;
@@ -138,10 +142,6 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
 .c5:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
-}
-
-.c1 {
-  padding: 20px;
 }
 
 .c9 {

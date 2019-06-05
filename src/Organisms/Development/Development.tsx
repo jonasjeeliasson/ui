@@ -4,7 +4,7 @@ import * as R from 'ramda';
 import { DevelopmentProps, DevelopmentComponent } from './Development.types';
 import { Number as NumberComponent } from '../..';
 import { Theme } from '../../theme/theme.types';
-import { getRoundedValue } from '../Number/Number';
+import { getRoundedValue } from '../../Molecules/Number/Number';
 
 const getPrefix = (value?: number | null) => {
   if (!value) return '';
@@ -12,7 +12,7 @@ const getPrefix = (value?: number | null) => {
 };
 
 const getColor = ({ value, theme }: { value?: number; theme: Theme }) => {
-  if (!value) return theme.color.text;
+  if (!value || !Number.isFinite(value)) return theme.color.text;
   return value > 0 ? theme.color.positive : theme.color.negative;
 };
 

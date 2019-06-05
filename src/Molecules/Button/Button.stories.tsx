@@ -228,6 +228,20 @@ storiesOf('Molecules | Button', module)
       </Button>
     </HashRouter>
   ))
+  .add('Disabled link looking like a button', () => (
+    <HashRouter>
+      <Button
+        fullWidth
+        onClick={action('clicked')}
+        size="m"
+        to="www.google.com"
+        variant="secondary"
+        disabled
+      >
+        Button
+      </Button>
+    </HashRouter>
+  ))
   .add('Link looking like a button with with colors', () => (
     <HashRouter>
       <>

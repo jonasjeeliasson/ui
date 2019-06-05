@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Development As currency 1`] = `
+exports[`Storyshots Organisms | Development As currency 1`] = `
 .c3 {
   color: #00D200;
 }
 
-.c4 {
-  color: #282823;
-}
-
 .c5 {
   color: #FF1900;
+}
+
+.c4 {
+  color: #282823;
 }
 
 .c0 {
@@ -146,17 +146,17 @@ exports[`Storyshots Molecules | Development As currency 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Development As percentage 1`] = `
+exports[`Storyshots Organisms | Development As percentage 1`] = `
 .c3 {
   color: #00D200;
 }
 
-.c4 {
-  color: #282823;
-}
-
 .c5 {
   color: #FF1900;
+}
+
+.c4 {
+  color: #282823;
 }
 
 .c0 {
@@ -292,17 +292,17 @@ exports[`Storyshots Molecules | Development As percentage 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Development Default 1`] = `
+exports[`Storyshots Organisms | Development Default 1`] = `
 .c3 {
   color: #00D200;
 }
 
-.c4 {
-  color: #282823;
-}
-
 .c5 {
   color: #FF1900;
+}
+
+.c4 {
+  color: #282823;
 }
 
 .c0 {
@@ -435,7 +435,7 @@ exports[`Storyshots Molecules | Development Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Development Integration: with different typographies 1`] = `
+exports[`Storyshots Organisms | Development Integration: with different typographies 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -512,12 +512,12 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
   color: #00D200;
 }
 
-.c5 {
-  color: #282823;
-}
-
 .c6 {
   color: #FF1900;
+}
+
+.c5 {
+  color: #282823;
 }
 
 .c0 {
@@ -1344,7 +1344,118 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
 </div>
 `;
 
-exports[`Storyshots Molecules | Development Regression: value is non-zero, but rounded value is 0 1`] = `
+exports[`Storyshots Organisms | Development Regression: infinity 1`] = `
+.c3 {
+  color: #282823;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      +Infinity
+    </div>
+    <div>
+      <span
+        className="c3"
+        value={Infinity}
+      >
+        <span
+          aria-hidden={true}
+        />
+        -
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      -Infinity
+    </div>
+    <div>
+      <span
+        className="c3"
+        value={-Infinity}
+      >
+        <span
+          aria-hidden={true}
+        />
+        -
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Organisms | Development Regression: value is non-zero, but rounded value is 0 1`] = `
 .c3 {
   color: #282823;
 }
@@ -1501,17 +1612,17 @@ exports[`Storyshots Molecules | Development Regression: value is non-zero, but r
 </div>
 `;
 
-exports[`Storyshots Molecules | Development With icon 1`] = `
+exports[`Storyshots Organisms | Development With icon 1`] = `
 .c3 {
   color: #00D200;
 }
 
-.c4 {
-  color: #282823;
-}
-
 .c5 {
   color: #FF1900;
+}
+
+.c4 {
+  color: #282823;
 }
 
 .c0 {
