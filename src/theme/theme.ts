@@ -99,6 +99,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       inputBorder: rawColor.gray4,
       inputBorderHover: rawColor.gray1,
       flagBorder: rawColor.gray6,
+      bankIcon: rawColor.complementaryBlue1,
     },
     media: {
       between: (s1, s2) => {

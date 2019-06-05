@@ -1,5 +1,5 @@
 /** Atoms */
-import { Table, Tbody, Td, Tfoot, Th, Thead, Tr } from './Atoms/Table';
+import Box from './Atoms/Box';
 import Card from './Atoms/Card';
 import CssGrid from './Atoms/CssGrid';
 import Flag from './Atoms/Flag';
@@ -10,10 +10,9 @@ import ListItem from './Atoms/ListItem';
 import Media from './Atoms/Media';
 import Separator from './Atoms/Separator';
 import Spinner from './Atoms/Spinner';
-import TabTitle from './Atoms/TabTitle';
+import { Table, Tbody, Td, Tfoot, Th, Thead, Tr } from './Atoms/Table';
 import Time from './Atoms/Time';
 import Typography from './Atoms/Typography';
-import Box from './Atoms/Box';
 import VisuallyHidden from './Atoms/VisuallyHidden';
 
 /** Molecules */
@@ -32,16 +31,19 @@ import PageWrapper from './Molecules/PageWrapper';
 import Select from './Molecules/Select';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
+import TabTitle from './Molecules/TabTitle';
 
 /** Organisms */
 import CardWithTabs from './Organisms/CardWithTabs';
 import Development from './Organisms/Development';
 
 import theme, { createTheme } from './theme';
+
 /** Runtime code */
 export {
   createTheme,
   Avatar,
+  Box,
   Button,
   Card,
   CardWithTabs,
@@ -79,6 +81,5 @@ export {
   Time,
   Tr,
   Typography,
-  Box,
   VisuallyHidden,
 };

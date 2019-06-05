@@ -96,7 +96,7 @@ const Tabs: ContainerComponent = ({
             onKeyDown={onKeyDown}
             setRef={setRef(i)}
           >
-            <Typography type="secondary" weight={active === i ? 'bold' : 'regular'}>
+            <Typography as="div" type="secondary" weight={active === i ? 'bold' : 'regular'}>
               {c.props.title}
             </Typography>
           </Title>
