@@ -445,15 +445,6 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   line-height: 1.5;
 }
 
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-}
-
 .c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -461,6 +452,15 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   font-weight: 400;
   font-size: 12px;
   line-height: 1.6666666666666667;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
 }
 
 .c9 {

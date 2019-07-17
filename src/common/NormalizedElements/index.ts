@@ -1,3 +1,4 @@
 import { Button } from './NormalizedButton';
+import { Input } from './NormalizedInput';
 
-export default { Button };
+export default { Button, Input };

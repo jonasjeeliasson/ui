@@ -26,6 +26,7 @@ export const deprecate = (message: string) => <T extends {} | Function>(target: 
       ? target
       : new Proxy(target, {
           get(getTarget, getProp) {
+            // eslint-disable-next-line no-console
             console.warn(`Deprecated: ${message}`);
             return getTarget[getProp];
           },

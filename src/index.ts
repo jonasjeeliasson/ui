@@ -7,6 +7,7 @@ import DateTime from './Atoms/DateTime';
 import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';
 import Icon from './Atoms/Icon';
+import Label from './Atoms/Label';
 import List from './Atoms/List';
 import ListItem from './Atoms/ListItem';
 import Media, { useMedia } from './Atoms/Media';
@@ -22,6 +23,7 @@ import Avatar from './Molecules/Avatar';
 import Button from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
 import CollapsibleCard from './Molecules/CollapsibleCard';
+import Input from './Molecules/Input';
 import LabeledValue from './Molecules/LabeledValue';
 import Link from './Molecules/Link';
 import LinkBuy from './Molecules/LinkBuy';
@@ -60,6 +62,8 @@ export {
   Flag,
   Flexbox,
   Icon,
+  Input,
+  Label,
   LabeledValue,
   Link,
   LinkBuy,

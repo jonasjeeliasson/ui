@@ -1,0 +1,1210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | Input Default 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  color: #6E6E69;
+  cursor: pointer;
+}
+
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  min-width: 25ch;
+  color: #282823;
+  padding: 0 8px;
+  height: 40px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #BCBCB6;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c4::-moz-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c4:-ms-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c4::placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c4:hover {
+  border-color: #4B4B46;
+}
+
+.c4:active,
+.c4:focus {
+  border-color: #0046FF;
+}
+
+<span
+  className="c0"
+>
+  <label>
+    <div
+      className="c1"
+    >
+      <span
+        className="c2 c3"
+      >
+        Name
+      </span>
+      <div
+        className="c2"
+      >
+        <input
+          className="c4"
+          type="text"
+        />
+        
+      </div>
+    </div>
+  </label>
+</span>
+`;
+
+exports[`Storyshots Molecules | Input Disabled 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Disabled
+    </span>
+  </div>,
+  .c5 {
+  box-sizing: border-box;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  color: #6E6E69;
+  cursor: pointer;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  min-width: 25ch;
+  color: #282823;
+  padding: 0 8px;
+  height: 32px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid transparent;
+  background: #EBEBE8;
+  color: #A0A09B;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c7:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7::placeholder {
+  color: #A0A09B;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  min-width: 25ch;
+  color: #282823;
+  padding: 0 8px;
+  height: 40px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid transparent;
+  background: #EBEBE8;
+  color: #A0A09B;
+}
+
+.c8::-webkit-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c8::-moz-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c8:-ms-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c8::placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c8::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c8:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8::placeholder {
+  color: #A0A09B;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+    className="c0"
+    direction="column"
+  >
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Small
+      </div>
+      <div>
+        <span
+          className="c3"
+        >
+          <label>
+            <div
+              className="c4"
+            >
+              <span
+                className="c5 c6"
+              >
+                Username
+              </span>
+              <div
+                className="c5"
+              >
+                <input
+                  className="c7"
+                  disabled={true}
+                  placeholder="What's your username?"
+                  type="text"
+                />
+                
+              </div>
+            </div>
+          </label>
+        </span>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Medium (default)
+      </div>
+      <div>
+        <span
+          className="c3"
+        >
+          <label>
+            <div
+              className="c4"
+            >
+              <span
+                className="c5 c6"
+              >
+                Username
+              </span>
+              <div
+                className="c5"
+              >
+                <input
+                  className="c8"
+                  disabled={true}
+                  placeholder="What's your username?"
+                  type="text"
+                />
+                
+              </div>
+            </div>
+          </label>
+        </span>
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  margin-bottom: 32px;
+}
+
+<div
+    className="c0"
+  />,
+]
+`;
+
+exports[`Storyshots Molecules | Input Error 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Error
+    </span>
+  </div>,
+  .c5 {
+  box-sizing: border-box;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  color: #6E6E69;
+  cursor: pointer;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+}
+
+.c8 {
+  display: block;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  min-width: 25ch;
+  color: #282823;
+  padding: 0 8px;
+  height: 32px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #FF1900;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c7:active,
+.c7:focus {
+  border-color: #0046FF;
+}
+
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  min-width: 25ch;
+  color: #282823;
+  padding: 0 8px;
+  height: 40px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #FF1900;
+}
+
+.c10::-webkit-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c10::-moz-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c10:-ms-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c10::placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c10:active,
+.c10:focus {
+  border-color: #0046FF;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+    className="c0"
+    direction="column"
+  >
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Small
+      </div>
+      <div>
+        <span
+          className="c3"
+        >
+          <label>
+            <div
+              className="c4"
+            >
+              <span
+                className="c5 c6"
+              >
+                City
+              </span>
+              <div
+                className="c5"
+              >
+                <input
+                  className="c7"
+                  error={true}
+                  type="text"
+                />
+                <span
+                  className="c8 c9"
+                >
+                  Error message
+                </span>
+              </div>
+            </div>
+          </label>
+        </span>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Medium (default)
+      </div>
+      <div>
+        <span
+          className="c3"
+        >
+          <label>
+            <div
+              className="c4"
+            >
+              <span
+                className="c5 c6"
+              >
+                City
+              </span>
+              <div
+                className="c5"
+              >
+                <input
+                  className="c10"
+                  error={true}
+                  type="text"
+                />
+                <span
+                  className="c8 c9"
+                >
+                  Error message
+                </span>
+              </div>
+            </div>
+          </label>
+        </span>
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  margin-bottom: 32px;
+}
+
+<div
+    className="c0"
+  />,
+]
+`;
+
+exports[`Storyshots Molecules | Input Success 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Success
+    </span>
+  </div>,
+  .c5 {
+  box-sizing: border-box;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  color: #6E6E69;
+  cursor: pointer;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  min-width: 25ch;
+  color: #282823;
+  padding: 0 8px;
+  height: 32px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #00D200;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c7:active,
+.c7:focus {
+  border-color: #0046FF;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  min-width: 25ch;
+  color: #282823;
+  padding: 0 8px;
+  height: 40px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #00D200;
+}
+
+.c8::-webkit-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c8::-moz-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c8:-ms-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c8::placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c8:active,
+.c8:focus {
+  border-color: #0046FF;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+    className="c0"
+    direction="column"
+  >
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Small
+      </div>
+      <div>
+        <span
+          className="c3"
+        >
+          <label>
+            <div
+              className="c4"
+            >
+              <span
+                className="c5 c6"
+              >
+                Address
+              </span>
+              <div
+                className="c5"
+              >
+                <input
+                  className="c7"
+                  success={true}
+                  type="text"
+                />
+                
+              </div>
+            </div>
+          </label>
+        </span>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Medium (default)
+      </div>
+      <div>
+        <span
+          className="c3"
+        >
+          <label>
+            <div
+              className="c4"
+            >
+              <span
+                className="c5 c6"
+              >
+                Address
+              </span>
+              <div
+                className="c5"
+              >
+                <input
+                  className="c8"
+                  success={true}
+                  type="text"
+                />
+                
+              </div>
+            </div>
+          </label>
+        </span>
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  margin-bottom: 32px;
+}
+
+<div
+    className="c0"
+  />,
+]
+`;
+
+exports[`Storyshots Molecules | Input With a default value 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  color: #6E6E69;
+  cursor: pointer;
+}
+
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  min-width: 25ch;
+  color: #282823;
+  padding: 0 8px;
+  height: 40px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #BCBCB6;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c4::-moz-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c4:-ms-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c4::placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c4:hover {
+  border-color: #4B4B46;
+}
+
+.c4:active,
+.c4:focus {
+  border-color: #0046FF;
+}
+
+<span
+  className="c0"
+>
+  <label>
+    <div
+      className="c1"
+    >
+      <span
+        className="c2 c3"
+      >
+        Name
+      </span>
+      <div
+        className="c2"
+      >
+        <input
+          className="c4"
+          defaultValue="John Doe"
+          type="text"
+        />
+        
+      </div>
+    </div>
+  </label>
+</span>
+`;
+
+exports[`Storyshots Molecules | Input With placeholder text 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  color: #6E6E69;
+  cursor: pointer;
+}
+
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  min-width: 25ch;
+  color: #282823;
+  padding: 0 8px;
+  height: 40px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #BCBCB6;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c4::-moz-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c4:-ms-input-placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c4::placeholder {
+  color: #6E6E69;
+  opacity: 1;
+}
+
+.c4:hover {
+  border-color: #4B4B46;
+}
+
+.c4:active,
+.c4:focus {
+  border-color: #0046FF;
+}
+
+<span
+  className="c0"
+>
+  <label>
+    <div
+      className="c1"
+    >
+      <span
+        className="c2 c3"
+      >
+        Name
+      </span>
+      <div
+        className="c2"
+      >
+        <input
+          className="c4"
+          placeholder="What's your name?"
+          type="text"
+        />
+        
+      </div>
+    </div>
+  </label>
+</span>
+`;
