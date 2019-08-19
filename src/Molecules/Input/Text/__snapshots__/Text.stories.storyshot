@@ -99,13 +99,12 @@ Array [
 }
 
 .c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -118,24 +117,28 @@ Array [
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
 }
 
 .c9::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
@@ -145,22 +148,6 @@ Array [
 
 .c9::-moz-placeholder {
   line-height: 22px;
-}
-
-.c9::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c9:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::placeholder {
-  color: #6E6E69;
 }
 
 <div
@@ -333,13 +320,12 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
 }
 
 .c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -352,7 +338,7 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
   padding-left: 32px;
   padding-right: 40px;
@@ -360,18 +346,22 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
 
 .c9::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
@@ -381,22 +371,6 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
 
 .c9::-moz-placeholder {
   line-height: 22px;
-}
-
-.c9::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c9:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::placeholder {
-  color: #6E6E69;
 }
 
 .c10 {
@@ -573,13 +547,12 @@ exports[`Storyshots Molecules | Input / Text Default 1`] = `
 }
 
 .c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -592,24 +565,28 @@ exports[`Storyshots Molecules | Input / Text Default 1`] = `
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
 }
 
 .c9::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
@@ -619,22 +596,6 @@ exports[`Storyshots Molecules | Input / Text Default 1`] = `
 
 .c9::-moz-placeholder {
   line-height: 22px;
-}
-
-.c9::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c9:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::placeholder {
-  color: #6E6E69;
 }
 
 <div
@@ -794,13 +755,12 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
 }
 
 .c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -813,7 +773,7 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #EBEBE8;
   padding-left: 32px;
   padding-right: 40px;
@@ -821,18 +781,22 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
 
 .c9::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
@@ -842,22 +806,6 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
 
 .c9::-moz-placeholder {
   line-height: 22px;
-}
-
-.c9::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c9:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::placeholder {
-  color: #6E6E69;
 }
 
 .c10 {
@@ -1031,13 +979,12 @@ exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
 }
 
 .c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -1050,24 +997,28 @@ exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #EBEBE8;
 }
 
 .c9::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
@@ -1077,22 +1028,6 @@ exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
 
 .c9::-moz-placeholder {
   line-height: 22px;
-}
-
-.c9::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c9:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::placeholder {
-  color: #6E6E69;
 }
 
 <div
@@ -1241,13 +1176,12 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
 }
 
 .c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -1260,24 +1194,28 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
 }
 
 .c12::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c12::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c12:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c12::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c12:-ms-input-placeholder {
@@ -1287,22 +1225,6 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
 
 .c12::-moz-placeholder {
   line-height: 22px;
-}
-
-.c12::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c12::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c12:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c12::placeholder {
-  color: #6E6E69;
 }
 
 .c0 {
@@ -1593,13 +1515,12 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
 }
 
 .c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -1612,24 +1533,28 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
 }
 
 .c9::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
@@ -1639,22 +1564,6 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
 
 .c9::-moz-placeholder {
   line-height: 22px;
-}
-
-.c9::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c9:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::placeholder {
-  color: #6E6E69;
 }
 
 <div
@@ -1816,13 +1725,12 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
 }
 
 .c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -1835,24 +1743,28 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
 }
 
 .c9::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
@@ -1862,22 +1774,6 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
 
 .c9::-moz-placeholder {
   line-height: 22px;
-}
-
-.c9::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c9:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::placeholder {
-  color: #6E6E69;
 }
 
 <div
@@ -2041,13 +1937,12 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
 }
 
 .c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -2060,24 +1955,28 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
 }
 
 .c9::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
@@ -2087,22 +1986,6 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
 
 .c9::-moz-placeholder {
   line-height: 22px;
-}
-
-.c9::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c9:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::placeholder {
-  color: #6E6E69;
 }
 
 <div
@@ -2310,13 +2193,12 @@ Array [
 }
 
 .c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -2329,24 +2211,28 @@ Array [
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
 }
 
 .c12::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c12::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c12:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c12::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c12:-ms-input-placeholder {
@@ -2358,30 +2244,13 @@ Array [
   line-height: 22px;
 }
 
-.c12::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c12::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c12:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c12::placeholder {
-  color: #6E6E69;
-}
-
 .c13 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -2394,25 +2263,29 @@ Array [
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
   padding-left: 32px;
 }
 
 .c13::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c13::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c13:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c13::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c13:-ms-input-placeholder {
@@ -2424,30 +2297,13 @@ Array [
   line-height: 22px;
 }
 
-.c13::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c13::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c13:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c13::placeholder {
-  color: #6E6E69;
-}
-
 .c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -2460,25 +2316,29 @@ Array [
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
   padding-right: 40px;
 }
 
 .c17::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c17::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c17:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c17::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c17:-ms-input-placeholder {
@@ -2488,22 +2348,6 @@ Array [
 
 .c17::-moz-placeholder {
   line-height: 22px;
-}
-
-.c17::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c17::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c17:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c17::placeholder {
-  color: #6E6E69;
 }
 
 .c14 {
@@ -2850,15 +2694,12 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
 }
 
 .c3 {
-  border: 0;
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
   position: absolute;
+  height: 1px;
   width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2866,13 +2707,12 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
 }
 
 .c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -2885,24 +2725,28 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
 }
 
 .c9::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
@@ -2912,22 +2756,6 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
 
 .c9::-moz-placeholder {
   line-height: 22px;
-}
-
-.c9::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c9:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::placeholder {
-  color: #6E6E69;
 }
 
 <div
@@ -3091,13 +2919,12 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
 }
 
 .c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -3110,25 +2937,29 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
   padding-left: 32px;
 }
 
 .c9::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
@@ -3138,22 +2969,6 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
 
 .c9::-moz-placeholder {
   line-height: 22px;
-}
-
-.c9::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c9:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::placeholder {
-  color: #6E6E69;
 }
 
 .c10 {
@@ -3330,13 +3145,12 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
 }
 
 .c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -3349,25 +3163,29 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
   padding-right: 40px;
 }
 
 .c9::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
@@ -3377,22 +3195,6 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
 
 .c9::-moz-placeholder {
   line-height: 22px;
-}
-
-.c9::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c9:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::placeholder {
-  color: #6E6E69;
 }
 
 .c10 {
@@ -3737,13 +3539,12 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
 }
 
 .c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -3756,24 +3557,28 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
 }
 
 .c12::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c12::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c12:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c12::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c12:-ms-input-placeholder {
@@ -3783,22 +3588,6 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
 
 .c12::-moz-placeholder {
   line-height: 22px;
-}
-
-.c12::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c12::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c12:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c12::placeholder {
-  color: #6E6E69;
 }
 
 <div
@@ -4131,13 +3920,12 @@ Array [
 }
 
 .c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -4150,24 +3938,28 @@ Array [
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
 }
 
 .c12::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c12::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c12:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c12::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c12:-ms-input-placeholder {
@@ -4179,30 +3971,13 @@ Array [
   line-height: 15px;
 }
 
-.c12::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c12::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c12:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c12::placeholder {
-  color: #6E6E69;
-}
-
 .c18 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -4215,25 +3990,29 @@ Array [
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
   padding-left: 32px;
 }
 
 .c18::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c18::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c18:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c18::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c18:-ms-input-placeholder {
@@ -4245,30 +4024,13 @@ Array [
   line-height: 15px;
 }
 
-.c18::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c18::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c18:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c18::placeholder {
-  color: #6E6E69;
-}
-
 .c22 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -4281,25 +4043,29 @@ Array [
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
   padding-right: 40px;
 }
 
 .c22::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c22::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c22:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c22::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c22:-ms-input-placeholder {
@@ -4309,22 +4075,6 @@ Array [
 
 .c22::-moz-placeholder {
   line-height: 15px;
-}
-
-.c22::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c22::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c22:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c22::placeholder {
-  color: #6E6E69;
 }
 
 .c19 {
@@ -4781,13 +4531,12 @@ exports[`Storyshots Molecules | Input / Text Success 1`] = `
 }
 
 .c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -4800,24 +4549,28 @@ exports[`Storyshots Molecules | Input / Text Success 1`] = `
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
 }
 
 .c9::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
@@ -4827,22 +4580,6 @@ exports[`Storyshots Molecules | Input / Text Success 1`] = `
 
 .c9::-moz-placeholder {
   line-height: 22px;
-}
-
-.c9::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c9:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::placeholder {
-  color: #6E6E69;
 }
 
 <div
@@ -4872,6 +4609,7 @@ exports[`Storyshots Molecules | Input / Text Success 1`] = `
             <input
               className="c9"
               placeholder="Placeholder"
+              success={true}
               type="text"
             />
           </div>
@@ -4977,13 +4715,12 @@ exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled be
 }
 
 .c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -4996,24 +4733,28 @@ exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled be
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
 }
 
 .c9::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
@@ -5023,22 +4764,6 @@ exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled be
 
 .c9::-moz-placeholder {
   line-height: 22px;
-}
-
-.c9::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c9:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::placeholder {
-  color: #6E6E69;
 }
 
 <div
@@ -5173,13 +4898,12 @@ exports[`Storyshots Molecules | Input / Text With value (Controlled behaviour) 1
 }
 
 .c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -5192,24 +4916,28 @@ exports[`Storyshots Molecules | Input / Text With value (Controlled behaviour) 1
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
   background-color: #FFFFFF;
 }
 
 .c9::-webkit-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::-moz-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9::placeholder {
   line-height: 17px;
+  color: #6E6E69;
 }
 
 .c9:-ms-input-placeholder {
@@ -5219,22 +4947,6 @@ exports[`Storyshots Molecules | Input / Text With value (Controlled behaviour) 1
 
 .c9::-moz-placeholder {
   line-height: 22px;
-}
-
-.c9::-webkit-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder {
-  color: #6E6E69;
-}
-
-.c9:-ms-input-placeholder {
-  color: #6E6E69;
-}
-
-.c9::placeholder {
-  color: #6E6E69;
 }
 
 <div

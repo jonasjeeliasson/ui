@@ -1,13 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { VisuallyHiddenComponent } from './VisuallyHidden.types';
 
-const Hidden = styled.div`
+export const visuallyHiddenCss = css`
   position: absolute;
   height: 1px;
   width: 1px;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
+`;
+
+const Hidden = styled.div`
+  ${visuallyHiddenCss}
 `;
 
 export const VisuallyHidden: VisuallyHiddenComponent = ({ children, as }) => (

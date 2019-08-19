@@ -5,21 +5,11 @@ import R from 'ramda';
 import { Props } from './FormField.types';
 
 import { VisuallyHidden, Flexbox, Typography } from '../../..';
+import { visuallyHiddenCss as visuallyHidden } from '../../../Atoms/VisuallyHidden';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
 const LINE_HEIGHT_INFO_BELOW = 17;
-
-const visuallyHidden = css`
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-`;
 
 const height = css<Pick<Props, 'size'>>`
   height: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
@@ -146,7 +136,7 @@ export const FormField: React.FC<Props> = ({
           initial={{ y: -10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 0, opacity: 0 }}
-          aria-live="assertive"
+          aria-live="polite"
           // TODO: Check this one @manman
           // @ts-ignore
           aria-relevant="additions removals"
@@ -163,7 +153,7 @@ export const FormField: React.FC<Props> = ({
             initial={{ y: -10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 0, opacity: 0 }}
-            aria-live="assertive"
+            aria-live="polite"
             // TODO: Check this one @manman
             // @ts-ignore
             aria-relevant="additions removals"
