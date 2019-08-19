@@ -6,6 +6,7 @@ import CssGrid from './Atoms/CssGrid';
 import DateTime from './Atoms/DateTime';
 import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';
+import FormLabel from './Atoms/FormLabel';
 import Icon from './Atoms/Icon';
 import List from './Atoms/List';
 import ListItem from './Atoms/ListItem';
@@ -62,6 +63,7 @@ export {
   FeedbackBanner,
   Flag,
   Flexbox,
+  FormLabel,
   Icon,
   Input,
   LabeledValue,
