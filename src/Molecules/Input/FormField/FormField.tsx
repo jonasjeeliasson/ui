@@ -1,19 +1,11 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
-import R from 'ramda';
 import { Props } from './FormField.types';
 
-import { VisuallyHidden, Flexbox, Typography } from '../../..';
-import { visuallyHiddenCss as visuallyHidden } from '../../../Atoms/VisuallyHidden';
+import { VisuallyHidden, FormLabel, Typography } from '../../..';
 
 const hasError = (error?: Props['error']) => error && error !== '';
-
-const LINE_HEIGHT_INFO_BELOW = 17;
-
-const height = css<Pick<Props, 'size'>>`
-  height: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
-`;
 
 const Wrapper = styled.div<{ width?: string | number }>`
   ${p => (p.width ? `width: ${p.width};` : 'width: 200px;')}
@@ -42,7 +34,7 @@ const focusBorderColor = css<Pick<Props, 'error'>>`
   }
 `;
 
-const outerFlexboxBorderColor = css<Pick<Props, 'error' | 'success'>>`
+const borderStyles = css<Pick<Props, 'error' | 'success'>>`
   border: 1px solid
     ${p => {
       if (hasError(p.error)) return p.theme.color.inputBorderError;
@@ -53,45 +45,13 @@ const outerFlexboxBorderColor = css<Pick<Props, 'error' | 'success'>>`
   ${hoverIfNotDisabled}
 `;
 
-const DensedTypography = styled(Typography)`
-  line-height: ${LINE_HEIGHT_INFO_BELOW}px;
-  display: inline-block;
-`;
-
-const InlineFlexbox = styled(Flexbox)`
-  display: flex;
-  width: 100%;
-`;
-
-const BottomWrapper = styled(motion.span)`
-  width: 100%;
-`;
-
-const CleanFlexbox = React.forwardRef((props: any, ref: React.Ref<HTMLDivElement>) => (
-  <Flexbox {...R.omit(['error', 'disabled', 'innerWrapperRef'], props)} ref={ref} />
-));
-
-const InnerWrapperFlexbox = styled(CleanFlexbox)`
+const InnerWrapper = styled.div<Pick<Props, 'size'>>`
   position: relative;
-  ${height}
-  box-sizing: border-box;
-
-  ${outerFlexboxBorderColor}
-
   background-color: #ffffff;
+  height: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+  ${borderStyles}
+  box-sizing: border-box;
   box-shadow: 0 1px 3px ${p => p.theme.color.shadowInput};
-  font: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
-`;
-
-const HidableTypography = styled(Typography)<{ hidden: boolean }>`
-  ${p => (p.hidden ? visuallyHidden : '')}
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 `;
 
 export const FormField: React.FC<Props> = ({
@@ -100,38 +60,27 @@ export const FormField: React.FC<Props> = ({
   width,
   label,
   hideLabel,
+  itemId,
   size,
   error,
   success,
   disabled,
   extraInfo,
   onClick,
-  innerWrapperRef,
 }) => (
   /* eslint-disable jsx-a11y/label-has-associated-control,jsx-a11y/label-has-for */
   <Wrapper width={width} className={className} onClick={onClick}>
-    <label>
-      <InlineFlexbox container direction="column">
-        <HidableTypography hidden={Boolean(hideLabel)} type="secondary" color={t => t.color.label}>
-          {label}
-        </HidableTypography>
-        <Flexbox item alignSelf="stretch">
-          <Typography type="secondary" color={t => t.color.text} as="div">
-            <InnerWrapperFlexbox
-              ref={innerWrapperRef}
-              container
-              alignItems="center"
-              {...{ size, error, success, disabled }}
-            >
-              {children}
-            </InnerWrapperFlexbox>
-          </Typography>
-        </Flexbox>
-      </InlineFlexbox>
-    </label>
+    <FormLabel hideLabel={hideLabel} forId={itemId}>
+      {label}
+    </FormLabel>
+    <InnerWrapper {...{ size, error, success, disabled }}>
+      <Typography type="secondary" color={t => t.color.text}>
+        {children}
+      </Typography>
+    </InnerWrapper>
     <AnimatePresence>
       {hasError(error) ? (
-        <BottomWrapper
+        <motion.div
           size={size}
           initial={{ y: -10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -141,14 +90,14 @@ export const FormField: React.FC<Props> = ({
           // @ts-ignore
           aria-relevant="additions removals"
         >
-          <DensedTypography type="tertiary" color={t => t.color.negative}>
+          <Typography type="tertiary" color={t => t.color.negative}>
             <VisuallyHidden>Error: </VisuallyHidden>
             {error}
-          </DensedTypography>
-        </BottomWrapper>
+          </Typography>
+        </motion.div>
       ) : (
         extraInfo && (
-          <BottomWrapper
+          <motion.div
             size={size}
             initial={{ y: -10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -158,10 +107,10 @@ export const FormField: React.FC<Props> = ({
             // @ts-ignore
             aria-relevant="additions removals"
           >
-            <DensedTypography type="tertiary" color={t => t.color.label}>
+            <Typography type="tertiary" color={t => t.color.label}>
               {extraInfo}
-            </DensedTypography>
-          </BottomWrapper>
+            </Typography>
+          </motion.div>
         )
       )}
     </AnimatePresence>
