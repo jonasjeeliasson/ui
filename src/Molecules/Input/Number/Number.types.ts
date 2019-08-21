@@ -9,7 +9,8 @@ export type Props = {
   /** TODO: is this needed? */
   disabled?: boolean;
   fullWidth?: boolean;
-  fieldId?: string;
+  fieldId: string;
+  size?: 's';
   step: number;
   /**
    * You need to specify width

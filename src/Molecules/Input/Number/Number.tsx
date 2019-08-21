@@ -7,18 +7,71 @@ import NormalizedElements from '../../../common/NormalizedElements';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
-const inputBackgroundColor = css<Pick<Props, 'disabled'>>`
+const width = css<Pick<Props, 'size'>>`
+  width: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+`;
+
+const background = css<Pick<Props, 'disabled'>>`
   background-color: ${p =>
     p.disabled ? p.theme.color.disabledBackground : p.theme.color.backgroundInput};
 `;
 
-const Input = styled(NormalizedElements.Input).attrs({ type: 'number' })<Partial<Props>>`
-  ${inputBackgroundColor}
-  padding: ${p => p.theme.spacing.unit(2)}px;
-  height: 100%;
-  width: 100%;
-  border: 0;
+const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
+  ${p =>
+    p.disabled
+      ? ''
+      : `
+      &:hover {
+        border-color: ${p.theme.color.inputBorderHover};
+        z-index: 1;
+      }
+`}
+`;
+
+const focusBorderStyles = css<Pick<Props, 'error'>>`
+  &:focus {
+    border-color: ${p =>
+      hasError(p.error) ? p.theme.color.inputBorderError : p.theme.color.borderActive};
+    z-index: 1;
+  }
+`;
+
+const borderStyles = css<Pick<Props, 'error' | 'success'>>`
   outline: none;
+  border: 1px solid
+    ${p => {
+      if (hasError(p.error)) return p.theme.color.inputBorderError;
+      if (p.success) return p.theme.color.inputBorderSuccess;
+      return p.theme.color.inputBorder;
+    }};
+  position: relative;
+  ${hoverBorderStyles}
+  ${focusBorderStyles}
+`;
+
+const Stepper = styled.button.attrs({ type: 'button' })`
+  ${width}
+  ${background}
+  ${borderStyles}
+  height: 100%;
+  padding: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  flex: 1 0 auto;
+
+  &:active {
+    background-color: ${p => p.theme.color.cta};
+    color: ${p => p.theme.color.buttonText};
+  }
+`;
+
+const Input = styled(NormalizedElements.Input).attrs({ type: 'number' })<Partial<Props>>`
+  ${background}
+  ${borderStyles}
+  padding: ${p => p.theme.spacing.unit(2)}px;
+  width: 100%;
+  height: 100%;
+  margin: 0 -1px;
   box-sizing: border-box;
 
   &::-webkit-outer-spin-button,
@@ -30,11 +83,6 @@ const Input = styled(NormalizedElements.Input).attrs({ type: 'number' })<Partial
   &[type='number'] {
     -moz-appearance: textfield;
   }
-`;
-
-const Stepper = styled.button.attrs({ type: 'button' })`
-  width: ${p => p.theme.spacing.unit(8)}px;
-  height: 100%;
 `;
 
 const stepHandler = step => {
@@ -71,6 +119,7 @@ export const Number: React.FC<Props> & {
     defaultValue,
     value,
     fieldId,
+    size,
     step,
     onBlur,
     onChange,
@@ -83,26 +132,33 @@ export const Number: React.FC<Props> & {
 
   return (
     <FormField {...props}>
-      <Stepper onClick={() => stepHandler(-step)}>-</Stepper>
-      <Input
-        {...{
-          error,
-          success,
-          value,
-          defaultValue,
-          disabled,
-          id: fieldId,
-          onChange,
-          onFocus,
-          onClick,
-          onBlur,
-          onKeyDown,
-          onKeyUp,
-          onKeyPress,
-        }}
-        {...(hasError(error) ? { 'aria-invalid': true } : {})}
-      />
-      <Stepper onClick={() => stepHandler(step)}>+</Stepper>
+      <Flexbox container alignItems="center">
+        <Stepper onClick={() => stepHandler(-step)} size={size} disabled={disabled}>
+          -
+        </Stepper>
+        <Input
+          {...{
+            error,
+            success,
+            value,
+            defaultValue,
+            disabled,
+            id: fieldId,
+            onChange,
+            onFocus,
+            onClick,
+            onBlur,
+            onKeyDown,
+            onKeyUp,
+            onKeyPress,
+          }}
+          {...(hasError(error) ? { 'aria-invalid': true } : {})}
+        />
+
+        <Stepper onClick={() => stepHandler(step)} size={size} disabled={disabled}>
+          +
+        </Stepper>
+      </Flexbox>
     </FormField>
   );
 };

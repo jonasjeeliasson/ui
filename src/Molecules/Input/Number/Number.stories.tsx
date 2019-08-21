@@ -1,19 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { actions } from '@storybook/addon-actions';
-import { Input, Icon, Flexbox, Button } from '../../..';
-import { Display } from '../../../common/Display';
-
-// A bit laggy for now, let's optimize later
-const handlers = actions(
-  'onBlur',
-  'onClick',
-  'onFocus',
-  'onKeyDown',
-  'onKeyUp',
-  'onKeyPress',
-  'onChange',
-);
+import { Input } from '../../..';
 
 storiesOf('Molecules | Input / Number', module)
   .add('Default', () => <Input.Number fieldId="number1" label="Label" step={1} />)
@@ -22,4 +9,7 @@ storiesOf('Molecules | Input / Number', module)
   ))
   .add('With default value (Uncontrolled behaviour)', () => (
     <Input.Number fieldId="number3" label="Label" defaultValue="15.2" step={0.1} />
+  ))
+  .add('Disabled', () => (
+    <Input.Number fieldId="number4" label="Label" defaultValue="152.25" step={0.25} disabled />
   ));

@@ -4,7 +4,7 @@ export type Props = {
   label: string;
   /** But you can hide it visually */
   hideLabel?: boolean;
-  itemId: string;
+  fieldId: string;
   error?: string;
   success?: boolean;
   /** TODO: is this needed? */
