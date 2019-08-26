@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { injectIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
-import { Props } from './Number.types';
+import { Props, NumberComponent } from './Number.types';
 import { Flexbox } from '../../..';
 import { FormField } from '../FormField';
+import { getStringAsNumber } from './utils';
+import adjustValue from './adjustValue';
 import NormalizedElements from '../../../common/NormalizedElements';
 
 const hasError = (error?: Props['error']) => error && error !== '';
@@ -49,7 +52,7 @@ const borderStyles = css<Pick<Props, 'error' | 'success'>>`
   ${focusBorderStyles}
 `;
 
-const Stepper = styled.button.attrs({ type: 'button' })`
+const Stepper = styled.button.attrs({ type: 'button' })<Partial<Props>>`
   ${width}
   ${background}
   ${borderStyles}
@@ -85,27 +88,18 @@ const Input = styled(NormalizedElements.Input).attrs({ type: 'number' })<Partial
   }
 `;
 
-const stepHandler = step => {
-  console.log(step);
-};
-
 const components = {
-  // InlineFlexbox,
-  // HidableTypography,
-  // FormFieldFlexbox,
-  // Input,
-  // DensedTypography,
-  // Increment,
-  // BottomWrapper,
+  Input,
+  Stepper,
 };
 
-export const Number: React.FC<Props> & {
+const NumberInput: NumberComponent & {
   /**
    * This will allow you to customize
    * inner parts with styled-components
    * @example
-   * const CustomText = styled(Text)`
-   *  ${Input} {
+   * const CustomNumberInput = styled(Input.Number)`
+   *  ${CustomNumberInput} {
    *    color: pink;
    * }
    * `
@@ -116,11 +110,15 @@ export const Number: React.FC<Props> & {
     disabled,
     error,
     success,
-    defaultValue,
-    value,
+    defaultValue = 0,
+    value: controlledValue,
     fieldId,
+    intl,
     size,
-    step,
+    step = 1,
+    min = 0,
+    max,
+    name,
     onBlur,
     onChange,
     onClick,
@@ -128,23 +126,70 @@ export const Number: React.FC<Props> & {
     onKeyDown,
     onKeyUp,
     onKeyPress,
+    onStepUp = () => {},
+    onStepDown = () => {},
   } = props;
+  const normalizedValues = {
+    min: getStringAsNumber(min),
+    max: getStringAsNumber(max),
+    step: getStringAsNumber(step),
+    controlledValue: getStringAsNumber(controlledValue),
+    defaultValue: getStringAsNumber(defaultValue),
+  };
+
+  const [uncontrolledValue, setUncontrolledValue] = useState(normalizedValues.defaultValue);
+  const isControlled = controlledValue && controlledValue >= 0;
+
+  const updateValue = (increment: boolean) => {
+    const value = adjustValue({
+      originalValue: uncontrolledValue,
+      step,
+      intl,
+      min,
+      max,
+      shouldIncrement: increment,
+    });
+
+    setUncontrolledValue(getStringAsNumber(value));
+  };
+
+  const stepUpHandler = () => {
+    onStepUp();
+    !isControlled && updateValue(true);
+  };
+
+  const stepDownHandler = () => {
+    onStepDown();
+    !isControlled && updateValue(false);
+  };
+
+  const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    !isControlled && setUncontrolledValue(e.target.value);
+
+    if (onChange) {
+      onChange(e);
+    }
+  };
 
   return (
     <FormField {...props}>
       <Flexbox container alignItems="center">
-        <Stepper onClick={() => stepHandler(-step)} size={size} disabled={disabled}>
+        <Stepper onClick={stepDownHandler} size={size} disabled={disabled}>
           -
         </Stepper>
         <Input
           {...{
             error,
             success,
-            value,
+            value: controlledValue || uncontrolledValue,
             defaultValue,
             disabled,
             id: fieldId,
-            onChange,
+            step,
+            min,
+            max,
+            name,
+            onChange: onChangeHandler,
             onFocus,
             onClick,
             onBlur,
@@ -155,11 +200,13 @@ export const Number: React.FC<Props> & {
           {...(hasError(error) ? { 'aria-invalid': true } : {})}
         />
 
-        <Stepper onClick={() => stepHandler(step)} size={size} disabled={disabled}>
+        <Stepper onClick={stepUpHandler} size={size} disabled={disabled}>
           +
         </Stepper>
       </Flexbox>
     </FormField>
   );
 };
-Number.components = components;
+NumberInput.components = components;
+
+export default injectIntl(NumberInput);

@@ -81,7 +81,7 @@ export const Text: React.FC<Props> & {
    * This will allow you to customize
    * inner parts with styled-components
    * @example
-   * const CustomText = styled(Text)`
+   * const CustomText = styled(Input.Text)`
    *  ${UnstyledInput} {
    *    color: pink;
    * }

@@ -1,3 +1,5 @@
+import { InjectedIntlProps, InjectedIntl } from 'react-intl';
+
 export type Props = {
   className?: string;
   /** Label should always be presented - A11y */
@@ -11,7 +13,12 @@ export type Props = {
   fullWidth?: boolean;
   fieldId: string;
   size?: 's';
-  step: number;
+  step?: string | number;
+  min?: string | number;
+  max?: string | number;
+  value?: string | number;
+  defaultValue?: string | number;
+  name?: string;
   /**
    * You need to specify width
    * (better in pixels), because
@@ -21,9 +28,6 @@ export type Props = {
    */
   width?: string | number;
 
-  value?: string;
-  defaultValue?: string;
-
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   onClick?: React.MouseEventHandler<HTMLInputElement>;
   onBlur?: React.FocusEventHandler<HTMLInputElement>;
@@ -31,4 +35,17 @@ export type Props = {
   onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
+  onStepUp?: Function;
+  onStepDown?: Function;
+};
+
+export type NumberComponent = React.FunctionComponent<Props & InjectedIntlProps>;
+
+export type adjustValueProps = {
+  step: number;
+  min?: number;
+  max?: number;
+  shouldIncrement: boolean;
+  originalValue: number;
+  intl: InjectedIntl;
 };
