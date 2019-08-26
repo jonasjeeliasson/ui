@@ -129,28 +129,20 @@ const NumberInput: NumberComponent & {
     onStepUp = () => {},
     onStepDown = () => {},
   } = props;
-  const normalizedValues = {
-    min: getStringAsNumber(min),
-    max: getStringAsNumber(max),
-    step: getStringAsNumber(step),
-    controlledValue: getStringAsNumber(controlledValue),
-    defaultValue: getStringAsNumber(defaultValue),
-  };
-
-  const [uncontrolledValue, setUncontrolledValue] = useState(normalizedValues.defaultValue);
+  const [uncontrolledValue, setUncontrolledValue] = useState(defaultValue);
   const isControlled = controlledValue && controlledValue >= 0;
 
   const updateValue = (increment: boolean) => {
     const value = adjustValue({
       originalValue: uncontrolledValue,
       step,
-      intl,
       min,
       max,
       shouldIncrement: increment,
+      intl,
     });
 
-    setUncontrolledValue(getStringAsNumber(value));
+    setUncontrolledValue(value);
   };
 
   const stepUpHandler = () => {
@@ -164,7 +156,7 @@ const NumberInput: NumberComponent & {
   };
 
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    !isControlled && setUncontrolledValue(e.target.value);
+    !isControlled && setUncontrolledValue(getStringAsNumber(e.target.value));
 
     if (onChange) {
       onChange(e);
