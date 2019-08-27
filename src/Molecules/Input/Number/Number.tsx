@@ -3,7 +3,7 @@ import { injectIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
 import { Props, NumberComponent } from './Number.types';
 import { Flexbox } from '../../..';
-import { FormField } from '../FormField';
+import { FormFieldSimple } from '../FormFieldSimple';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber } from './utils';
 import { isNumber } from '../../../common/utils';
@@ -179,7 +179,7 @@ const NumberInput: NumberComponent & {
   };
 
   return (
-    <FormField {...props}>
+    <FormFieldSimple {...props}>
       <Flexbox container alignItems="center">
         <Stepper onClick={stepDownHandler} size={size} disabled={disabled}>
           -
@@ -211,7 +211,7 @@ const NumberInput: NumberComponent & {
           +
         </Stepper>
       </Flexbox>
-    </FormField>
+    </FormFieldSimple>
   );
 };
 NumberInput.components = components;

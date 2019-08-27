@@ -4,13 +4,13 @@ export type Props = {
   label: string;
   /** But you can hide it visually */
   hideLabel?: boolean;
+  fieldId: string;
   error?: string;
   success?: boolean;
   /** TODO: is this needed? */
   extraInfo?: string;
   rightAddon?: React.ReactNode;
   leftAddon?: React.ReactNode;
-  innerWrapperRef?: React.Ref<HTMLInputElement>;
   disabled?: boolean;
   placeholder?: string;
   fullWidth?: boolean;
