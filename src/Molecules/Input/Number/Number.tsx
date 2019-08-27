@@ -4,9 +4,10 @@ import styled, { css } from 'styled-components';
 import { Props, NumberComponent } from './Number.types';
 import { Flexbox } from '../../..';
 import { FormField } from '../FormField';
-import { getStringAsNumber } from './utils';
-import adjustValue from './adjustValue';
 import NormalizedElements from '../../../common/NormalizedElements';
+import { getStringAsNumber } from './utils';
+import { isNumber } from '../../../common/utils';
+import adjustValue from './adjustValue';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
@@ -131,13 +132,19 @@ const NumberInput: NumberComponent & {
   } = props;
   const [uncontrolledValue, setUncontrolledValue] = useState(defaultValue);
   const isControlled = controlledValue && controlledValue >= 0;
+  const sanitized = {
+    max: max ? getStringAsNumber(max) : undefined,
+    min: min ? getStringAsNumber(min) : undefined,
+    step: isNumber(step) ? step : getStringAsNumber(step),
+    uncontrolledValue: getStringAsNumber(uncontrolledValue),
+  };
 
   const updateValue = (increment: boolean) => {
     const value = adjustValue({
-      originalValue: uncontrolledValue,
-      step,
-      min,
-      max,
+      originalValue: sanitized.uncontrolledValue,
+      step: sanitized.step,
+      min: sanitized.min,
+      max: sanitized.max,
       shouldIncrement: increment,
       intl,
     });
@@ -147,16 +154,24 @@ const NumberInput: NumberComponent & {
 
   const stepUpHandler = () => {
     onStepUp();
-    !isControlled && updateValue(true);
+
+    if (!isControlled) {
+      updateValue(true);
+    }
   };
 
   const stepDownHandler = () => {
     onStepDown();
-    !isControlled && updateValue(false);
+
+    if (!isControlled) {
+      updateValue(false);
+    }
   };
 
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    !isControlled && setUncontrolledValue(getStringAsNumber(e.target.value));
+    if (!isControlled) {
+      setUncontrolledValue(e.target.value);
+    }
 
     if (onChange) {
       onChange(e);

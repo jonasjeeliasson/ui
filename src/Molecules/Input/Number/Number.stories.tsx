@@ -19,39 +19,23 @@ storiesOf('Molecules | Input / Number', module)
   .add('Default', () => <Input.Number fieldId="number1" label="Label" />)
   .add('With value (Controlled behaviour)', () => (
     <Input.Number
-      fieldId="number2"
+      fieldId="unique-id"
       label="Label"
       value={11}
       onStepUp={action('step up')}
       onStepDown={action('step down')}
     />
   ))
-  .add('With value 0.25 (Uncontrolled behaviour)', () => (
-    <Input.Number
-      fieldId="number22"
-      label="Label"
-      min={1.25}
-      max={2}
-      defaultValue={135.25}
-      step={0.25}
-      onStepUp={action('step up')}
-      onStepDown={action('step down')}
-    />
-  ))
-  .add('With value 0.0025 (Uncontrolled behaviour)', () => (
-    <Input.Number
-      fieldId="number22"
-      label="Label"
-      defaultValue={135}
-      step={0.0025}
-      onStepUp={action('step up')}
-      onStepDown={action('step down')}
-    />
-  ))
   .add('With default value (Uncontrolled behaviour)', () => (
-    <Input.Number fieldId="number3" label="Label" defaultValue={15.2} step={0.1} />
+    <Input.Number fieldId="unique-id" label="Label" defaultValue={15.2} step={0.1} />
+  ))
+  .add('With small step (Uncontrolled behaviour)', () => (
+    <Input.Number fieldId="unique-id" label="Label" defaultValue="15.200" step="0.005" />
+  ))
+  .add('With max and min (Uncontrolled behaviour)', () => (
+    <Input.Number fieldId="unique-id" label="Label" defaultValue={12} min={10} max={20} />
   ))
   .add('Disabled', () => (
-    <Input.Number fieldId="number4" label="Label" defaultValue={152.25} step={0.25} disabled />
+    <Input.Number fieldId="unique-id" label="Label" defaultValue={152.25} step={0.25} disabled />
   ))
-  .add('With all actions', () => <Input.Number fieldId="number6" label="Label" {...handlers} />);
+  .add('With all actions', () => <Input.Number fieldId="unique-id" label="Label" {...handlers} />);
