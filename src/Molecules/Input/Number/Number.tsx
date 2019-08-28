@@ -80,12 +80,12 @@ const Input = styled(NormalizedElements.Input).attrs({ type: 'number' })<Partial
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+    -webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
     margin: 0;
   }
 
   &[type='number'] {
-    -moz-appearance: textfield;
+    -moz-appearance: textfield; /* stylelint-disable-line property-no-vendor-prefix */
   }
 `;
 
