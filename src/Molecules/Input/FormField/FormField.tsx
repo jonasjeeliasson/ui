@@ -136,8 +136,7 @@ export const FormField: React.FC<Props> = ({
           initial={{ y: -10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 0, opacity: 0 }}
-          aria-live="polite"
-          // TODO: Check this one @manman
+          aria-live="assertive"
           // @ts-ignore
           aria-relevant="additions removals"
         >
@@ -154,7 +153,6 @@ export const FormField: React.FC<Props> = ({
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 0, opacity: 0 }}
             aria-live="polite"
-            // TODO: Check this one @manman
             // @ts-ignore
             aria-relevant="additions removals"
           >

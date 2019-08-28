@@ -20,6 +20,8 @@ const InnerWrapper = styled(Flexbox)`
   box-sizing: border-box;
 `;
 
+const BottomWrapper = styled(motion.div)``;
+
 export const FormFieldSimple: React.FC<Props> = ({
   children,
   className,
@@ -42,13 +44,12 @@ export const FormFieldSimple: React.FC<Props> = ({
     </Typography>
     <AnimatePresence>
       {hasError(error) ? (
-        <motion.div
+        <BottomWrapper
           size={size}
           initial={{ y: -10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 0, opacity: 0 }}
-          aria-live="polite"
-          // TODO: Check this one @manman
+          aria-live="assertive"
           // @ts-ignore
           aria-relevant="additions removals"
         >
@@ -56,23 +57,22 @@ export const FormFieldSimple: React.FC<Props> = ({
             <VisuallyHidden>Error: </VisuallyHidden>
             {error}
           </Typography>
-        </motion.div>
+        </BottomWrapper>
       ) : (
         extraInfo && (
-          <motion.div
+          <BottomWrapper
             size={size}
             initial={{ y: -10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 0, opacity: 0 }}
             aria-live="polite"
-            // TODO: Check this one @manman
             // @ts-ignore
             aria-relevant="additions removals"
           >
             <Typography type="tertiary" color={t => t.color.label}>
               {extraInfo}
             </Typography>
-          </motion.div>
+          </BottomWrapper>
         )
       )}
     </AnimatePresence>

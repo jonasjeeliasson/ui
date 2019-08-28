@@ -27,7 +27,7 @@ const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
       : `
       &:hover {
         border-color: ${p.theme.color.inputBorderHover};
-        z-index: 1;
+        z-index: 2;
       }
 `}
 `;
@@ -36,7 +36,7 @@ const focusBorderStyles = css<Pick<Props, 'error'>>`
   &:focus {
     border-color: ${p =>
       hasError(p.error) ? p.theme.color.inputBorderError : p.theme.color.borderActive};
-    z-index: 1;
+    z-index: 2;
   }
 `;
 
@@ -77,6 +77,7 @@ const Input = styled(NormalizedElements.Input).attrs({ type: 'number' })<Partial
   height: 100%;
   margin: 0 -1px;
   box-sizing: border-box;
+  z-index: 1;
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
@@ -139,8 +140,8 @@ const NumberInput: NumberComponent & {
     uncontrolledValue: getStringAsNumber(uncontrolledValue),
   };
 
-  const updateValue = (increment: boolean) => {
-    const value = adjustValue({
+  const getUpdateValue = (increment: boolean) => {
+    return adjustValue({
       originalValue: sanitized.uncontrolledValue,
       step: sanitized.step,
       min: sanitized.min,
@@ -148,23 +149,18 @@ const NumberInput: NumberComponent & {
       shouldIncrement: increment,
       intl,
     });
-
-    setUncontrolledValue(value);
   };
 
-  const stepUpHandler = () => {
-    onStepUp();
+  const onStepHandler = (stepUp: boolean) => {
+    const updatedValue = getUpdateValue(stepUp);
+    setUncontrolledValue(updatedValue);
 
-    if (!isControlled) {
-      updateValue(true);
-    }
-  };
-
-  const stepDownHandler = () => {
-    onStepDown();
-
-    if (!isControlled) {
-      updateValue(false);
+    if (stepUp) {
+      if (onStepUp) {
+        onStepUp(updatedValue);
+      }
+    } else if (onStepDown) {
+      onStepDown(updatedValue);
     }
   };
 
@@ -178,10 +174,25 @@ const NumberInput: NumberComponent & {
     }
   };
 
+  const onKeyDownHandler = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    const { key } = e;
+    const upKey = 'ArrowUp';
+    const downKey = 'ArrowDown';
+
+    if (key === upKey || key === downKey) {
+      e.preventDefault();
+      onStepHandler(key === upKey);
+    }
+
+    if (onKeyDown) {
+      onKeyDown(e);
+    }
+  };
+
   return (
     <FormFieldSimple {...props}>
       <Flexbox container alignItems="center">
-        <Stepper onClick={stepDownHandler} size={size} disabled={disabled}>
+        <Stepper onClick={() => onStepHandler(false)} size={size} disabled={disabled}>
           -
         </Stepper>
         <Input
@@ -189,7 +200,6 @@ const NumberInput: NumberComponent & {
             error,
             success,
             value: controlledValue || uncontrolledValue,
-            defaultValue,
             disabled,
             id: fieldId,
             step,
@@ -200,20 +210,21 @@ const NumberInput: NumberComponent & {
             onFocus,
             onClick,
             onBlur,
-            onKeyDown,
+            onKeyDown: onKeyDownHandler,
             onKeyUp,
             onKeyPress,
           }}
           {...(hasError(error) ? { 'aria-invalid': true } : {})}
         />
 
-        <Stepper onClick={stepUpHandler} size={size} disabled={disabled}>
+        <Stepper onClick={() => onStepHandler(true)} size={size} disabled={disabled}>
           +
         </Stepper>
       </Flexbox>
     </FormFieldSimple>
   );
 };
+
 NumberInput.components = components;
 
 export default injectIntl(NumberInput);

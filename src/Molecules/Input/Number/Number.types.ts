@@ -7,6 +7,7 @@ export type Props = {
   /** But you can hide it visually */
   hideLabel?: boolean;
   error?: string;
+  extraInfo?: string;
   success?: boolean;
   /** TODO: is this needed? */
   disabled?: boolean;
@@ -35,8 +36,8 @@ export type Props = {
   onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
-  onStepUp?: Function;
-  onStepDown?: Function;
+  onStepUp?: (value: string) => void;
+  onStepDown?: (value: string) => void;
 };
 
 export type NumberComponent = React.FunctionComponent<Props & InjectedIntlProps>;
