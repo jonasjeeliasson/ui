@@ -5,8 +5,14 @@ import * as React from 'react';
 // since we are not exporting this component itself
 import { FormFieldSimple } from '.';
 
-storiesOf('Molecules | Input / FormField', module)
-  .add('Docs', () => <p>This is a helper component, you are probably looking for something else</p>)
+storiesOf('Molecules | Input / FormFieldSimple', module)
+  .add('Docs', () => (
+    <p>
+      This is a helper component, you are probably looking for something else. The difference
+      between this component and the FormField component is that this does not do anything to the
+      border of the field.
+    </p>
+  ))
   .add('Default', () => (
     <FormFieldSimple label="Label" fieldId="unique-id-1">
       <div style={{ background: 'aqua' }}>Pass in any children you want</div>
