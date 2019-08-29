@@ -10,6 +10,7 @@ jest.mock('framer-motion', () => {
   return {
     motion: {
       span: Dummy('span'),
+      div: Dummy('div'),
     },
     AnimatePresence: Dummy(),
   };

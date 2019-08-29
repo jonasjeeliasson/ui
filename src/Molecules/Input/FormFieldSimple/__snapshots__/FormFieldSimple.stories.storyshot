@@ -1,0 +1,293 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | Input / FormFieldSimple Default 1`] = `
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c0 {
+  width: 200px;
+}
+
+.c4 {
+  position: relative;
+  background-color: #ffffff;
+  height: 40px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="unique-id-1"
+  >
+    <span
+      className="c2"
+    >
+      Label
+    </span>
+  </label>
+  <span
+    className="c3"
+  >
+    <div
+      className="c4 c5"
+    >
+      <div
+        style={
+          Object {
+            "background": "aqua",
+          }
+        }
+      >
+        Pass in any children you want
+      </div>
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / FormFieldSimple Docs 1`] = `
+<p>
+  This is a helper component, you are probably looking for something else. The difference between this component and the FormField component is that this does not do anything to the border of the field.
+</p>
+`;
+
+exports[`Storyshots Molecules | Input / FormFieldSimple Error 1`] = `
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c7 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c1 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+}
+
+.c0 {
+  width: 200px;
+}
+
+.c4 {
+  position: relative;
+  background-color: #ffffff;
+  height: 40px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="unique-id-2"
+  >
+    <span
+      className="c2"
+    >
+      Label
+    </span>
+  </label>
+  <span
+    className="c3"
+  >
+    <div
+      className="c4 c5"
+    >
+      <div
+        style={
+          Object {
+            "background": "aqua",
+          }
+        }
+      >
+        Pass in any children you want
+      </div>
+    </div>
+  </span>
+  <div>
+    <span
+      className="c6"
+    >
+      <div
+        className="c7"
+      >
+        Error: 
+      </div>
+      error
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / FormFieldSimple Extra info 1`] = `
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+}
+
+.c0 {
+  width: 200px;
+}
+
+.c4 {
+  position: relative;
+  background-color: #ffffff;
+  height: 40px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="unique-id-2"
+  >
+    <span
+      className="c2"
+    >
+      Label
+    </span>
+  </label>
+  <span
+    className="c3"
+  >
+    <div
+      className="c4 c5"
+    >
+      <div
+        style={
+          Object {
+            "background": "aqua",
+          }
+        }
+      >
+        Pass in any children you want
+      </div>
+    </div>
+  </span>
+  <div>
+    <span
+      className="c6"
+    >
+      Some extra info
+    </span>
+  </div>
+</div>
+`;

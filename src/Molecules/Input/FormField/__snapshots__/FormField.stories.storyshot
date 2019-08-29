@@ -31,18 +31,18 @@ exports[`Storyshots Molecules | Input / FormField Default 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
+  color: #6E6E69;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7142857142857142;
 }
 
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #282823;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -172,18 +172,27 @@ exports[`Storyshots Molecules | Input / FormField Error 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c11 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
+  color: #6E6E69;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7142857142857142;
 }
 
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #282823;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -197,15 +206,6 @@ exports[`Storyshots Molecules | Input / FormField Error 1`] = `
   font-weight: 400;
   font-size: 12px;
   line-height: 1.6666666666666667;
-}
-
-.c11 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
 }
 
 .c0 {
@@ -342,18 +342,18 @@ exports[`Storyshots Molecules | Input / FormField Extra info 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
+  color: #6E6E69;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7142857142857142;
 }
 
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #282823;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
