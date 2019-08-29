@@ -9,7 +9,6 @@ const hasError = (error?: Props['error']) => error && error !== '';
 
 const Wrapper = styled.div<{ width?: string | number }>`
   ${p => (p.width ? `width: ${p.width};` : 'width: 200px;')}
-  display: inline-block;
 `;
 
 const InnerWrapper = styled(Flexbox)`

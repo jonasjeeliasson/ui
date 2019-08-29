@@ -196,7 +196,7 @@ const NumberInput: NumberComponent & {
 
   return (
     <FormFieldSimple {...props}>
-      <Flexbox container alignItems="center">
+      <Flexbox container item grow={1} alignItems="center">
         <Stepper onClick={() => onStepHandler(false)} size={size} disabled={disabled}>
           -
         </Stepper>
