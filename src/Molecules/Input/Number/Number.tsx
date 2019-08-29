@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { injectIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
 import { Props, NumberComponent } from './Number.types';
@@ -36,7 +36,7 @@ const focusBorderStyles = css<Pick<Props, 'error'>>`
   &:focus {
     border-color: ${p =>
       hasError(p.error) ? p.theme.color.inputBorderError : p.theme.color.borderActive};
-    z-index: 2;
+    z-index: 3;
   }
 `;
 
@@ -132,6 +132,7 @@ const NumberInput: NumberComponent & {
     onStepDown = () => {},
   } = props;
   const [uncontrolledValue, setUncontrolledValue] = useState(defaultValue);
+  const inputRef = useRef<HTMLInputElement>(null);
   const isControlled = controlledValue && controlledValue >= 0;
   const sanitized = {
     max: max ? getStringAsNumber(max) : undefined,
@@ -161,6 +162,10 @@ const NumberInput: NumberComponent & {
       }
     } else if (onStepDown) {
       onStepDown(updatedValue);
+    }
+
+    if (inputRef.current) {
+      inputRef.current.focus();
     }
   };
 
@@ -197,6 +202,7 @@ const NumberInput: NumberComponent & {
         </Stepper>
         <Input
           {...{
+            ref: inputRef,
             error,
             success,
             value: controlledValue || uncontrolledValue,
