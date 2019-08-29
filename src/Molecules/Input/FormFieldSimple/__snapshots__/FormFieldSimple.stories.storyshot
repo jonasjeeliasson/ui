@@ -36,6 +36,7 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Default 1`] = `
 
 .c0 {
   width: 200px;
+  display: inline-block;
 }
 
 .c4 {
@@ -140,6 +141,7 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Error 1`] = `
 
 .c0 {
   width: 200px;
+  display: inline-block;
 }
 
 .c4 {
@@ -241,6 +243,7 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Extra info 1`] = `
 
 .c0 {
   width: 200px;
+  display: inline-block;
 }
 
 .c4 {

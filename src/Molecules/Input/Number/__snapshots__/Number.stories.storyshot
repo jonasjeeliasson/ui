@@ -52,6 +52,7 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
 
 .c0 {
   width: 200px;
+  display: inline-block;
 }
 
 .c4 {
@@ -235,6 +236,7 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
 
 .c0 {
   width: 200px;
+  display: inline-block;
 }
 
 .c4 {
@@ -429,6 +431,7 @@ exports[`Storyshots Molecules | Input / Number Error if value is less than 1 1`]
 
 .c0 {
   width: 200px;
+  display: inline-block;
 }
 
 .c4 {
@@ -634,6 +637,7 @@ exports[`Storyshots Molecules | Input / Number Extra info below 1`] = `
 
 .c0 {
   width: 200px;
+  display: inline-block;
 }
 
 .c4 {
@@ -842,6 +846,7 @@ exports[`Storyshots Molecules | Input / Number Extra info with error 1`] = `
 
 .c0 {
   width: 200px;
+  display: inline-block;
 }
 
 .c4 {
@@ -1044,6 +1049,7 @@ exports[`Storyshots Molecules | Input / Number Hidden label 1`] = `
 
 .c0 {
   width: 200px;
+  display: inline-block;
 }
 
 .c4 {
@@ -1227,6 +1233,7 @@ exports[`Storyshots Molecules | Input / Number Success 1`] = `
 
 .c0 {
   width: 200px;
+  display: inline-block;
 }
 
 .c4 {
@@ -1411,6 +1418,7 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
 
 .c0 {
   width: 200px;
+  display: inline-block;
 }
 
 .c4 {
@@ -1599,6 +1607,7 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
 
 .c0 {
   width: 200px;
+  display: inline-block;
 }
 
 .c4 {
@@ -1782,6 +1791,7 @@ exports[`Storyshots Molecules | Input / Number With max and min (Uncontrolled be
 
 .c0 {
   width: 200px;
+  display: inline-block;
 }
 
 .c4 {
@@ -1966,6 +1976,7 @@ exports[`Storyshots Molecules | Input / Number With small step (Uncontrolled beh
 
 .c0 {
   width: 200px;
+  display: inline-block;
 }
 
 .c4 {
@@ -2149,6 +2160,7 @@ exports[`Storyshots Molecules | Input / Number With value (Controlled behaviour)
 
 .c0 {
   width: 200px;
+  display: inline-block;
 }
 
 .c4 {
