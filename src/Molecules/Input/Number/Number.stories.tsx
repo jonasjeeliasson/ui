@@ -76,8 +76,8 @@ storiesOf('Molecules | Input / Number', module)
           fieldId="insert-unique-id"
           label="Label"
           step="1"
-          onStepUp={x => setValue(x)}
-          onStepDown={x => setValue(x)}
+          onStepUp={x => x && setValue(x)}
+          onStepDown={x => x && setValue(x)}
           {...(showError ? { error: 'Number needs to be greater than 0' } : {})}
         />
       );
