@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { injectIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
 import { Props, NumberComponent } from './Number.types';
-import { Flexbox } from '../../..';
+import { Flexbox, VisuallyHidden } from '../../..';
 import { FormFieldSimple } from '../FormFieldSimple';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber } from './utils';
@@ -66,6 +66,10 @@ const Stepper = styled.button.attrs({ type: 'button' })<Partial<Props>>`
   &:active {
     background-color: ${p => p.theme.color.cta};
     color: ${p => p.theme.color.buttonText};
+  }
+
+  &:first-of-type {
+    order: -1;
   }
 `;
 
@@ -204,11 +208,6 @@ const NumberInput: NumberComponent & {
   return (
     <FormFieldSimple {...props}>
       <Flexbox container item grow={1} alignItems="center">
-        {!noSteppers && (
-          <Stepper onClick={() => onStepHandler(false)} size={size} disabled={disabled}>
-            -
-          </Stepper>
-        )}
         <Input
           {...{
             ref: inputRef,
@@ -232,8 +231,13 @@ const NumberInput: NumberComponent & {
           {...(hasError(error) ? { 'aria-invalid': true } : {})}
         />
         {!noSteppers && (
+          <Stepper onClick={() => onStepHandler(false)} size={size} disabled={disabled}>
+            <VisuallyHidden>decrease number by {step}</VisuallyHidden>-
+          </Stepper>
+        )}
+        {!noSteppers && (
           <Stepper onClick={() => onStepHandler(true)} size={size} disabled={disabled}>
-            +
+            <VisuallyHidden>increase number by {step}</VisuallyHidden>+
           </Stepper>
         )}
       </Flexbox>

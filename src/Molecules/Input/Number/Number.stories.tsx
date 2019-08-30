@@ -88,17 +88,19 @@ storiesOf('Molecules | Input / Number', module)
   .add('With extra info below', () => (
     <Input.Number fieldId="insert-unique-id" label="Label" extraInfo="Use wisely this space" />
   ))
-  .add('With extra info with error', () => {
+  .add('With extra info and error', () => {
     const Component = () => {
-      const [value, setValue] = React.useState('');
+      const [value, setValue] = React.useState('0');
+      const showError = parseInt(value, 10) < 1;
 
       return (
         <Input.Number
           fieldId="insert-unique-id"
           label="Label"
           extraInfo="Use wisely this space"
-          onChange={e => setValue(e.target.value)}
-          {...(value === '' ? { error: 'Enter text' } : {})}
+          onStepUp={x => x && setValue(x)}
+          onStepDown={x => x && setValue(x)}
+          {...(showError ? { error: 'Number needs to be greater than 0' } : {})}
         />
       );
     };

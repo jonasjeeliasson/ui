@@ -132,13 +132,10 @@ export const FormField: React.FC<Props> = ({
     <AnimatePresence>
       {hasError(error) ? (
         <BottomWrapper
-          size={size}
           initial={{ y: -10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 0, opacity: 0 }}
-          aria-live="assertive"
-          // @ts-ignore
-          aria-relevant="additions removals"
+          aria-live="polite"
         >
           <DensedTypography type="tertiary" color={t => t.color.negative}>
             <VisuallyHidden>Error: </VisuallyHidden>
@@ -148,13 +145,10 @@ export const FormField: React.FC<Props> = ({
       ) : (
         extraInfo && (
           <BottomWrapper
-            size={size}
             initial={{ y: -10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 0, opacity: 0 }}
             aria-live="polite"
-            // @ts-ignore
-            aria-relevant="additions removals"
           >
             <DensedTypography type="tertiary" color={t => t.color.label}>
               {extraInfo}
