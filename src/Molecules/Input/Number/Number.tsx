@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { injectIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
 import { Props, NumberComponent } from './Number.types';
-import { Flexbox, VisuallyHidden } from '../../..';
+import { Flexbox, VisuallyHidden, Icon } from '../../..';
 import { FormFieldSimple } from '../FormFieldSimple';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber } from './utils';
@@ -61,11 +61,17 @@ const Stepper = styled.button.attrs({ type: 'button' })<Partial<Props>>`
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1 0 auto;
 
   &:active {
     background-color: ${p => p.theme.color.cta};
-    color: ${p => p.theme.color.buttonText};
+
+    svg {
+      fill: ${p => p.theme.color.buttonText};
+    }
   }
 
   &:first-of-type {
@@ -232,12 +238,14 @@ const NumberInput: NumberComponent & {
         />
         {!noSteppers && (
           <Stepper onClick={() => onStepHandler(false)} size={size} disabled={disabled}>
-            <VisuallyHidden>decrease number by {step}</VisuallyHidden>-
+            <VisuallyHidden>decrease number by {step}</VisuallyHidden>
+            <Icon.Minus size={3} />
           </Stepper>
         )}
         {!noSteppers && (
           <Stepper onClick={() => onStepHandler(true)} size={size} disabled={disabled}>
-            <VisuallyHidden>increase number by {step}</VisuallyHidden>+
+            <VisuallyHidden>increase number by {step}</VisuallyHidden>
+            <Icon.Plus size={3} />
           </Stepper>
         )}
       </Flexbox>

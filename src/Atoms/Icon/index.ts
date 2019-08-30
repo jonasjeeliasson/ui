@@ -13,7 +13,9 @@ import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
 import { InfoCircle } from './components/InfoCircle';
 import { Pen } from './components/Pen';
+import { Plus } from './components/Plus';
 import { Printer } from './components/Printer';
+import { Minus } from './components/Minus';
 import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
 import { Trash } from './components/Trash';
@@ -35,7 +37,9 @@ export default {
   Globe,
   InfoCircle,
   Pen,
+  Plus,
   Printer,
+  Minus,
   Star,
   Star24,
   Trash,

@@ -501,6 +501,31 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div
       className="c2"
     >
+      Plus
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="c3"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       Printer
     </div>
     <div>
@@ -520,6 +545,31 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
             d="M20 11L21 11C21.5522847 11 22 10.7761424 22 10.5 22 10.2238576 21.5522847 10 21 10L20 10C19.4477153 10 19 10.2238576 19 10.5 19 10.7761424 19.4477153 11 20 11zM14.25 17L9.75 17C9.33578644 17 9 17.2238576 9 17.5 9 17.7761424 9.33578644 18 9.75 18L14.25 18C14.6642136 18 15 17.7761424 15 17.5 15 17.2238576 14.6642136 17 14.25 17zM14.25 19L9.75 19C9.33578644 19 9 19.2238576 9 19.5 9 19.7761424 9.33578644 20 9.75 20L14.25 20C14.6642136 20 15 19.7761424 15 19.5 15 19.2238576 14.6642136 19 14.25 19z"
           />
         </g>
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Minus
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="c3"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M24 11v2H0v-2z"
+          fillRule="evenodd"
+        />
       </svg>
     </div>
   </div>

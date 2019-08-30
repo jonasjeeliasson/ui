@@ -41,6 +41,20 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   white-space: nowrap;
 }
 
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -82,6 +96,18 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -99,7 +125,10 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
 
 .c8:active {
   background-color: #0046FF;
-  color: #FFFFFF;
+}
+
+.c8:active svg {
+  fill: #FFFFFF;
 }
 
 .c8:first-of-type {
@@ -190,7 +219,19 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
             decrease number by 
             1
           </div>
-          -
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M24 11v2H0v-2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
         <button
           className="c8"
@@ -203,7 +244,19 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
             increase number by 
             1
           </div>
-          +
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
       </div>
     </div>
@@ -252,6 +305,20 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
   white-space: nowrap;
 }
 
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -293,6 +360,18 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -305,7 +384,10 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
 
 .c8:active {
   background-color: #0046FF;
-  color: #FFFFFF;
+}
+
+.c8:active svg {
+  fill: #FFFFFF;
 }
 
 .c8:first-of-type {
@@ -393,7 +475,19 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
             decrease number by 
             0.25
           </div>
-          -
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M24 11v2H0v-2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
         <button
           className="c8"
@@ -407,7 +501,19 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
             increase number by 
             0.25
           </div>
-          +
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
       </div>
     </div>
@@ -456,6 +562,20 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   white-space: nowrap;
 }
 
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -497,6 +617,18 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -514,7 +646,10 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
 
 .c8:active {
   background-color: #0046FF;
-  color: #FFFFFF;
+}
+
+.c8:active svg {
+  fill: #FFFFFF;
 }
 
 .c8:first-of-type {
@@ -605,7 +740,19 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
             decrease number by 
             0.005
           </div>
-          -
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M24 11v2H0v-2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
         <button
           className="c8"
@@ -618,7 +765,19 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
             increase number by 
             0.005
           </div>
-          +
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
       </div>
     </div>
@@ -667,6 +826,20 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   white-space: nowrap;
 }
 
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -708,6 +881,18 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -725,7 +910,10 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
 
 .c8:active {
   background-color: #0046FF;
-  color: #FFFFFF;
+}
+
+.c8:active svg {
+  fill: #FFFFFF;
 }
 
 .c8:first-of-type {
@@ -821,7 +1009,19 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
             decrease number by 
             1
           </div>
-          -
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M24 11v2H0v-2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
         <button
           className="c8"
@@ -834,7 +1034,19 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
             increase number by 
             1
           </div>
-          +
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
       </div>
     </div>
@@ -883,6 +1095,20 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   white-space: nowrap;
 }
 
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -924,6 +1150,18 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -941,7 +1179,10 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
 
 .c8:active {
   background-color: #0046FF;
-  color: #FFFFFF;
+}
+
+.c8:active svg {
+  fill: #FFFFFF;
 }
 
 .c8:first-of-type {
@@ -1032,7 +1273,19 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
             decrease number by 
             0.1
           </div>
-          -
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M24 11v2H0v-2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
         <button
           className="c8"
@@ -1045,7 +1298,19 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
             increase number by 
             0.1
           </div>
-          +
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
       </div>
     </div>
@@ -1094,6 +1359,20 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   white-space: nowrap;
 }
 
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -1112,7 +1391,7 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   line-height: 1.7142857142857142;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -1144,6 +1423,18 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -1161,7 +1452,10 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
 
 .c8:active {
   background-color: #0046FF;
-  color: #FFFFFF;
+}
+
+.c8:active svg {
+  fill: #FFFFFF;
 }
 
 .c8:first-of-type {
@@ -1253,7 +1547,19 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
             decrease number by 
             1
           </div>
-          -
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M24 11v2H0v-2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
         <button
           className="c8"
@@ -1266,14 +1572,26 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
             increase number by 
             1
           </div>
-          +
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
       </div>
     </div>
   </span>
   <div>
     <span
-      className="c10"
+      className="c11"
     >
       <div
         className="c9"
@@ -1327,6 +1645,20 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   white-space: nowrap;
 }
 
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -1345,7 +1677,7 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   line-height: 1.7142857142857142;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -1377,6 +1709,18 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -1394,7 +1738,10 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
 
 .c8:active {
   background-color: #0046FF;
-  color: #FFFFFF;
+}
+
+.c8:active svg {
+  fill: #FFFFFF;
 }
 
 .c8:first-of-type {
@@ -1486,7 +1833,19 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
             decrease number by 
             1
           </div>
-          -
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M24 11v2H0v-2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
         <button
           className="c8"
@@ -1499,14 +1858,26 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
             increase number by 
             1
           </div>
-          +
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
       </div>
     </div>
   </span>
   <div>
     <span
-      className="c10"
+      className="c11"
     >
       <div
         className="c9"
@@ -1560,6 +1931,20 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   white-space: nowrap;
 }
 
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -1578,7 +1963,7 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   line-height: 1.7142857142857142;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1610,6 +1995,18 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -1627,7 +2024,10 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
 
 .c8:active {
   background-color: #0046FF;
-  color: #FFFFFF;
+}
+
+.c8:active svg {
+  fill: #FFFFFF;
 }
 
 .c8:first-of-type {
@@ -1718,7 +2118,19 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
             decrease number by 
             1
           </div>
-          -
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M24 11v2H0v-2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
         <button
           className="c8"
@@ -1731,14 +2143,26 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
             increase number by 
             1
           </div>
-          +
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
       </div>
     </div>
   </span>
   <div>
     <span
-      className="c10"
+      className="c11"
     >
       Use wisely this space
     </span>
@@ -1793,6 +2217,20 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   white-space: nowrap;
 }
 
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -1834,6 +2272,18 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -1851,7 +2301,10 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
 
 .c8:active {
   background-color: #0046FF;
-  color: #FFFFFF;
+}
+
+.c8:active svg {
+  fill: #FFFFFF;
 }
 
 .c8:first-of-type {
@@ -1942,7 +2395,19 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
             decrease number by 
             1
           </div>
-          -
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M24 11v2H0v-2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
         <button
           className="c8"
@@ -1955,7 +2420,19 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
             increase number by 
             1
           </div>
-          +
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
       </div>
     </div>
@@ -2004,6 +2481,20 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   white-space: nowrap;
 }
 
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -2045,6 +2536,18 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -2062,7 +2565,10 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
 
 .c8:active {
   background-color: #0046FF;
-  color: #FFFFFF;
+}
+
+.c8:active svg {
+  fill: #FFFFFF;
 }
 
 .c8:first-of-type {
@@ -2154,7 +2660,19 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
             decrease number by 
             1
           </div>
-          -
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M24 11v2H0v-2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
         <button
           className="c8"
@@ -2167,7 +2685,19 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
             increase number by 
             1
           </div>
-          +
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
       </div>
     </div>
@@ -2386,6 +2916,20 @@ Array [
   white-space: nowrap;
 }
 
+.c13 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -2404,7 +2948,7 @@ Array [
   line-height: 1.7142857142857142;
 }
 
-.c14 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -2436,6 +2980,18 @@ Array [
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -2453,7 +3009,10 @@ Array [
 
 .c11:active {
   background-color: #0046FF;
-  color: #FFFFFF;
+}
+
+.c11:active svg {
+  fill: #FFFFFF;
 }
 
 .c11:first-of-type {
@@ -2500,7 +3059,7 @@ Array [
   -moz-appearance: textfield;
 }
 
-.c13 {
+.c14 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2518,23 +3077,23 @@ Array [
   z-index: 1;
 }
 
-.c13:hover {
+.c14:hover {
   border-color: #4B4B46;
   z-index: 2;
 }
 
-.c13:focus {
+.c14:focus {
   border-color: #FF1900;
   z-index: 3;
 }
 
-.c13::-webkit-outer-spin-button,
-.c13::-webkit-inner-spin-button {
+.c14::-webkit-outer-spin-button,
+.c14::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c13[type='number'] {
+.c14[type='number'] {
   -moz-appearance: textfield;
 }
 
@@ -2654,7 +3213,19 @@ Array [
                     decrease number by 
                     1
                   </div>
-                  -
+                  <svg
+                    aria-hidden="true"
+                    className="c13"
+                    focusable="false"
+                    role="presentation"
+                    size={3}
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M24 11v2H0v-2z"
+                      fillRule="evenodd"
+                    />
+                  </svg>
                 </button>
                 <button
                   className="c11"
@@ -2668,7 +3239,19 @@ Array [
                     increase number by 
                     1
                   </div>
-                  +
+                  <svg
+                    aria-hidden="true"
+                    className="c13"
+                    focusable="false"
+                    role="presentation"
+                    size={3}
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+                      fillRule="evenodd"
+                    />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -2760,7 +3343,7 @@ Array [
               >
                 <input
                   aria-invalid={true}
-                  className="c13"
+                  className="c14"
                   id="insert-unique-id"
                   min={0}
                   onChange={[Function]}
@@ -2781,7 +3364,19 @@ Array [
                     decrease number by 
                     1
                   </div>
-                  -
+                  <svg
+                    aria-hidden="true"
+                    className="c13"
+                    focusable="false"
+                    role="presentation"
+                    size={3}
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M24 11v2H0v-2z"
+                      fillRule="evenodd"
+                    />
+                  </svg>
                 </button>
                 <button
                   className="c11"
@@ -2795,14 +3390,26 @@ Array [
                     increase number by 
                     1
                   </div>
-                  +
+                  <svg
+                    aria-hidden="true"
+                    className="c13"
+                    focusable="false"
+                    role="presentation"
+                    size={3}
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+                      fillRule="evenodd"
+                    />
+                  </svg>
                 </button>
               </div>
             </div>
           </span>
           <div>
             <span
-              className="c14"
+              className="c15"
             >
               <div
                 className="c12"
@@ -2867,6 +3474,20 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   white-space: nowrap;
 }
 
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -2908,6 +3529,18 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -2925,7 +3558,10 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
 
 .c8:active {
   background-color: #0046FF;
-  color: #FFFFFF;
+}
+
+.c8:active svg {
+  fill: #FFFFFF;
 }
 
 .c8:first-of-type {
@@ -3017,7 +3653,19 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
             decrease number by 
             1
           </div>
-          -
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M24 11v2H0v-2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
         <button
           className="c8"
@@ -3030,7 +3678,19 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
             increase number by 
             1
           </div>
-          +
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
       </div>
     </div>
@@ -3079,6 +3739,20 @@ exports[`Storyshots Molecules | Input / Number With value (Controlled behaviour)
   white-space: nowrap;
 }
 
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -3120,6 +3794,18 @@ exports[`Storyshots Molecules | Input / Number With value (Controlled behaviour)
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -3137,7 +3823,10 @@ exports[`Storyshots Molecules | Input / Number With value (Controlled behaviour)
 
 .c8:active {
   background-color: #0046FF;
-  color: #FFFFFF;
+}
+
+.c8:active svg {
+  fill: #FFFFFF;
 }
 
 .c8:first-of-type {
@@ -3228,7 +3917,19 @@ exports[`Storyshots Molecules | Input / Number With value (Controlled behaviour)
             decrease number by 
             1
           </div>
-          -
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M24 11v2H0v-2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
         <button
           className="c8"
@@ -3241,7 +3942,19 @@ exports[`Storyshots Molecules | Input / Number With value (Controlled behaviour)
             increase number by 
             1
           </div>
-          +
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
         </button>
       </div>
     </div>
