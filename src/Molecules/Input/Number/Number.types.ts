@@ -20,6 +20,7 @@ export type Props = {
   value?: string | number;
   defaultValue?: string | number;
   name?: string;
+  noSteppers?: boolean;
   /**
    * You need to specify width
    * (better in pixels), because
@@ -29,6 +30,8 @@ export type Props = {
    */
   width?: string | number;
 
+  onStepUp?: (() => void) | ((value?: string) => void);
+  onStepDown?: (() => void) | ((value?: string) => void);
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   onClick?: React.MouseEventHandler<HTMLInputElement>;
   onBlur?: React.FocusEventHandler<HTMLInputElement>;
@@ -36,8 +39,6 @@ export type Props = {
   onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
-  onStepUp?: (value: string) => void;
-  onStepDown?: (value: string) => void;
 };
 
 export type NumberComponent = React.FunctionComponent<Props & InjectedIntlProps>;

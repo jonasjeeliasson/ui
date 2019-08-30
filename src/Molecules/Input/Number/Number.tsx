@@ -121,6 +121,7 @@ const NumberInput: NumberComponent & {
     min = 0,
     max,
     name,
+    noSteppers,
     onBlur,
     onChange,
     onClick,
@@ -153,8 +154,12 @@ const NumberInput: NumberComponent & {
   };
 
   const onStepHandler = (stepUp: boolean) => {
-    const updatedValue = getUpdateValue(stepUp);
-    setUncontrolledValue(updatedValue);
+    let updatedValue;
+
+    if (!isControlled) {
+      updatedValue = getUpdateValue(stepUp);
+      setUncontrolledValue(updatedValue);
+    }
 
     if (stepUp) {
       if (onStepUp) {
@@ -180,13 +185,15 @@ const NumberInput: NumberComponent & {
   };
 
   const onKeyDownHandler = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    const { key } = e;
-    const upKey = 'ArrowUp';
-    const downKey = 'ArrowDown';
+    if (!isControlled) {
+      const { key } = e;
+      const upKey = 'ArrowUp';
+      const downKey = 'ArrowDown';
 
-    if (key === upKey || key === downKey) {
-      e.preventDefault();
-      onStepHandler(key === upKey);
+      if (key === upKey || key === downKey) {
+        e.preventDefault();
+        onStepHandler(key === upKey);
+      }
     }
 
     if (onKeyDown) {
@@ -197,9 +204,11 @@ const NumberInput: NumberComponent & {
   return (
     <FormFieldSimple {...props}>
       <Flexbox container item grow={1} alignItems="center">
-        <Stepper onClick={() => onStepHandler(false)} size={size} disabled={disabled}>
-          -
-        </Stepper>
+        {!noSteppers && (
+          <Stepper onClick={() => onStepHandler(false)} size={size} disabled={disabled}>
+            -
+          </Stepper>
+        )}
         <Input
           {...{
             ref: inputRef,
@@ -222,10 +231,11 @@ const NumberInput: NumberComponent & {
           }}
           {...(hasError(error) ? { 'aria-invalid': true } : {})}
         />
-
-        <Stepper onClick={() => onStepHandler(true)} size={size} disabled={disabled}>
-          +
-        </Stepper>
+        {!noSteppers && (
+          <Stepper onClick={() => onStepHandler(true)} size={size} disabled={disabled}>
+            +
+          </Stepper>
+        )}
       </Flexbox>
     </FormFieldSimple>
   );
