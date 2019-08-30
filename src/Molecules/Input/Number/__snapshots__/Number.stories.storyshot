@@ -137,7 +137,7 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="number1"
+    htmlFor="insert-unique-id"
   >
     <span
       className="c2"
@@ -163,7 +163,7 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
         </button>
         <input
           className="c8"
-          id="number1"
+          id="insert-unique-id"
           min={0}
           onChange={[Function]}
           onKeyDown={[Function]}
@@ -361,222 +361,7 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number Error if value is less than 1 1`] = `
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c10 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FF1900;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
-}
-
-.c7 {
-  width: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 100%;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7:active {
-  background-color: #0046FF;
-  color: #FFFFFF;
-}
-
-.c8 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 -1px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #FF1900;
-  z-index: 3;
-}
-
-.c8::-webkit-outer-spin-button,
-.c8::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c8[type='number'] {
-  -moz-appearance: textfield;
-}
-
-<div
-  className="c0"
->
-  <label
-    className="c1"
-    hidden={false}
-    htmlFor="insert-unique-id"
-  >
-    <span
-      className="c2"
-    >
-      Label
-    </span>
-  </label>
-  <span
-    className="c3"
-  >
-    <div
-      className="c4 c5"
-    >
-      <div
-        className="c6"
-      >
-        <button
-          className="c7"
-          onClick={[Function]}
-          type="button"
-        >
-          -
-        </button>
-        <input
-          aria-invalid={true}
-          className="c8"
-          id="insert-unique-id"
-          min={0}
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          step="1"
-          type="number"
-          value={0}
-        />
-        <button
-          className="c7"
-          onClick={[Function]}
-          type="button"
-        >
-          +
-        </button>
-      </div>
-    </div>
-  </span>
-  <div>
-    <span
-      className="c9"
-    >
-      <div
-        className="c10"
-      >
-        Error: 
-      </div>
-      Number needs to be greater than 0
-    </span>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules | Input / Number Extra info below 1`] = `
+exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
 .c5 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -624,15 +409,6 @@ exports[`Storyshots Molecules | Input / Number Extra info below 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7142857142857142;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
 }
 
 .c0 {
@@ -752,606 +528,9 @@ exports[`Storyshots Molecules | Input / Number Extra info below 1`] = `
           min={0}
           onChange={[Function]}
           onKeyDown={[Function]}
-          step={1}
+          step="0.005"
           type="number"
-          value={0}
-        />
-        <button
-          className="c7"
-          onClick={[Function]}
-          type="button"
-        >
-          +
-        </button>
-      </div>
-    </div>
-  </span>
-  <div>
-    <span
-      className="c9"
-    >
-      Use wisely this space
-    </span>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules | Input / Number Extra info with error 1`] = `
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c10 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-}
-
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FF1900;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
-}
-
-.c7 {
-  width: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 100%;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7:active {
-  background-color: #0046FF;
-  color: #FFFFFF;
-}
-
-.c8 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 -1px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #FF1900;
-  z-index: 3;
-}
-
-.c8::-webkit-outer-spin-button,
-.c8::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c8[type='number'] {
-  -moz-appearance: textfield;
-}
-
-<div
-  className="c0"
->
-  <label
-    className="c1"
-    hidden={false}
-    htmlFor="insert-unique-id"
-  >
-    <span
-      className="c2"
-    >
-      Label
-    </span>
-  </label>
-  <span
-    className="c3"
-  >
-    <div
-      className="c4 c5"
-    >
-      <div
-        className="c6"
-      >
-        <button
-          className="c7"
-          onClick={[Function]}
-          type="button"
-        >
-          -
-        </button>
-        <input
-          aria-invalid={true}
-          className="c8"
-          id="insert-unique-id"
-          min={0}
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          step={1}
-          type="number"
-          value={0}
-        />
-        <button
-          className="c7"
-          onClick={[Function]}
-          type="button"
-        >
-          +
-        </button>
-      </div>
-    </div>
-  </span>
-  <div>
-    <span
-      className="c9"
-    >
-      <div
-        className="c10"
-      >
-        Error: 
-      </div>
-      Enter text
-    </span>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules | Input / Number Hidden label 1`] = `
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c1 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
-}
-
-.c7 {
-  width: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 100%;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7:active {
-  background-color: #0046FF;
-  color: #FFFFFF;
-}
-
-.c8 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 -1px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8::-webkit-outer-spin-button,
-.c8::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c8[type='number'] {
-  -moz-appearance: textfield;
-}
-
-<div
-  className="c0"
->
-  <label
-    className="c1"
-    hidden={true}
-    htmlFor="insert-unique-id"
-  >
-    <span
-      className="c2"
-    >
-      Label
-    </span>
-  </label>
-  <span
-    className="c3"
-  >
-    <div
-      className="c4 c5"
-    >
-      <div
-        className="c6"
-      >
-        <button
-          className="c7"
-          onClick={[Function]}
-          type="button"
-        >
-          -
-        </button>
-        <input
-          className="c8"
-          id="insert-unique-id"
-          min={0}
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          step={1}
-          type="number"
-          value={0}
-        />
-        <button
-          className="c7"
-          onClick={[Function]}
-          type="button"
-        >
-          +
-        </button>
-      </div>
-    </div>
-  </span>
-</div>
-`;
-
-exports[`Storyshots Molecules | Input / Number Success 1`] = `
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c1 {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
-}
-
-.c7 {
-  width: 40px;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 100%;
-  padding: 0;
-  cursor: pointer;
-  box-sizing: border-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7:active {
-  background-color: #0046FF;
-  color: #FFFFFF;
-}
-
-.c8 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #00D200;
-  position: relative;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 -1px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8::-webkit-outer-spin-button,
-.c8::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c8[type='number'] {
-  -moz-appearance: textfield;
-}
-
-<div
-  className="c0"
->
-  <label
-    className="c1"
-    hidden={false}
-    htmlFor="insert-unique-id"
-  >
-    <span
-      className="c2"
-    >
-      Label
-    </span>
-  </label>
-  <span
-    className="c3"
-  >
-    <div
-      className="c4 c5"
-    >
-      <div
-        className="c6"
-      >
-        <button
-          className="c7"
-          onClick={[Function]}
-          type="button"
-        >
-          -
-        </button>
-        <input
-          className="c8"
-          id="insert-unique-id"
-          min={0}
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          step={1}
-          success={true}
-          type="number"
-          value={0}
+          value="15.200"
         />
         <button
           className="c7"
@@ -1739,7 +918,827 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number With max and min (Uncontrolled behaviour) 1`] = `
+exports[`Storyshots Molecules | Input / Number With error if value is less than 1 1`] = `
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c10 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c1 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c4 {
+  position: relative;
+  background-color: #ffffff;
+  height: 40px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  box-sizing: border-box;
+}
+
+.c7 {
+  width: 40px;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 100%;
+  padding: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.c7:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c7:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c7:active {
+  background-color: #0046FF;
+  color: #FFFFFF;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #FF1900;
+  position: relative;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  margin: 0 -1px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c8:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c8:focus {
+  border-color: #FF1900;
+  z-index: 3;
+}
+
+.c8::-webkit-outer-spin-button,
+.c8::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c8[type='number'] {
+  -moz-appearance: textfield;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
+  >
+    <span
+      className="c2"
+    >
+      Label
+    </span>
+  </label>
+  <span
+    className="c3"
+  >
+    <div
+      className="c4 c5"
+    >
+      <div
+        className="c6"
+      >
+        <button
+          className="c7"
+          onClick={[Function]}
+          type="button"
+        >
+          -
+        </button>
+        <input
+          aria-invalid={true}
+          className="c8"
+          id="insert-unique-id"
+          min={0}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          step="1"
+          type="number"
+          value={0}
+        />
+        <button
+          className="c7"
+          onClick={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </div>
+    </div>
+  </span>
+  <div>
+    <span
+      className="c9"
+    >
+      <div
+        className="c10"
+      >
+        Error: 
+      </div>
+      Number needs to be greater than 0
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c1 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c4 {
+  position: relative;
+  background-color: #ffffff;
+  height: 40px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  box-sizing: border-box;
+}
+
+.c7 {
+  width: 40px;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 100%;
+  padding: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.c7:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c7:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c7:active {
+  background-color: #0046FF;
+  color: #FFFFFF;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  margin: 0 -1px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c8:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c8:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c8::-webkit-outer-spin-button,
+.c8::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c8[type='number'] {
+  -moz-appearance: textfield;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
+  >
+    <span
+      className="c2"
+    >
+      Label
+    </span>
+  </label>
+  <span
+    className="c3"
+  >
+    <div
+      className="c4 c5"
+    >
+      <div
+        className="c6"
+      >
+        <button
+          className="c7"
+          onClick={[Function]}
+          type="button"
+        >
+          -
+        </button>
+        <input
+          className="c8"
+          id="insert-unique-id"
+          min={0}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          step={1}
+          type="number"
+          value={0}
+        />
+        <button
+          className="c7"
+          onClick={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </div>
+    </div>
+  </span>
+  <div>
+    <span
+      className="c9"
+    >
+      Use wisely this space
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Number With extra info with error 1`] = `
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c10 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c1 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c4 {
+  position: relative;
+  background-color: #ffffff;
+  height: 40px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  box-sizing: border-box;
+}
+
+.c7 {
+  width: 40px;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 100%;
+  padding: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.c7:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c7:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c7:active {
+  background-color: #0046FF;
+  color: #FFFFFF;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #FF1900;
+  position: relative;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  margin: 0 -1px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c8:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c8:focus {
+  border-color: #FF1900;
+  z-index: 3;
+}
+
+.c8::-webkit-outer-spin-button,
+.c8::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c8[type='number'] {
+  -moz-appearance: textfield;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
+  >
+    <span
+      className="c2"
+    >
+      Label
+    </span>
+  </label>
+  <span
+    className="c3"
+  >
+    <div
+      className="c4 c5"
+    >
+      <div
+        className="c6"
+      >
+        <button
+          className="c7"
+          onClick={[Function]}
+          type="button"
+        >
+          -
+        </button>
+        <input
+          aria-invalid={true}
+          className="c8"
+          id="insert-unique-id"
+          min={0}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          step={1}
+          type="number"
+          value={0}
+        />
+        <button
+          className="c7"
+          onClick={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </div>
+    </div>
+  </span>
+  <div>
+    <span
+      className="c9"
+    >
+      <div
+        className="c10"
+      >
+        Error: 
+      </div>
+      Enter text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c1 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c4 {
+  position: relative;
+  background-color: #ffffff;
+  height: 40px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  box-sizing: border-box;
+}
+
+.c7 {
+  width: 40px;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 100%;
+  padding: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.c7:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c7:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c7:active {
+  background-color: #0046FF;
+  color: #FFFFFF;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  margin: 0 -1px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c8:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c8:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c8::-webkit-outer-spin-button,
+.c8::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c8[type='number'] {
+  -moz-appearance: textfield;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={true}
+    htmlFor="insert-unique-id"
+  >
+    <span
+      className="c2"
+    >
+      Label
+    </span>
+  </label>
+  <span
+    className="c3"
+  >
+    <div
+      className="c4 c5"
+    >
+      <div
+        className="c6"
+      >
+        <button
+          className="c7"
+          onClick={[Function]}
+          type="button"
+        >
+          -
+        </button>
+        <input
+          className="c8"
+          id="insert-unique-id"
+          min={0}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          step={1}
+          type="number"
+          value={0}
+        />
+        <button
+          className="c7"
+          onClick={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </div>
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
 .c5 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1924,7 +1923,628 @@ exports[`Storyshots Molecules | Input / Number With max and min (Uncontrolled be
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number With small step (Uncontrolled behaviour) 1`] = `
+exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c1 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c4 {
+  position: relative;
+  background-color: #ffffff;
+  height: 40px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  box-sizing: border-box;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  margin: 0 -1px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c7:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c7:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c7::-webkit-outer-spin-button,
+.c7::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c7[type='number'] {
+  -moz-appearance: textfield;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
+  >
+    <span
+      className="c2"
+    >
+      Label
+    </span>
+  </label>
+  <span
+    className="c3"
+  >
+    <div
+      className="c4 c5"
+    >
+      <div
+        className="c6"
+      >
+        <input
+          className="c7"
+          id="insert-unique-id"
+          min={0}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          step={1}
+          type="number"
+          value={0}
+        />
+      </div>
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Number With size small 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Size = "s"
+    </span>
+  </div>,
+  .c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c14 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c4 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c7 {
+  position: relative;
+  background-color: #ffffff;
+  height: 32px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  box-sizing: border-box;
+}
+
+.c10 {
+  width: 32px;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 100%;
+  padding: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.c10:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c10:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c10:active {
+  background-color: #0046FF;
+  color: #FFFFFF;
+}
+
+.c11 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  margin: 0 -1px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c11:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c11:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c11::-webkit-outer-spin-button,
+.c11::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c11[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #FF1900;
+  position: relative;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  margin: 0 -1px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c12:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c12:focus {
+  border-color: #FF1900;
+  z-index: 3;
+}
+
+.c12::-webkit-outer-spin-button,
+.c12::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c12[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+    className="c0"
+    direction="column"
+  >
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Default
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label
+            className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
+          >
+            <span
+              className="c5"
+            >
+              Label
+            </span>
+          </label>
+          <span
+            className="c6"
+          >
+            <div
+              className="c7 c8"
+            >
+              <div
+                className="c9"
+              >
+                <button
+                  className="c10"
+                  onClick={[Function]}
+                  size="s"
+                  type="button"
+                >
+                  -
+                </button>
+                <input
+                  className="c11"
+                  id="insert-unique-id"
+                  min={0}
+                  onChange={[Function]}
+                  onKeyDown={[Function]}
+                  step={1}
+                  type="number"
+                  value={0}
+                />
+                <button
+                  className="c10"
+                  onClick={[Function]}
+                  size="s"
+                  type="button"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        No steppers
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label
+            className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
+          >
+            <span
+              className="c5"
+            >
+              Label
+            </span>
+          </label>
+          <span
+            className="c6"
+          >
+            <div
+              className="c7 c8"
+            >
+              <div
+                className="c9"
+              >
+                <input
+                  className="c11"
+                  id="insert-unique-id"
+                  min={0}
+                  onChange={[Function]}
+                  onKeyDown={[Function]}
+                  step={1}
+                  type="number"
+                  value={0}
+                />
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Error
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label
+            className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
+          >
+            <span
+              className="c5"
+            >
+              Label
+            </span>
+          </label>
+          <span
+            className="c6"
+          >
+            <div
+              className="c7 c8"
+            >
+              <div
+                className="c9"
+              >
+                <button
+                  className="c10"
+                  onClick={[Function]}
+                  size="s"
+                  type="button"
+                >
+                  -
+                </button>
+                <input
+                  aria-invalid={true}
+                  className="c12"
+                  id="insert-unique-id"
+                  min={0}
+                  onChange={[Function]}
+                  onKeyDown={[Function]}
+                  step={1}
+                  type="number"
+                  value={0}
+                />
+                <button
+                  className="c10"
+                  onClick={[Function]}
+                  size="s"
+                  type="button"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </span>
+          <div>
+            <span
+              className="c13"
+            >
+              <div
+                className="c14"
+              >
+                Error: 
+              </div>
+              Some error text that will wrap itself over couple of lines
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  margin-bottom: 32px;
+}
+
+<div
+    className="c0"
+  />,
+]
+`;
+
+exports[`Storyshots Molecules | Input / Number With success 1`] = `
 .c5 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2025,7 +2645,7 @@ exports[`Storyshots Molecules | Input / Number With small step (Uncontrolled beh
   overflow: visible;
   background-color: #FFFFFF;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: 1px solid #00D200;
   position: relative;
   padding: 8px;
   width: 100%;
@@ -2091,9 +2711,10 @@ exports[`Storyshots Molecules | Input / Number With small step (Uncontrolled beh
           min={0}
           onChange={[Function]}
           onKeyDown={[Function]}
-          step="0.005"
+          step={1}
+          success={true}
           type="number"
-          value="15.200"
+          value={0}
         />
         <button
           className="c7"
@@ -2277,7 +2898,7 @@ exports[`Storyshots Molecules | Input / Number With value (Controlled behaviour)
           onKeyDown={[Function]}
           step={1}
           type="number"
-          value="11"
+          value={10}
         />
         <button
           className="c7"
