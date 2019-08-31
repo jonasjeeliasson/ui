@@ -71,6 +71,28 @@ describe('adjustValue', () => {
     expect(result).toEqual('24.4');
   });
 
+  test('step up float by adjusted float', () => {
+    const result = adjustValue({
+      originalValue: 416.54,
+      step: 0.05,
+      shouldIncrement: true,
+      intl,
+    });
+
+    expect(result).toEqual('416.55');
+  });
+
+  test('step down float by adjusted float', () => {
+    const result = adjustValue({
+      originalValue: 393.67,
+      step: 0.25,
+      shouldIncrement: false,
+      intl,
+    });
+
+    expect(result).toEqual('393.5');
+  });
+
   test('step down but not below min', () => {
     const result = adjustValue({
       originalValue: 10,
