@@ -105,6 +105,7 @@ exports[`Storyshots Molecules | Input / FormField Default 1`] = `
         className="c3 c4"
       >
         Label
+        
       </span>
       <div
         className="c5"
@@ -269,6 +270,7 @@ exports[`Storyshots Molecules | Input / FormField Error 1`] = `
         className="c3 c4"
       >
         Label
+        
       </span>
       <div
         className="c5"
@@ -430,6 +432,7 @@ exports[`Storyshots Molecules | Input / FormField Extra info 1`] = `
         className="c3 c4"
       >
         Label
+        
       </span>
       <div
         className="c5"
@@ -464,5 +467,140 @@ exports[`Storyshots Molecules | Input / FormField Extra info 1`] = `
       Some extra info
     </span>
   </span>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / FormField Required 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  box-sizing: border-box;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c7 {
+  position: relative;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.c7:focus-within {
+  border-color: #0046FF;
+}
+
+.c7.focus-within {
+  border-color: #0046FF;
+}
+
+.c7:hover:not(:focus-within) {
+  border-color: #4B4B46;
+}
+
+.c3 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+<div
+  className="c0"
+>
+  <label>
+    <div
+      className="c1 c2"
+    >
+      <span
+        className="c3 c4"
+      >
+        Label
+         *
+      </span>
+      <div
+        className="c5"
+      >
+        <div
+          className="c6"
+          color={[Function]}
+          type="secondary"
+        >
+          <div
+            className="c7 c8"
+          >
+            <div
+              style={
+                Object {
+                  "background": "aqua",
+                }
+              }
+            >
+              Pass in any children you want
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
 </div>
 `;

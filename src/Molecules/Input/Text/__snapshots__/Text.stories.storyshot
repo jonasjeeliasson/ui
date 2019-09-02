@@ -162,6 +162,7 @@ Array [
           className="c3 c4"
         >
           Label
+          
         </span>
         <div
           className="c5"
@@ -404,6 +405,7 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
         className="c3 c4"
       >
         Label
+        
       </span>
       <div
         className="c5"
@@ -609,6 +611,7 @@ exports[`Storyshots Molecules | Input / Text Default 1`] = `
         className="c3 c4"
       >
         Label
+        
       </span>
       <div
         className="c5"
@@ -839,6 +842,7 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
         className="c3 c4"
       >
         Label
+        
       </span>
       <div
         className="c5"
@@ -1041,6 +1045,7 @@ exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
         className="c3 c4"
       >
         Label
+        
       </span>
       <div
         className="c5"
@@ -1309,6 +1314,7 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
               className="c6 c7"
             >
               Too long label, goes into ellipsis. Consider smaller label or bigger input
+              
             </span>
             <div
               className="c8"
@@ -1362,6 +1368,7 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
               className="c6 c7"
             >
               Small label
+              
             </span>
             <div
               className="c8"
@@ -1577,6 +1584,7 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
         className="c3 c4"
       >
         My awesome text field
+        
       </span>
       <div
         className="c5"
@@ -1787,6 +1795,7 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
         className="c3 c4"
       >
         Label
+        
       </span>
       <div
         className="c5"
@@ -1999,6 +2008,7 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
         className="c3 c4"
       >
         My awesome text field
+        
       </span>
       <div
         className="c5"
@@ -2453,6 +2463,7 @@ Array [
                 className="c6 c7"
               >
                 Label
+                
               </span>
               <div
                 className="c8"
@@ -2500,6 +2511,7 @@ Array [
                 className="c6 c7"
               >
                 Label
+                
               </span>
               <div
                 className="c8"
@@ -2564,6 +2576,7 @@ Array [
                 className="c6 c7"
               >
                 Label
+                
               </span>
               <div
                 className="c8"
@@ -2769,6 +2782,7 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
         className="c3 c4"
       >
         Label
+        
       </span>
       <div
         className="c5"
@@ -2992,6 +3006,7 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
         className="c3 c4"
       >
         Label
+        
       </span>
       <div
         className="c5"
@@ -3218,6 +3233,7 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
         className="c3 c4"
       >
         Label
+        
       </span>
       <div
         className="c5"
@@ -3611,6 +3627,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
               className="c6 c7"
             >
               Username
+              
             </span>
             <div
               className="c8"
@@ -3657,6 +3674,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
               className="c6 c7"
             >
               Password
+              
             </span>
             <div
               className="c8"
@@ -4179,6 +4197,7 @@ Array [
                 className="c6 c7"
               >
                 Label
+                
               </span>
               <div
                 className="c8"
@@ -4226,6 +4245,7 @@ Array [
                 className="c6 c7"
               >
                 Label
+                
               </span>
               <div
                 className="c8"
@@ -4272,6 +4292,7 @@ Array [
                 className="c6 c7"
               >
                 Label
+                
               </span>
               <div
                 className="c8"
@@ -4331,6 +4352,7 @@ Array [
                 className="c6 c7"
               >
                 Label
+                
               </span>
               <div
                 className="c8"
@@ -4394,6 +4416,7 @@ Array [
                 className="c6 c7"
               >
                 Label
+                
               </span>
               <div
                 className="c8"
@@ -4593,6 +4616,7 @@ exports[`Storyshots Molecules | Input / Text Success 1`] = `
         className="c3 c4"
       >
         Label
+        
       </span>
       <div
         className="c5"
@@ -4777,6 +4801,7 @@ exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled be
         className="c3 c4"
       >
         Label
+        
       </span>
       <div
         className="c5"
@@ -4960,6 +4985,7 @@ exports[`Storyshots Molecules | Input / Text With value (Controlled behaviour) 1
         className="c3 c4"
       >
         Label
+        
       </span>
       <div
         className="c5"

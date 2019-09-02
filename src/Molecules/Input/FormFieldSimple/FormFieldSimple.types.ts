@@ -1,12 +1,13 @@
 export type Props = {
-  className?: string;
   /** Label should always be presented - A11y */
   label: string;
   /** But you can hide it visually */
   hideLabel?: boolean;
-  fieldId: string;
+  className?: string;
   error?: string;
   extraInfo?: string;
+  fieldId: string;
+  required?: boolean;
   size?: 's';
   /**
    * You need to specify width

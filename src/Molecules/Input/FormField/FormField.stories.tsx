@@ -12,6 +12,11 @@ storiesOf('Molecules | Input / FormField', module)
       <div style={{ background: 'aqua', width: '100%' }}>Pass in any children you want</div>
     </FormField>
   ))
+  .add('Required', () => (
+    <FormField label="Label" required>
+      <div style={{ background: 'aqua' }}>Pass in any children you want</div>
+    </FormField>
+  ))
   .add('Error', () => (
     <FormField label="Label" error="error">
       <div style={{ background: 'aqua', width: '100%' }}>Pass in any children you want</div>

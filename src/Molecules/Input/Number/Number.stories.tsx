@@ -54,6 +54,9 @@ storiesOf('Molecules | Input / Number', module)
   .add('With max and min', () => (
     <Input.Number fieldId="insert-unique-id" label="Label" defaultValue="12" min="10" max="20" />
   ))
+  .add('Required', () => (
+    <Input.Number fieldId="insert-unique-id" label="Label" defaultValue="91" required />
+  ))
   .add('Disabled', () => (
     <Input.Number
       fieldId="insert-unique-id"

@@ -14,6 +14,7 @@ export type Props = {
   disabled?: boolean;
   placeholder?: string;
   fullWidth?: boolean;
+  required?: boolean;
   size?: 's';
   /**
    * You need to specify width

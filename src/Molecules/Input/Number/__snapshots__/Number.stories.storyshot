@@ -187,6 +187,7 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
       className="c2"
     >
       Label
+      
     </span>
   </label>
   <span
@@ -441,6 +442,7 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
       className="c2"
     >
       Label
+      
     </span>
   </label>
   <span
@@ -500,6 +502,272 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
           >
             increase number by 
             0.25
+          </div>
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Number Required 1`] = `
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c9 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c1 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c4 {
+  position: relative;
+  background-color: #ffffff;
+  height: 40px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  box-sizing: border-box;
+}
+
+.c8 {
+  width: 40px;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 100%;
+  padding: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.c8:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c8:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c8:active {
+  background-color: #0046FF;
+}
+
+.c8:active svg {
+  fill: #FFFFFF;
+}
+
+.c8:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  margin: 0 -1px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c7:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c7:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c7::-webkit-outer-spin-button,
+.c7::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c7[type='number'] {
+  -moz-appearance: textfield;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
+  >
+    <span
+      className="c2"
+    >
+      Label
+       *
+    </span>
+  </label>
+  <span
+    className="c3"
+  >
+    <div
+      className="c4 c5"
+    >
+      <div
+        className="c6"
+      >
+        <input
+          className="c7"
+          id="insert-unique-id"
+          min={0}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          required={true}
+          step={1}
+          type="number"
+          value="91"
+        />
+        <button
+          className="c8"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="c9"
+          >
+            decrease number by 
+            1
+          </div>
+          <svg
+            aria-hidden="true"
+            className="c10"
+            focusable="false"
+            role="presentation"
+            size={3}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M24 11v2H0v-2z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </button>
+        <button
+          className="c8"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="c9"
+          >
+            increase number by 
+            1
           </div>
           <svg
             aria-hidden="true"
@@ -708,6 +976,7 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
       className="c2"
     >
       Label
+      
     </span>
   </label>
   <span
@@ -972,6 +1241,7 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
       className="c2"
     >
       Label
+      
     </span>
   </label>
   <span
@@ -1241,6 +1511,7 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
       className="c2"
     >
       Label
+      
     </span>
   </label>
   <span
@@ -1514,6 +1785,7 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
       className="c2"
     >
       Label
+      
     </span>
   </label>
   <span
@@ -1800,6 +2072,7 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
       className="c2"
     >
       Label
+      
     </span>
   </label>
   <span
@@ -2086,6 +2359,7 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
       className="c2"
     >
       Label
+      
     </span>
   </label>
   <span
@@ -2363,6 +2637,7 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
       className="c2"
     >
       Label
+      
     </span>
   </label>
   <span
@@ -2627,6 +2902,7 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
       className="c2"
     >
       Label
+      
     </span>
   </label>
   <span
@@ -2818,6 +3094,7 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
       className="c2"
     >
       Label
+      
     </span>
   </label>
   <span
@@ -3180,6 +3457,7 @@ Array [
               className="c5"
             >
               Label
+              
             </span>
           </label>
           <span
@@ -3281,6 +3559,7 @@ Array [
               className="c5"
             >
               Label
+              
             </span>
           </label>
           <span
@@ -3330,6 +3609,7 @@ Array [
               className="c5"
             >
               Label
+              
             </span>
           </label>
           <span
@@ -3620,6 +3900,7 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
       className="c2"
     >
       Label
+      
     </span>
   </label>
   <span
@@ -3885,6 +4166,7 @@ exports[`Storyshots Molecules | Input / Number With value (Controlled behaviour)
       className="c2"
     >
       Label
+      
     </span>
   </label>
   <span

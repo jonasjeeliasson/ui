@@ -97,16 +97,17 @@ const HidableTypography = styled(Typography)<{ hidden: boolean }>`
 export const FormField: React.FC<Props> = ({
   children,
   className,
-  width,
-  label,
-  hideLabel,
-  size,
-  error,
-  success,
   disabled,
+  error,
   extraInfo,
-  onClick,
+  hideLabel,
   innerWrapperRef,
+  label,
+  onClick,
+  required,
+  size,
+  success,
+  width,
 }) => (
   /* eslint-disable jsx-a11y/label-has-associated-control,jsx-a11y/label-has-for */
   <Wrapper width={width} className={className} onClick={onClick}>
@@ -114,6 +115,7 @@ export const FormField: React.FC<Props> = ({
       <InlineFlexbox container direction="column">
         <HidableTypography hidden={Boolean(hideLabel)} type="secondary" color={t => t.color.label}>
           {label}
+          {required ? ' *' : ''}
         </HidableTypography>
         <Flexbox item alignSelf="stretch">
           <Typography type="secondary" color={t => t.color.text} as="div">

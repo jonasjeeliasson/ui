@@ -25,17 +25,19 @@ const BottomWrapper = styled(motion.div)``;
 export const FormFieldSimple: React.FC<Props> = ({
   children,
   className,
-  width,
-  label,
-  hideLabel,
-  fieldId,
-  size,
   error,
   extraInfo,
+  fieldId,
+  hideLabel,
+  label,
+  required,
+  size,
+  width,
 }) => (
   <Wrapper width={width} className={className}>
     <FormLabel hideLabel={hideLabel} forId={fieldId}>
       {label}
+      {required ? ' *' : ''}
     </FormLabel>
     <Typography type="secondary" color={t => t.color.text}>
       <InnerWrapper container {...{ size }}>
