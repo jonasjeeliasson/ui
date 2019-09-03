@@ -20,6 +20,7 @@ import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
 import { Trash } from './components/Trash';
 import { WarningTriangle } from './components/WarningTriangle';
+import { Rtmt } from './components/Rtmt';
 
 export default {
   ArrowRight,
@@ -44,4 +45,5 @@ export default {
   Star24,
   Trash,
   WarningTriangle,
+  Rtmt,
 };
