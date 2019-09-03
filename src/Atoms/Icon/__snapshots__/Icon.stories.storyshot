@@ -23,6 +23,10 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
   stroke: #6E6E69;
 }
 
+.c6 {
+  stroke: #6E6E69;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -555,6 +559,44 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div
       className="c2"
     >
+      Questionmark
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="c3"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <g
+          fillRule="evenodd"
+          transform="translate(1 1)"
+        >
+          <circle
+            className="c4"
+            cx="11"
+            cy="11"
+            fill="none"
+            r="11"
+          />
+          <path
+            d="M9.4544,13.5528 L9.4544,13.3008 C9.4544,12.1584 9.4376,11.6376 11.1512,10.2432 C11.8904,9.6384 12.4784,9.2184 12.4784,8.496 C12.4784,7.8576 12.0248,7.3536 11.1176,7.3536 C10.1768,7.3536 9.656,7.9416 9.4376,8.6472 L6.9008,8.6472 C7.2368,6.3624 8.9504,5.1696 11.168,5.1696 C13.5032,5.1696 15.0992,6.4128 15.0992,8.3784 C15.0992,9.6888 14.5448,10.3776 13.0496,11.6544 C12.344,12.2424 11.84,12.6456 11.7056,13.3008 L11.6552,13.5528 L9.4544,13.5528 Z M11.9072,14.7288 L11.9072,17.4 L9.2696,17.4 L9.2696,14.7288 L11.9072,14.7288 Z"
+            fill="#000"
+            fillRule="nonzero"
+          />
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       Search
     </div>
     <div>
@@ -592,7 +634,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
         viewBox="0 0 24 24"
       >
         <path
-          className="c4"
+          className="c5"
           d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
           strokeWidth="1"
         />
@@ -618,7 +660,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
         viewBox="0 0 24 24"
       >
         <path
-          className="c5"
+          className="c6"
           d="M12,3.28909585 L9.7518819,10.3333333 L2.94990324,10.3333333 L8.34965326,14.4696321 L6.10344598,21.3821992 L12,17.0986537 L17.896554,21.3821992 L15.6503467,14.4696321 L21.0500967,10.3333333 L14.2481181,10.3333333 L12,3.28909585 Z"
           strokeWidth="2"
         />

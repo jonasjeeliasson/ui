@@ -15,6 +15,7 @@ import { Globe } from './components/Globe';
 import { InfoCircle } from './components/InfoCircle';
 import { Pen } from './components/Pen';
 import { Printer } from './components/Printer';
+import { Questionmark } from './components/Questionmark';
 import { Search } from './components/Search';
 import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
@@ -39,6 +40,7 @@ export default {
   InfoCircle,
   Pen,
   Printer,
+  Questionmark,
   Search,
   Star,
   Star24,
