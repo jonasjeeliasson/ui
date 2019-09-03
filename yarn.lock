@@ -6679,10 +6679,10 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framer-motion@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-1.5.0.tgz#8f05772cc243b8cde0dc0f52a156a60e795af9c4"
-  integrity sha512-lrdOjz9adZP/tLuo9EEIfNK3guwpmZ4gWt2PcRMO2CgBgL55sInwQV4PTGonyPc9A6bmXd8vwgN1mWUNfAPulQ==
+framer-motion@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-1.6.2.tgz#54b9d79c0bfe00cf93e812cbf86eb284c25134ea"
+  integrity sha512-fBsoW9YkvvORWU4Vmb/elAEgYSF5cfCfBYydO8T5eOuffpERXrzAC+wzQsA4TKII8YUKckEIAvseuHOCNHbPRA==
   dependencies:
     "@popmotion/easing" "^1.0.2"
     "@popmotion/popcorn" "^0.4.2"
@@ -6690,7 +6690,7 @@ framer-motion@^1.5.0:
     hey-listen "^1.0.8"
     popmotion "9.0.0-beta-8"
     style-value-types "^3.1.6"
-    stylefire "^6.0.7"
+    stylefire "^6.0.9"
     tslib "^1.10.0"
 
 framesync@^4.0.0, framesync@^4.0.1, framesync@^4.0.4:
@@ -11337,7 +11337,12 @@ popmotion@9.0.0-beta-8:
     style-value-types "^3.1.6"
     tslib "^1.10.0"
 
-popper.js@^1.14.4, popper.js@^1.14.7:
+popper.js@^1.14.4:
+  version "1.14.7"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.14.7.tgz#e31ec06cfac6a97a53280c3e55e4e0c860e7738e"
+  integrity sha512-4q1hNvoUre/8srWsH7hnoSJ5xVmIL4qgz+s4qf2TnJIMyZFUFMGH+9vE7mXynAlHSZ/NdTmmow86muD0myUkVQ==
+
+popper.js@^1.14.7:
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.15.0.tgz#5560b99bbad7647e9faa475c6b8056621f5a4ff2"
   integrity sha512-w010cY1oCUmI+9KwwlWki+r5jxKfTFDVoadl7MSrIujHU5MJ5OR6HTDj6Xo8aoR/QsA56x8jKjA59qGH4ELtrA==
@@ -13986,10 +13991,10 @@ styled-components@^4.2.0:
     stylis-rule-sheet "^0.0.10"
     supports-color "^5.5.0"
 
-stylefire@^6.0.7:
-  version "6.0.8"
-  resolved "https://registry.yarnpkg.com/stylefire/-/stylefire-6.0.8.tgz#64e2e116b823004631e5f9b2eeb6c7a39925beec"
-  integrity sha512-V0UTO3hOoEjcDMp8jWVkavfci+10BPHkChUfZbt8pVJ2fnoE2TxTADOT7fKas0JCK7QvcGldBrGKzasI7NyIwA==
+stylefire@^6.0.9:
+  version "6.0.9"
+  resolved "https://registry.yarnpkg.com/stylefire/-/stylefire-6.0.9.tgz#4c9ab1d2a68e99a2e5a83e11333495824e494632"
+  integrity sha512-HGpTvXAtXbQplESMSvhzFsBtpLNIqMf9hZrdsfoZrJCD0RrF7wyRDc1mhYJym5EL2KQKFAEz+AH6YPOv++VxOQ==
   dependencies:
     "@popmotion/popcorn" "^0.4.2"
     framesync "^4.0.0"
@@ -14506,9 +14511,9 @@ trough@^1.0.0:
   integrity sha512-fwkLWH+DimvA4YCy+/nvJd61nWQQ2liO/nF/RjkTpiOGi+zxZzVkhb1mvbHIIW4b/8nDsYI8uTmAlc0nNkRMOw==
 
 ts-pnp@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.1.2.tgz#be8e4bfce5d00f0f58e0666a82260c34a57af552"
-  integrity sha512-f5Knjh7XCyRIzoC/z1Su1yLLRrPrFCgtUAh/9fCSP6NKbATwpOL1+idQVXQokK9GRFURn/jYPGPfegIctwunoA==
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.1.4.tgz#ae27126960ebaefb874c6d7fa4729729ab200d90"
+  integrity sha512-1J/vefLC+BWSo+qe8OnJQfWTYRS6ingxjwqmHMqaMxXMj7kFtKLgAaYW3JeX3mktjgUL+etlU8/B4VUAUI9QGw==
 
 tslib@^1.0.0, tslib@^1.10.0, tslib@^1.9.3:
   version "1.10.0"

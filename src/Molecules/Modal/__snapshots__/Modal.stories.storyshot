@@ -1,15 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Modal Default 1`] = `
-.c2 {
+.c3 {
   margin-bottom: 8px;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
 }
 
-.c3 {
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -21,7 +37,7 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
   align-items: baseline;
 }
 
-.c8 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -35,7 +51,7 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
   display: block;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -44,7 +60,7 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
   line-height: 1.5;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -54,61 +70,59 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
 }
 
 .c1 {
-  box-sizing: border-box;
-  padding: 20px;
-  border: 0;
-  background: #FFFFFF;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
 }
 
-.c7 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
   overflow: visible;
   text-transform: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background: none;
   margin-left: 16px;
   padding: 0;
   border: 0;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c6 {
+.c7 {
   margin-left: auto;
 }
 
-.c9 {
+.c10 {
   max-height: 50vh;
   overflow-y: auto;
 }
@@ -123,48 +137,15 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
 }
 
 @media (min-width:768px) {
-  .c11 {
+  .c1 {
     background-color: rgba(110,110,105,0.63);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-  }
-}
-
-@media (max-width:767px) {
-  .c1 {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    width: 480px;
-    top: 50%;
-    left: 50%;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.05);
-    -webkit-transform: translate(-50%,0%);
-    -ms-transform: translate(-50%,0%);
-    transform: translate(-50%,0%);
-    opacity: 0;
-    -webkit-transition: -webkit-transform 0.3s ease-in,opacity 0.3s ease-in;
-    -webkit-transition: transform 0.3s ease-in,opacity 0.3s ease-in;
-    transition: transform 0.3s ease-in,opacity 0.3s ease-in;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    opacity: 1;
   }
 }
 
@@ -220,96 +201,96 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
         onWheelCapture={[Function]}
       >
         <div
-          aria-label="Dialog information"
-          className="c1"
-          role="dialog"
+          className="c1 c2"
         >
-          <div
-            className="c2"
-          >
+          <div>
             <div
               className="c3"
             >
               <div
                 className="c4"
               >
-                <h2
+                <div
                   className="c5"
-                  type="title2"
                 >
-                  Dialog information
-                </h2>
+                  <h2
+                    className="c6"
+                    type="title2"
+                  >
+                    Dialog information
+                  </h2>
+                </div>
+                <div
+                  className="c7 c5"
+                >
+                  <button
+                    className="c8"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      className="c9"
+                      focusable="false"
+                      role="img"
+                      size={5}
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                      />
+                      <title>
+                        Close this dialog
+                      </title>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              className="c10"
+            >
+              <div
+                className="c3"
+              >
+                <p
+                  className="c11"
+                  type="primary"
+                >
+                  Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                </p>
               </div>
               <div
-                className="c6 c4"
+                className="c3"
               >
-                <button
-                  className="c7"
-                  onClick={[Function]}
-                  type="button"
+                <p
+                  className="c11"
+                  type="primary"
                 >
-                  <svg
-                    aria-hidden="false"
-                    className="c8"
-                    focusable="false"
-                    role="img"
-                    size={5}
-                    viewBox="0 0 24 24"
-                  >
-                    <polygon
-                      points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
-                    />
-                    <title>
-                      Close this dialog
-                    </title>
-                  </svg>
-                </button>
+                  That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+                </p>
               </div>
-            </div>
-          </div>
-          <div
-            className="c9"
-          >
-            <div
-              className="c2"
-            >
+              <div
+                className="c3"
+              >
+                <p
+                  className="c11"
+                  type="primary"
+                >
+                  Nielsen/Norman has an excellent article about their usage here
+                </p>
+              </div>
               <p
-                className="c10"
+                className="c11"
                 type="primary"
               >
-                Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                <a
+                  href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+                >
+                  https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+                </a>
               </p>
             </div>
-            <div
-              className="c2"
-            >
-              <p
-                className="c10"
-                type="primary"
-              >
-                That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
-              </p>
-            </div>
-            <div
-              className="c2"
-            >
-              <p
-                className="c10"
-                type="primary"
-              >
-                Nielsen/Norman has an excellent article about their usage here
-              </p>
-            </div>
-            <p
-              className="c10"
-              type="primary"
-            >
-              <a
-                href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
-              >
-                https:// www.nngroup.com/articles/modal-nonmodal-dialog/
-              </a>
-            </p>
           </div>
         </div>
       </div>
@@ -328,24 +309,37 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
         }
       }
       tabIndex={0}
-    />
-    <div
-      className="c11"
     />
   </portal-dummy>
 </div>
 `;
 
 exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
-.c2 {
+.c3 {
   margin-bottom: 8px;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
 }
 
-.c3 {
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -357,7 +351,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
   align-items: baseline;
 }
 
-.c8 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -371,7 +365,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
   display: block;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -380,7 +374,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
   line-height: 1.5;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -390,61 +384,59 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
 }
 
 .c1 {
-  box-sizing: border-box;
-  padding: 20px;
-  border: 0;
-  background: #FFFFFF;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
 }
 
-.c7 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
   overflow: visible;
   text-transform: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background: none;
   margin-left: 16px;
   padding: 0;
   border: 0;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c6 {
+.c7 {
   margin-left: auto;
 }
 
-.c9 {
+.c10 {
   max-height: 50vh;
   overflow-y: auto;
 }
@@ -459,48 +451,15 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
 }
 
 @media (min-width:768px) {
-  .c11 {
+  .c1 {
     background-color: rgba(110,110,105,0.63);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-  }
-}
-
-@media (max-width:767px) {
-  .c1 {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    width: 480px;
-    top: 50%;
-    left: 50%;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.05);
-    -webkit-transform: translate(-50%,0%);
-    -ms-transform: translate(-50%,0%);
-    transform: translate(-50%,0%);
-    opacity: 0;
-    -webkit-transition: -webkit-transform 0.3s ease-in,opacity 0.3s ease-in;
-    -webkit-transition: transform 0.3s ease-in,opacity 0.3s ease-in;
-    transition: transform 0.3s ease-in,opacity 0.3s ease-in;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    opacity: 1;
   }
 }
 
@@ -550,96 +509,96 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
         onWheelCapture={[Function]}
       >
         <div
-          aria-label="Dialog information"
-          className="c1"
-          role="dialog"
+          className="c1 c2"
         >
-          <div
-            className="c2"
-          >
+          <div>
             <div
               className="c3"
             >
               <div
                 className="c4"
               >
-                <h2
+                <div
                   className="c5"
-                  type="title2"
                 >
-                  Dialog information
-                </h2>
+                  <h2
+                    className="c6"
+                    type="title2"
+                  >
+                    Dialog information
+                  </h2>
+                </div>
+                <div
+                  className="c7 c5"
+                >
+                  <button
+                    className="c8"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      className="c9"
+                      focusable="false"
+                      role="img"
+                      size={5}
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                      />
+                      <title>
+                        Close this dialog
+                      </title>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              className="c10"
+            >
+              <div
+                className="c3"
+              >
+                <p
+                  className="c11"
+                  type="primary"
+                >
+                  Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                </p>
               </div>
               <div
-                className="c6 c4"
+                className="c3"
               >
-                <button
-                  className="c7"
-                  onClick={[Function]}
-                  type="button"
+                <p
+                  className="c11"
+                  type="primary"
                 >
-                  <svg
-                    aria-hidden="false"
-                    className="c8"
-                    focusable="false"
-                    role="img"
-                    size={5}
-                    viewBox="0 0 24 24"
-                  >
-                    <polygon
-                      points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
-                    />
-                    <title>
-                      Close this dialog
-                    </title>
-                  </svg>
-                </button>
+                  That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+                </p>
               </div>
-            </div>
-          </div>
-          <div
-            className="c9"
-          >
-            <div
-              className="c2"
-            >
+              <div
+                className="c3"
+              >
+                <p
+                  className="c11"
+                  type="primary"
+                >
+                  Nielsen/Norman has an excellent article about their usage here
+                </p>
+              </div>
               <p
-                className="c10"
+                className="c11"
                 type="primary"
               >
-                Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                <a
+                  href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+                >
+                  https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+                </a>
               </p>
             </div>
-            <div
-              className="c2"
-            >
-              <p
-                className="c10"
-                type="primary"
-              >
-                That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
-              </p>
-            </div>
-            <div
-              className="c2"
-            >
-              <p
-                className="c10"
-                type="primary"
-              >
-                Nielsen/Norman has an excellent article about their usage here
-              </p>
-            </div>
-            <p
-              className="c10"
-              type="primary"
-            >
-              <a
-                href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
-              >
-                https:// www.nngroup.com/articles/modal-nonmodal-dialog/
-              </a>
-            </p>
           </div>
         </div>
       </div>
@@ -659,23 +618,36 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
       }
       tabIndex={0}
     />
-    <div
-      className="c11"
-    />
   </portal-dummy>
 </div>
 `;
 
 exports[`Storyshots Molecules | Modal Without header 1`] = `
-.c2 {
+.c3 {
   margin-bottom: 8px;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
 }
 
-.c3 {
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -687,7 +659,7 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
   align-items: baseline;
 }
 
-.c7 {
+.c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -701,7 +673,7 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
   display: block;
 }
 
-.c9 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -711,61 +683,59 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
 }
 
 .c1 {
-  box-sizing: border-box;
-  padding: 20px;
-  border: 0;
-  background: #FFFFFF;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
 }
 
-.c6 {
+.c7 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
   overflow: visible;
   text-transform: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background: none;
   margin-left: 16px;
   padding: 0;
   border: 0;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
-.c6,
-.c6[type='button'],
-.c6[type='reset'],
-.c6[type='submit'] {
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c6::-moz-focus-inner,
-.c6[type='button']::-moz-focus-inner,
-.c6[type='reset']::-moz-focus-inner,
-.c6[type='submit']::-moz-focus-inner {
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c6:-moz-focusring,
-.c6[type='button']:-moz-focusring,
-.c6[type='reset']:-moz-focusring,
-.c6[type='submit']:-moz-focusring {
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c4 {
+.c5 {
   margin-left: auto;
 }
 
-.c8 {
+.c9 {
   max-height: 50vh;
   overflow-y: auto;
 }
@@ -780,41 +750,8 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
 }
 
 @media (min-width:768px) {
-  .c10 {
+  .c1 {
     background-color: rgba(110,110,105,0.63);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-  }
-}
-
-@media (max-width:767px) {
-  .c1 {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    width: 480px;
-    top: 50%;
-    left: 50%;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.05);
-    -webkit-transform: translate(-50%,0%);
-    -ms-transform: translate(-50%,0%);
-    transform: translate(-50%,0%);
-    opacity: 0;
-    -webkit-transition: -webkit-transform 0.3s ease-in,opacity 0.3s ease-in;
-    -webkit-transition: transform 0.3s ease-in,opacity 0.3s ease-in;
-    transition: transform 0.3s ease-in,opacity 0.3s ease-in;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    opacity: 1;
   }
 }
 
@@ -870,85 +807,86 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
         onWheelCapture={[Function]}
       >
         <div
-          className="c1"
-          role="dialog"
+          className="c1 c2"
         >
-          <div
-            className="c2"
-          >
+          <div>
             <div
               className="c3"
             >
               <div
-                className="c4 c5"
+                className="c4"
               >
-                <button
-                  className="c6"
-                  onClick={[Function]}
-                  type="button"
+                <div
+                  className="c5 c6"
                 >
-                  <svg
-                    aria-hidden="false"
+                  <button
                     className="c7"
-                    focusable="false"
-                    role="img"
-                    size={5}
-                    viewBox="0 0 24 24"
+                    onClick={[Function]}
+                    type="button"
                   >
-                    <polygon
-                      points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
-                    />
-                    <title>
-                      Close this dialog
-                    </title>
-                  </svg>
-                </button>
+                    <svg
+                      aria-hidden="false"
+                      className="c8"
+                      focusable="false"
+                      role="img"
+                      size={5}
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                      />
+                      <title>
+                        Close this dialog
+                      </title>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            className="c8"
-          >
             <div
-              className="c2"
-            >
-              <p
-                className="c9"
-                type="primary"
-              >
-                Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
-              </p>
-            </div>
-            <div
-              className="c2"
-            >
-              <p
-                className="c9"
-                type="primary"
-              >
-                That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
-              </p>
-            </div>
-            <div
-              className="c2"
-            >
-              <p
-                className="c9"
-                type="primary"
-              >
-                Nielsen/Norman has an excellent article about their usage here
-              </p>
-            </div>
-            <p
               className="c9"
-              type="primary"
             >
-              <a
-                href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+              <div
+                className="c3"
               >
-                https:// www.nngroup.com/articles/modal-nonmodal-dialog/
-              </a>
-            </p>
+                <p
+                  className="c10"
+                  type="primary"
+                >
+                  Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                </p>
+              </div>
+              <div
+                className="c3"
+              >
+                <p
+                  className="c10"
+                  type="primary"
+                >
+                  That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+                </p>
+              </div>
+              <div
+                className="c3"
+              >
+                <p
+                  className="c10"
+                  type="primary"
+                >
+                  Nielsen/Norman has an excellent article about their usage here
+                </p>
+              </div>
+              <p
+                className="c10"
+                type="primary"
+              >
+                <a
+                  href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+                >
+                  https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -967,9 +905,6 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
         }
       }
       tabIndex={0}
-    />
-    <div
-      className="c10"
     />
   </portal-dummy>
 </div>
