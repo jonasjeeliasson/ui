@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Props } from './Modal.types';
 import { isBoolean } from '../../common/utils';
 import { ModalInner } from './ModalInner';
+import { Portal } from '../..';
 
 export const Modal: React.FC<Props> = ({
   open: isOpenExternal,
@@ -21,7 +22,11 @@ export const Modal: React.FC<Props> = ({
 
   const shouldRender = isControlled ? isOpenExternal : isOpenInternal;
 
-  return shouldRender ? <ModalInner {...rest} onClose={onClose} /> : null;
+  return shouldRender ? (
+    <Portal>
+      <ModalInner {...rest} onClose={onClose} />
+    </Portal>
+  ) : null;
 };
 
 Modal.displayName = 'Modal';

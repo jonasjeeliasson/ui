@@ -1,3 +1,102 @@
+## [1.32.1](https://github.com/nordnet/ui/compare/v1.32.0...v1.32.1) (2019-08-30)
+
+
+### Bug Fixes
+
+* add default values to external link ([26e437c](https://github.com/nordnet/ui/commit/26e437c))
+
+# [1.32.0](https://github.com/nordnet/ui/compare/v1.31.0...v1.32.0) (2019-08-23)
+
+
+### Bug Fixes
+
+* 💂‍snapshot ([d56896f](https://github.com/nordnet/ui/commit/d56896f))
+
+
+### Features
+
+* 🎸 add search and file icons ([a268276](https://github.com/nordnet/ui/commit/a268276))
+* make link suppor external urls ([0b6a7f2](https://github.com/nordnet/ui/commit/0b6a7f2))
+
+# [1.31.0](https://github.com/nordnet/ui/compare/v1.30.0...v1.31.0) (2019-08-19)
+
+
+### Bug Fixes
+
+* pr edits ([1479649](https://github.com/nordnet/ui/commit/1479649))
+* pr edits ([b07572a](https://github.com/nordnet/ui/commit/b07572a))
+* small adjustments ([bee2b73](https://github.com/nordnet/ui/commit/bee2b73))
+* some more overflow things ([0539bd2](https://github.com/nordnet/ui/commit/0539bd2))
+* stylelint ([fec28bf](https://github.com/nordnet/ui/commit/fec28bf))
+* test and lint ([61cb680](https://github.com/nordnet/ui/commit/61cb680))
+* tests ([4ca78ca](https://github.com/nordnet/ui/commit/4ca78ca))
+* tests ([5632ad5](https://github.com/nordnet/ui/commit/5632ad5))
+* vendor-related stuff ([39e26e1](https://github.com/nordnet/ui/commit/39e26e1))
+
+
+### Features
+
+* minor adjustments and fixes ([5463801](https://github.com/nordnet/ui/commit/5463801))
+* text input wip ([ed01d21](https://github.com/nordnet/ui/commit/ed01d21))
+
+# [1.30.0](https://github.com/nordnet/ui/compare/v1.29.3...v1.30.0) (2019-08-19)
+
+
+### Features
+
+* added color function prop ([9c5fa63](https://github.com/nordnet/ui/commit/9c5fa63))
+* implemented color logic ([d162211](https://github.com/nordnet/ui/commit/d162211))
+
+## [1.29.3](https://github.com/nordnet/ui/compare/v1.29.2...v1.29.3) (2019-08-16)
+
+
+### Bug Fixes
+
+* update line heights ([af32ad3](https://github.com/nordnet/ui/commit/af32ad3))
+
+## [1.29.2](https://github.com/nordnet/ui/compare/v1.29.1...v1.29.2) (2019-08-16)
+
+
+### Bug Fixes
+
+* modal z index ([b217565](https://github.com/nordnet/ui/commit/b217565))
+
+## [1.29.1](https://github.com/nordnet/ui/compare/v1.29.0...v1.29.1) (2019-08-15)
+
+
+### Bug Fixes
+
+* modal backdrop zindex ([cb6179e](https://github.com/nordnet/ui/commit/cb6179e))
+
+# [1.29.0](https://github.com/nordnet/ui/compare/v1.28.0...v1.29.0) (2019-08-15)
+
+
+### Bug Fixes
+
+* clean modal story ([497b75f](https://github.com/nordnet/ui/commit/497b75f))
+* cleanup ([657cb7c](https://github.com/nordnet/ui/commit/657cb7c))
+* simplify further ([c1f5126](https://github.com/nordnet/ui/commit/c1f5126))
+
+
+### Features
+
+* add attachto prop ([8213e4e](https://github.com/nordnet/ui/commit/8213e4e))
+* create portal atom ([61b1c0f](https://github.com/nordnet/ui/commit/61b1c0f))
+
+# [1.28.0](https://github.com/nordnet/ui/compare/v1.27.0...v1.28.0) (2019-08-13)
+
+
+### Features
+
+* **DateTime:** add support for date time strings ([3f0236a](https://github.com/nordnet/ui/commit/3f0236a))
+
+# [1.27.0](https://github.com/nordnet/ui/compare/v1.26.0...v1.27.0) (2019-08-08)
+
+
+### Features
+
+* add tabsnav classname ([636ac1e](https://github.com/nordnet/ui/commit/636ac1e))
+
 # [1.26.0](https://github.com/nordnet/ui/compare/v1.25.0...v1.26.0) (2019-08-05)
 
 

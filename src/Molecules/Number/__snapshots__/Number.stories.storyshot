@@ -137,7 +137,7 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c5 {
@@ -146,7 +146,7 @@ exports[`Storyshots Molecules | Number Integration: with different typographies 
   margin: 0;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 1.3333333333333333;
 }
 
 .c6 {
@@ -1264,7 +1264,7 @@ Array [
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {

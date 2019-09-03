@@ -7,7 +7,7 @@ exports[`Storyshots Molecules | Avatar Basic usage 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 1.3333333333333333;
 }
 
 .c0 {
@@ -37,7 +37,7 @@ exports[`Storyshots Molecules | Avatar Best practice, with element as children 1
   margin: 0;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 1.3333333333333333;
 }
 
 .c0 {

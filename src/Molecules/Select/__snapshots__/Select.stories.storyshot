@@ -30,7 +30,7 @@ exports[`Storyshots Molecules | Select Select with hidden label 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c5 {
@@ -39,7 +39,7 @@ exports[`Storyshots Molecules | Select Select with hidden label 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -173,7 +173,7 @@ exports[`Storyshots Molecules | Select Select with overflowing placeholder 1`] =
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c4 {
@@ -182,7 +182,7 @@ exports[`Storyshots Molecules | Select Select with overflowing placeholder 1`] =
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c2 {
@@ -310,7 +310,7 @@ exports[`Storyshots Molecules | Select Select with placeholder 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c4 {
@@ -319,7 +319,7 @@ exports[`Storyshots Molecules | Select Select with placeholder 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c2 {
@@ -455,7 +455,7 @@ exports[`Storyshots Molecules | Select Select with placeholder and preselected v
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c4 {
@@ -464,7 +464,7 @@ exports[`Storyshots Molecules | Select Select with placeholder and preselected v
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c2 {
@@ -609,7 +609,7 @@ exports[`Storyshots Molecules | Select Select with prepended empty value 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c5 {
@@ -618,7 +618,7 @@ exports[`Storyshots Molecules | Select Select with prepended empty value 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -757,7 +757,7 @@ exports[`Storyshots Molecules | Select Select with preselected value 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c4 {
@@ -766,7 +766,7 @@ exports[`Storyshots Molecules | Select Select with preselected value 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c2 {
@@ -896,7 +896,7 @@ exports[`Storyshots Molecules | Select Select without placeholder 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c4 {
@@ -905,7 +905,7 @@ exports[`Storyshots Molecules | Select Select without placeholder 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c2 {

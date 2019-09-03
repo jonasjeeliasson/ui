@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms | Portal Default 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+<portal-dummy>
+  <p
+    className="c0"
+    type="primary"
+  >
+    This element is moved to the bottom of the body tag
+  </p>
+</portal-dummy>
+`;
+
+exports[`Storyshots Atoms | Portal If attachTo prop is not a HTMLElement then nothing is rendered 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+<div
+  id="origin"
+>
+  <portal-dummy>
+    <p
+      className="c0"
+      type="primary"
+    >
+      This element should not be rendered
+    </p>
+  </portal-dummy>
+</div>
+`;
+
+exports[`Storyshots Atoms | Portal Portal to specified destination 1`] = `
+<div
+  id="destination"
+/>
+`;

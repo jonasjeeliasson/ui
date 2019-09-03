@@ -11,6 +11,7 @@ import Icon from './Atoms/Icon';
 import List from './Atoms/List';
 import ListItem from './Atoms/ListItem';
 import Media, { useMedia } from './Atoms/Media';
+import Portal from './Atoms/Portal';
 import Separator from './Atoms/Separator';
 import Spinner from './Atoms/Spinner';
 import TabTitle from './Atoms/TabTitle';
@@ -79,6 +80,7 @@ export {
   Number,
   PageHeaderCard,
   PageWrapper,
+  Portal,
   Select,
   Separator,
   Spinner,

@@ -10,8 +10,20 @@ exports[`Storyshots Atoms | DateTime Invalid value 1`] = `"-"`;
 
 exports[`Storyshots Atoms | DateTime Uses custom symbol for invalid value 1`] = `"X"`;
 
+exports[`Storyshots Atoms | DateTime With date as ISO 8601 string 1`] = `
+<time>
+  11/11/1999
+</time>
+`;
+
 exports[`Storyshots Atoms | DateTime With date only 1`] = `
 <time>
   1/18/1970
+</time>
+`;
+
+exports[`Storyshots Atoms | DateTime With date time as ISO 8601 string 1`] = `
+<time>
+  11/11/1999, 10:11
 </time>
 `;

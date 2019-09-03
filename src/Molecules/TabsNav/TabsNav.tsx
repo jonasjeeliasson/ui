@@ -55,7 +55,7 @@ const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps }
 
 // TODO: fix ts issue with height prop
 // @ts-ignore
-const TabsNav: Component = (withRouter(({ children, location, height = 11 }) => {
+const TabsNav: Component = (withRouter(({ children, location, height = 11, className }) => {
   const { setRef, onKeyDown } = useKeyboardNavigation({
     itemsLength: React.Children.count(children),
   });
@@ -78,6 +78,7 @@ const TabsNav: Component = (withRouter(({ children, location, height = 11 }) => 
             to={c.props.to}
             onKeyDown={onKeyDown}
             height={height}
+            className={c.props.className}
           >
             {c.props.title}
           </Title>
@@ -87,7 +88,14 @@ const TabsNav: Component = (withRouter(({ children, location, height = 11 }) => 
   });
 
   return (
-    <Flexbox container direction="row" gutter={4} as={StyledUl} sm={{ gutter: 8 }}>
+    <Flexbox
+      className={className}
+      container
+      direction="row"
+      gutter={4}
+      as={StyledUl}
+      sm={{ gutter: 8 }}
+    >
       {titles}
     </Flexbox>
   );

@@ -43,6 +43,7 @@ export const isElement = (x: any): x is React.ReactNode => React.isValidElement(
 export const isNumber = (x: any): x is number => typeof x === 'number';
 export const isBoolean = (x: any): x is boolean => typeof x === 'boolean';
 export const isFunction = (x: any): x is Function => typeof x === 'function';
+export const isHTMLElement = (x: any): x is HTMLElement => x instanceof HTMLElement;
 
 export const pickAriaAttributes = R.pickBy((_, key: string) => R.test(/^aria-/, key));
 

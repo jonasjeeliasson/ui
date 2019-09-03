@@ -58,7 +58,7 @@ exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c4 {
@@ -67,7 +67,7 @@ exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -205,7 +205,7 @@ exports[`Storyshots Molecules | FeedbackBanner Default usage 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c4 {
@@ -214,7 +214,7 @@ exports[`Storyshots Molecules | FeedbackBanner Default usage 1`] = `
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -366,7 +366,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c7 {
@@ -375,7 +375,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -742,7 +742,7 @@ exports[`Storyshots Molecules | FeedbackBanner Displaying title 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c7 {
@@ -751,7 +751,7 @@ exports[`Storyshots Molecules | FeedbackBanner Displaying title 1`] = `
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {

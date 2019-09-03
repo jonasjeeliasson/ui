@@ -61,7 +61,7 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .c7 {
@@ -137,6 +137,7 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
     left: 0;
     height: 100%;
     width: 100%;
+    z-index: 2;
   }
 }
 
@@ -177,159 +178,161 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
   <div
     className="c0"
   />
-  <div
-    data-focus-guard={true}
-    style={
-      Object {
-        "height": "0px",
-        "left": "1px",
-        "overflow": "hidden",
-        "padding": 0,
-        "position": "fixed",
-        "top": "1px",
-        "width": "1px",
-      }
-    }
-    tabIndex={0}
-  />
-  <div
-    data-focus-guard={true}
-    style={
-      Object {
-        "height": "0px",
-        "left": "1px",
-        "overflow": "hidden",
-        "padding": 0,
-        "position": "fixed",
-        "top": "1px",
-        "width": "1px",
-      }
-    }
-    tabIndex={1}
-  />
-  <div
-    data-focus-lock-disabled={false}
-    onBlur={[Function]}
-    onFocus={[Function]}
-  >
+  <portal-dummy>
     <div
-      onScrollCapture={[Function]}
-      onTouchMoveCapture={[Function]}
-      onWheelCapture={[Function]}
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
       <div
-        aria-label="Dialog information"
-        className="c1"
-        role="dialog"
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
       >
         <div
-          className="c2"
+          aria-label="Dialog information"
+          className="c1"
+          role="dialog"
         >
           <div
-            className="c3"
+            className="c2"
           >
             <div
-              className="c4"
+              className="c3"
             >
-              <h2
-                className="c5"
-                type="title2"
+              <div
+                className="c4"
               >
-                Dialog information
-              </h2>
-            </div>
-            <div
-              className="c6 c4"
-            >
-              <button
-                className="c7"
-                onClick={[Function]}
-                type="button"
-              >
-                <svg
-                  aria-hidden="false"
-                  className="c8"
-                  focusable="false"
-                  role="img"
-                  size={5}
-                  viewBox="0 0 24 24"
+                <h2
+                  className="c5"
+                  type="title2"
                 >
-                  <polygon
-                    points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
-                  />
-                  <title>
-                    Close this dialog
-                  </title>
-                </svg>
-              </button>
+                  Dialog information
+                </h2>
+              </div>
+              <div
+                className="c6 c4"
+              >
+                <button
+                  className="c7"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="false"
+                    className="c8"
+                    focusable="false"
+                    role="img"
+                    size={5}
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                    />
+                    <title>
+                      Close this dialog
+                    </title>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          className="c9"
-        >
           <div
-            className="c2"
+            className="c9"
           >
+            <div
+              className="c2"
+            >
+              <p
+                className="c10"
+                type="primary"
+              >
+                Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+              </p>
+            </div>
+            <div
+              className="c2"
+            >
+              <p
+                className="c10"
+                type="primary"
+              >
+                That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+              </p>
+            </div>
+            <div
+              className="c2"
+            >
+              <p
+                className="c10"
+                type="primary"
+              >
+                Nielsen/Norman has an excellent article about their usage here
+              </p>
+            </div>
             <p
               className="c10"
               type="primary"
             >
-              Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+              <a
+                href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+              >
+                https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+              </a>
             </p>
           </div>
-          <div
-            className="c2"
-          >
-            <p
-              className="c10"
-              type="primary"
-            >
-              That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
-            </p>
-          </div>
-          <div
-            className="c2"
-          >
-            <p
-              className="c10"
-              type="primary"
-            >
-              Nielsen/Norman has an excellent article about their usage here
-            </p>
-          </div>
-          <p
-            className="c10"
-            type="primary"
-          >
-            <a
-              href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
-            >
-              https:// www.nngroup.com/articles/modal-nonmodal-dialog/
-            </a>
-          </p>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    data-focus-guard={true}
-    style={
-      Object {
-        "height": "0px",
-        "left": "1px",
-        "overflow": "hidden",
-        "padding": 0,
-        "position": "fixed",
-        "top": "1px",
-        "width": "1px",
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
       }
-    }
-    tabIndex={0}
-  />
-  <div
-    className="c11"
-  />
+      tabIndex={0}
+    />
+    <div
+      className="c11"
+    />
+  </portal-dummy>
 </div>
 `;
 
@@ -394,7 +397,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .c7 {
@@ -470,6 +473,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
     left: 0;
     height: 100%;
     width: 100%;
+    z-index: 2;
   }
 }
 
@@ -504,159 +508,161 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
   <div
     className="c0"
   />
-  <div
-    data-focus-guard={true}
-    style={
-      Object {
-        "height": "0px",
-        "left": "1px",
-        "overflow": "hidden",
-        "padding": 0,
-        "position": "fixed",
-        "top": "1px",
-        "width": "1px",
-      }
-    }
-    tabIndex={0}
-  />
-  <div
-    data-focus-guard={true}
-    style={
-      Object {
-        "height": "0px",
-        "left": "1px",
-        "overflow": "hidden",
-        "padding": 0,
-        "position": "fixed",
-        "top": "1px",
-        "width": "1px",
-      }
-    }
-    tabIndex={1}
-  />
-  <div
-    data-focus-lock-disabled={false}
-    onBlur={[Function]}
-    onFocus={[Function]}
-  >
+  <portal-dummy>
     <div
-      onScrollCapture={[Function]}
-      onTouchMoveCapture={[Function]}
-      onWheelCapture={[Function]}
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
       <div
-        aria-label="Dialog information"
-        className="c1"
-        role="dialog"
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
       >
         <div
-          className="c2"
+          aria-label="Dialog information"
+          className="c1"
+          role="dialog"
         >
           <div
-            className="c3"
+            className="c2"
           >
             <div
-              className="c4"
+              className="c3"
             >
-              <h2
-                className="c5"
-                type="title2"
+              <div
+                className="c4"
               >
-                Dialog information
-              </h2>
-            </div>
-            <div
-              className="c6 c4"
-            >
-              <button
-                className="c7"
-                onClick={[Function]}
-                type="button"
-              >
-                <svg
-                  aria-hidden="false"
-                  className="c8"
-                  focusable="false"
-                  role="img"
-                  size={5}
-                  viewBox="0 0 24 24"
+                <h2
+                  className="c5"
+                  type="title2"
                 >
-                  <polygon
-                    points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
-                  />
-                  <title>
-                    Close this dialog
-                  </title>
-                </svg>
-              </button>
+                  Dialog information
+                </h2>
+              </div>
+              <div
+                className="c6 c4"
+              >
+                <button
+                  className="c7"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="false"
+                    className="c8"
+                    focusable="false"
+                    role="img"
+                    size={5}
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                    />
+                    <title>
+                      Close this dialog
+                    </title>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          className="c9"
-        >
           <div
-            className="c2"
+            className="c9"
           >
+            <div
+              className="c2"
+            >
+              <p
+                className="c10"
+                type="primary"
+              >
+                Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+              </p>
+            </div>
+            <div
+              className="c2"
+            >
+              <p
+                className="c10"
+                type="primary"
+              >
+                That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+              </p>
+            </div>
+            <div
+              className="c2"
+            >
+              <p
+                className="c10"
+                type="primary"
+              >
+                Nielsen/Norman has an excellent article about their usage here
+              </p>
+            </div>
             <p
               className="c10"
               type="primary"
             >
-              Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+              <a
+                href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+              >
+                https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+              </a>
             </p>
           </div>
-          <div
-            className="c2"
-          >
-            <p
-              className="c10"
-              type="primary"
-            >
-              That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
-            </p>
-          </div>
-          <div
-            className="c2"
-          >
-            <p
-              className="c10"
-              type="primary"
-            >
-              Nielsen/Norman has an excellent article about their usage here
-            </p>
-          </div>
-          <p
-            className="c10"
-            type="primary"
-          >
-            <a
-              href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
-            >
-              https:// www.nngroup.com/articles/modal-nonmodal-dialog/
-            </a>
-          </p>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    data-focus-guard={true}
-    style={
-      Object {
-        "height": "0px",
-        "left": "1px",
-        "overflow": "hidden",
-        "padding": 0,
-        "position": "fixed",
-        "top": "1px",
-        "width": "1px",
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
       }
-    }
-    tabIndex={0}
-  />
-  <div
-    className="c11"
-  />
+      tabIndex={0}
+    />
+    <div
+      className="c11"
+    />
+  </portal-dummy>
 </div>
 `;
 
@@ -712,7 +718,7 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .c6 {
@@ -781,6 +787,7 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
     left: 0;
     height: 100%;
     width: 100%;
+    z-index: 2;
   }
 }
 
@@ -821,147 +828,149 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
   <div
     className="c0"
   />
-  <div
-    data-focus-guard={true}
-    style={
-      Object {
-        "height": "0px",
-        "left": "1px",
-        "overflow": "hidden",
-        "padding": 0,
-        "position": "fixed",
-        "top": "1px",
-        "width": "1px",
-      }
-    }
-    tabIndex={0}
-  />
-  <div
-    data-focus-guard={true}
-    style={
-      Object {
-        "height": "0px",
-        "left": "1px",
-        "overflow": "hidden",
-        "padding": 0,
-        "position": "fixed",
-        "top": "1px",
-        "width": "1px",
-      }
-    }
-    tabIndex={1}
-  />
-  <div
-    data-focus-lock-disabled={false}
-    onBlur={[Function]}
-    onFocus={[Function]}
-  >
+  <portal-dummy>
     <div
-      onScrollCapture={[Function]}
-      onTouchMoveCapture={[Function]}
-      onWheelCapture={[Function]}
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
       <div
-        className="c1"
-        role="dialog"
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
       >
         <div
-          className="c2"
+          className="c1"
+          role="dialog"
         >
           <div
-            className="c3"
+            className="c2"
           >
             <div
-              className="c4 c5"
+              className="c3"
             >
-              <button
-                className="c6"
-                onClick={[Function]}
-                type="button"
+              <div
+                className="c4 c5"
               >
-                <svg
-                  aria-hidden="false"
-                  className="c7"
-                  focusable="false"
-                  role="img"
-                  size={5}
-                  viewBox="0 0 24 24"
+                <button
+                  className="c6"
+                  onClick={[Function]}
+                  type="button"
                 >
-                  <polygon
-                    points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
-                  />
-                  <title>
-                    Close this dialog
-                  </title>
-                </svg>
-              </button>
+                  <svg
+                    aria-hidden="false"
+                    className="c7"
+                    focusable="false"
+                    role="img"
+                    size={5}
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                    />
+                    <title>
+                      Close this dialog
+                    </title>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          className="c8"
-        >
           <div
-            className="c2"
+            className="c8"
           >
+            <div
+              className="c2"
+            >
+              <p
+                className="c9"
+                type="primary"
+              >
+                Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+              </p>
+            </div>
+            <div
+              className="c2"
+            >
+              <p
+                className="c9"
+                type="primary"
+              >
+                That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+              </p>
+            </div>
+            <div
+              className="c2"
+            >
+              <p
+                className="c9"
+                type="primary"
+              >
+                Nielsen/Norman has an excellent article about their usage here
+              </p>
+            </div>
             <p
               className="c9"
               type="primary"
             >
-              Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+              <a
+                href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+              >
+                https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+              </a>
             </p>
           </div>
-          <div
-            className="c2"
-          >
-            <p
-              className="c9"
-              type="primary"
-            >
-              That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
-            </p>
-          </div>
-          <div
-            className="c2"
-          >
-            <p
-              className="c9"
-              type="primary"
-            >
-              Nielsen/Norman has an excellent article about their usage here
-            </p>
-          </div>
-          <p
-            className="c9"
-            type="primary"
-          >
-            <a
-              href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
-            >
-              https:// www.nngroup.com/articles/modal-nonmodal-dialog/
-            </a>
-          </p>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    data-focus-guard={true}
-    style={
-      Object {
-        "height": "0px",
-        "left": "1px",
-        "overflow": "hidden",
-        "padding": 0,
-        "position": "fixed",
-        "top": "1px",
-        "width": "1px",
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
       }
-    }
-    tabIndex={0}
-  />
-  <div
-    className="c10"
-  />
+      tabIndex={0}
+    />
+    <div
+      className="c10"
+    />
+  </portal-dummy>
 </div>
 `;

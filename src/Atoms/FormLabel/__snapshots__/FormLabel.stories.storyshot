@@ -14,7 +14,7 @@ exports[`Storyshots Atoms | FormLabel As a wrapper 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 <label
@@ -47,7 +47,7 @@ Array [
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 <label
@@ -89,7 +89,7 @@ Array [
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 <label

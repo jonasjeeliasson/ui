@@ -23,11 +23,16 @@ const getSharedStyle = (props: ThemedStyledProps<LinkProps, Theme>) => {
   `;
 };
 
-const CleanRouterLink = (props: LinkProps) => (
-  <RouterLink {...R.omit(['fullWidth', 'colorFn', 'color', 'display'], props) as any} />
-);
+const CleanLink = (props: LinkProps) => {
+  return props.external ? (
+    // eslint-disable-next-line jsx-a11y/anchor-has-content
+    <a {...R.omit(['fullWidth', 'colorFn', 'color', 'display'], props) as any} />
+  ) : (
+    <RouterLink {...R.omit(['fullWidth', 'colorFn', 'color', 'display'], props) as any} />
+  );
+};
 
-const StyledLink = styled(CleanRouterLink)<LinkProps>`
+const StyledLink = styled(CleanLink)<LinkProps>`
   ${p => getSharedStyle(p)}
   text-decoration: none;
 `;
@@ -42,7 +47,17 @@ const StyledButton = styled(NormalizedElements.Button)<LinkProps>`
 `;
 
 export const Link: LinkComponent = props => {
-  const { to, children, disabled, className, onClick, target, rel } = props;
+  const {
+    to,
+    children,
+    disabled,
+    className,
+    onClick,
+    external,
+    target = external ? '_blank' : undefined,
+    rel = external ? 'noopener noreferrer nofollow' : undefined,
+  } = props;
+  const destinationProp = external ? { href: to } : { to };
 
   if (isUndefined(to) || disabled) {
     return (
@@ -53,7 +68,14 @@ export const Link: LinkComponent = props => {
   }
 
   return (
-    <StyledLink className={className} onClick={onClick} to={to} target={target} rel={rel}>
+    <StyledLink
+      className={className}
+      onClick={onClick}
+      {...destinationProp}
+      target={target}
+      rel={rel}
+      external={external}
+    >
       {children}
     </StyledLink>
   );

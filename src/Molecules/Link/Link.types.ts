@@ -7,8 +7,9 @@ export type LinkProps = {
   className?: string;
   display?: 'inline' | 'block' | 'inline-block' | 'flex' | 'inline-flex';
   /** @default _self */
-  target?: '_blank';
+  target?: '_blank' | '_self';
   to?: ReactRouterDomLinkProps['to'];
+  external?: boolean;
   rel?: string;
   disabled?: boolean;
 };

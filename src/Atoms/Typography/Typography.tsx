@@ -56,7 +56,7 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
     case TYPOGRAPHY_TYPES.secondary:
       mobile = {
         size: 14,
-        lineHeight: theme.spacing.unit(6),
+        lineHeight: theme.spacing.unit(5),
       };
       defaultWeight = 'regular';
       allowedWeights = ['regular', 'bold'];
@@ -64,7 +64,7 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
     case TYPOGRAPHY_TYPES.tertiary:
       mobile = {
         size: 12,
-        lineHeight: theme.spacing.unit(5),
+        lineHeight: theme.spacing.unit(4),
       };
       defaultWeight = 'regular';
       allowedWeights = ['regular', 'bold'];

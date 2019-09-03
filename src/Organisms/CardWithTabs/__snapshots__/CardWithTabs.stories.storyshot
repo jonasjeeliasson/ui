@@ -88,7 +88,7 @@ Array [
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c7 {
@@ -97,7 +97,7 @@ Array [
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c2 {
@@ -341,7 +341,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c7 {
@@ -350,7 +350,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c2 {
@@ -612,7 +612,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c10 {
@@ -621,7 +621,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c2 {

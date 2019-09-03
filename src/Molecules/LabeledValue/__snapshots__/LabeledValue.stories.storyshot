@@ -7,7 +7,7 @@ exports[`Storyshots Molecules | LabeledValue Default 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -47,7 +47,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue secondary
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -56,7 +56,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue secondary
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -102,7 +102,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue title1 1`
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -189,7 +189,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c5 {
@@ -198,7 +198,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c7 {
@@ -207,7 +207,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -312,7 +312,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c5 {
@@ -321,7 +321,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {

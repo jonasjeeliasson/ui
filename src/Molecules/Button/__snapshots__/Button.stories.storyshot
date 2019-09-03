@@ -7,7 +7,7 @@ exports[`Storyshots Molecules | Button Button primary with colors 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -273,7 +273,7 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c7 {
@@ -638,7 +638,7 @@ exports[`Storyshots Molecules | Button Button secondary with colors 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -904,7 +904,7 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c7 {
@@ -1275,7 +1275,7 @@ exports[`Storyshots Molecules | Button Button that is full width 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -1370,7 +1370,7 @@ exports[`Storyshots Molecules | Button Button with different variants 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -1722,7 +1722,7 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -1928,7 +1928,7 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c2 {
@@ -2122,7 +2122,7 @@ exports[`Storyshots Molecules | Button Default usage 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -2216,7 +2216,7 @@ exports[`Storyshots Molecules | Button Disabled Button with different variants 1
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -2491,7 +2491,7 @@ exports[`Storyshots Molecules | Button Disabled link looking like a button 1`] =
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -2580,7 +2580,7 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -2786,7 +2786,7 @@ exports[`Storyshots Molecules | Button Link looking like a button that is full w
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -2852,7 +2852,7 @@ exports[`Storyshots Molecules | Button Link looking like a button with rel as no
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -2949,7 +2949,7 @@ Array [
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -3188,7 +3188,7 @@ Array [
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -3419,7 +3419,7 @@ exports[`Storyshots Molecules | Button Links looking like buttons composed in a 
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c2 {

@@ -61,7 +61,7 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -70,7 +70,7 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -326,7 +326,7 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -335,7 +335,7 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -584,7 +584,7 @@ exports[`Storyshots Molecules | Input / Number Required 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -593,7 +593,7 @@ exports[`Storyshots Molecules | Input / Number Required 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -850,7 +850,7 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -859,7 +859,7 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -1115,7 +1115,7 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -1124,7 +1124,7 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -1385,7 +1385,7 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -1394,7 +1394,7 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -1651,7 +1651,7 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -1660,7 +1660,7 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -1916,7 +1916,7 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -1925,7 +1925,7 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c11 {
@@ -1934,7 +1934,7 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   margin: 0;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 1.3333333333333333;
 }
 
 .c0 {
@@ -2203,7 +2203,7 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -2212,7 +2212,7 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c11 {
@@ -2221,7 +2221,7 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 1.3333333333333333;
 }
 
 .c0 {
@@ -2490,7 +2490,7 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -2499,7 +2499,7 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c11 {
@@ -2508,7 +2508,7 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 1.3333333333333333;
 }
 
 .c0 {
@@ -2777,7 +2777,7 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -2786,7 +2786,7 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -3042,7 +3042,7 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -3051,7 +3051,7 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -3285,7 +3285,7 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -3294,7 +3294,7 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -3479,7 +3479,7 @@ Array [
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c6 {
@@ -3488,7 +3488,7 @@ Array [
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c15 {
@@ -3497,7 +3497,7 @@ Array [
   margin: 0;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 1.3333333333333333;
 }
 
 .c3 {
@@ -4040,7 +4040,7 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -4049,7 +4049,7 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -4306,7 +4306,7 @@ exports[`Storyshots Molecules | Input / Number With value (Controlled behaviour)
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -4315,7 +4315,7 @@ exports[`Storyshots Molecules | Input / Number With value (Controlled behaviour)
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {

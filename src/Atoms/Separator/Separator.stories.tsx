@@ -9,9 +9,6 @@ import { Separator } from '../..';
 const StyledContainer = styled.div`
   height: 400px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 const Container = ({ children }: any) => <StyledContainer>{children}</StyledContainer>;
 
@@ -20,6 +17,13 @@ storiesOf('Atoms | Separator', module)
   .add('Separator default', () => (
     <Container>
       <Separator />
+    </Container>
+  ))
+  .add('Separators with different color', () => (
+    <Container>
+      <Separator color={t => t.color.negative} />
+      <br />
+      <Separator color={t => t.color.backgroundDark} />
     </Container>
   ))
   .add('Separator vertical', () => (

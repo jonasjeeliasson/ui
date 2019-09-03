@@ -68,7 +68,8 @@
     "react-remove-scroll": "^2.0.4",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "use-ssr": "^1.0.18"
   },
   "peerDependencies": {
     "react": ">=16",

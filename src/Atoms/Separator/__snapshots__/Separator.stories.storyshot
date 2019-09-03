@@ -10,18 +10,6 @@ exports[`Storyshots Atoms | Separator Separator default 1`] = `
 .c0 {
   height: 400px;
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 <div
@@ -43,18 +31,6 @@ exports[`Storyshots Atoms | Separator Separator vertical 1`] = `
 .c0 {
   height: 400px;
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 <div
@@ -62,6 +38,37 @@ exports[`Storyshots Atoms | Separator Separator vertical 1`] = `
 >
   <div
     className="c1"
+  />
+</div>
+`;
+
+exports[`Storyshots Atoms | Separator Separators with different color 1`] = `
+.c1 {
+  width: 100%;
+  height: 1px;
+  background-color: #FF1900;
+}
+
+.c2 {
+  width: 100%;
+  height: 1px;
+  background-color: #282823;
+}
+
+.c0 {
+  height: 400px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  />
+  <br />
+  <div
+    className="c2"
   />
 </div>
 `;

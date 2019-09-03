@@ -116,7 +116,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c4 {

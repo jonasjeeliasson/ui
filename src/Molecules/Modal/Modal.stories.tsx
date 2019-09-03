@@ -31,6 +31,7 @@ storiesOf('Molecules | Modal', module)
             Open modal
           </button>
           <ScrollMaker />
+          {/* ScrollMaker is just used to show how the Modal locks scrolling when open */}
           <Modal onClose={onClose} title="Dialog information" open={open}>
             <Box mb={2}>
               <Typography type="primary" as="p">
@@ -81,6 +82,7 @@ storiesOf('Molecules | Modal', module)
             Open modal
           </button>
           <ScrollMaker />
+          {/* ScrollMaker is just used to show how the Modal locks scrolling when open */}
           <Modal onClose={onClose} open={open}>
             <Box mb={2}>
               <Typography type="primary" as="p">
@@ -118,6 +120,7 @@ storiesOf('Molecules | Modal', module)
       return (
         <div>
           <ScrollMaker />
+          {/* ScrollMaker is just used to show how the Modal locks scrolling when open */}
           <Modal title="Dialog information">
             <Box mb={2}>
               <Typography type="primary" as="p">

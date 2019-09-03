@@ -15,6 +15,7 @@ const Backdrop = styled.div`
     left: 0;
     height: 100%;
     width: 100%;
+    z-index: 2;
   }
 `;
 
@@ -26,7 +27,7 @@ const Dialog = styled.div<DialogProps>`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
 
   ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
     width: 100%;
