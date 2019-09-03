@@ -21,14 +21,23 @@ const StyledIconBase = styled.svg<StyledIconBaseProps>`
 `;
 
 export const IconBase: React.FC<InternalProps> = (props: InternalProps) => {
-  const { className, children, title, size = 5, color, fill, inline } = props;
+  const {
+    className,
+    children,
+    title,
+    size = 5,
+    color,
+    fill,
+    inline,
+    viewBox = '0 0 24 24',
+  } = props;
 
   return (
     <StyledIconBase
       className={className}
       size={size}
       focusable="false"
-      viewBox="0 0 24 24"
+      viewBox={viewBox}
       aria-hidden={title ? 'false' : 'true'}
       role={title ? 'img' : 'presentation'}
       colorFn={fill || color}
