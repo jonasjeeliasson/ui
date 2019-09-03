@@ -39,6 +39,7 @@ const StyledLink = styled(CleanLink)<LinkProps>`
 
 const StyledButton = styled(NormalizedElements.Button)<LinkProps>`
   ${p => getSharedStyle(p)}
+  background: none;
   cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
   border: none;
   border-radius: 0;

@@ -134,6 +134,7 @@ exports[`Storyshots Molecules | Link With disabled prop results in a disabled bu
   display: inline;
   padding: 0;
   color: #A0A09B;
+  background: none;
   cursor: not-allowed;
   border: none;
   border-radius: 0;
@@ -236,6 +237,7 @@ exports[`Storyshots Molecules | Link Without to prop results in a button looking
   display: inline;
   padding: 0;
   color: #0046FF;
+  background: none;
   cursor: pointer;
   border: none;
   border-radius: 0;
