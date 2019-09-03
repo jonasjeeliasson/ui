@@ -119,6 +119,7 @@ const NumberInput: NumberComponent & {
   components: typeof components;
 } = props => {
   const {
+    autoFocus,
     defaultValue = 0,
     disabled,
     error,
@@ -128,20 +129,20 @@ const NumberInput: NumberComponent & {
     min = 0,
     name,
     noSteppers,
-    size,
-    step = 1,
-    success,
-    value: controlledValue,
-    required,
     onBlur,
     onChange,
     onClick,
     onFocus,
     onKeyDown,
-    onKeyUp,
     onKeyPress,
-    onStepUp = () => {},
+    onKeyUp,
     onStepDown = () => {},
+    onStepUp = () => {},
+    required,
+    size,
+    step = 1,
+    success,
+    value: controlledValue,
   } = props;
   const [uncontrolledValue, setUncontrolledValue] = useState(defaultValue);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -217,24 +218,25 @@ const NumberInput: NumberComponent & {
       <Flexbox container item grow={1} alignItems="center">
         <Input
           {...{
-            ref: inputRef,
+            autoFocus,
+            disabled,
             error,
+            id: fieldId,
+            max,
+            min,
+            name,
+            onBlur,
+            onChange: onChangeHandler,
+            onClick,
+            onFocus,
+            onKeyDown: onKeyDownHandler,
+            onKeyPress,
+            onKeyUp,
+            ref: inputRef,
+            required,
+            step,
             success,
             value: controlledValue || uncontrolledValue,
-            disabled,
-            id: fieldId,
-            step,
-            min,
-            max,
-            name,
-            required,
-            onChange: onChangeHandler,
-            onFocus,
-            onClick,
-            onBlur,
-            onKeyDown: onKeyDownHandler,
-            onKeyUp,
-            onKeyPress,
           }}
           {...(hasError(error) ? { 'aria-invalid': true } : {})}
         />

@@ -66,6 +66,15 @@ storiesOf('Molecules | Input / Number', module)
       disabled
     />
   ))
+  .add('With auto focus', () => (
+    <Input.Number
+      fieldId="insert-unique-id"
+      label="Label"
+      defaultValue="152.25"
+      step="0.25"
+      autoFocus
+    />
+  ))
   .add('With all actions', () => (
     <Input.Number fieldId="insert-unique-id" label="Label" {...handlers} />
   ))
