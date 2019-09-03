@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { IconBase } from '../IconBase';
-import { BaseProps, StyledChildProps } from '../IconBase.types';
+import { ChildProps, StyledChildProps } from '../IconBase.types';
 
 const StyledCircle = styled.circle<StyledChildProps>`
   ${p => {
@@ -10,7 +10,7 @@ const StyledCircle = styled.circle<StyledChildProps>`
   }}
 `;
 
-export const Questionmark = ({ stroke, ...props }: BaseProps) => {
+export const Questionmark = ({ stroke, ...props }: ChildProps) => {
   return (
     <IconBase {...props}>
       <g fillRule="evenodd" transform="translate(1 1)">
